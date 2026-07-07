@@ -297,3 +297,63 @@ https://tnd-msa-sp-orqclientes0035-enp.apps.ocptest.uiotest.bpichinchatest.test/
       </ser:CreacionCliente21>
    </soapenv:Body>
 </soapenv:Envelope>
+
+
+
+curl -L 'http://10.60.128.86:6001/IntegrationBus/soap/ORQProductos0061' -H 'Content-Type: application/xml' -d '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ser:validacionPoliticasListas01>
+            <headerIn>
+                <dispositivo>9d044797e9abc0da</dispositivo>
+                <empresa>0010</empresa>
+                <canal>03</canal>
+                <medio>030006</medio>
+                <aplicacion>00663</aplicacion>
+                <agencia/>
+                <tipoTransaccion>302001531</tipoTransaccion>
+                <geolocalizacion/>
+                <usuario>USINTERT</usuario>
+                <unicidad/>
+                <guid>b546ac26-d9fe-4c7f-b143-140b53e0d327</guid>
+                <fechaHora>202605051128030398</fechaHora>
+                <filler/>
+                <idioma>es-EC</idioma>
+                <sesion>72cded14-031e-401d-a357-bfeb9331565d</sesion>
+                <ip>179.49.52.54</ip>
+                <idCliente>1304630542</idCliente>
+                <tipoIdCliente/>
+                <bancs>
+                    <teller>00070560</teller>
+                    <terminal>1</terminal>
+                    <institucion>0010</institucion>
+                    <agencia>1</agencia>
+                    <estacion>1</estacion>
+                    <aplicacion/>
+                    <canal/>
+                </bancs>
+            </headerIn>
+            <bodyIn>
+                <cliente>
+                    <!--Optional:-->
+                    <tipoIdentificacion>0001</tipoIdentificacion>
+                    <identificacion>1802787554</identificacion>
+                    <primerNombre>GALO</primerNombre>
+                    <segundoNombre>ALFREDO</segundoNombre>
+                    <primerApellido>BERRU</primerApellido>
+                    <segundoApellido>CARRION</segundoApellido>
+                </cliente>
+                <flujo>
+                    <estado>iniciar</estado>
+                    <campos>
+                        <campo>
+                            <clave/>
+                            <valor/>
+                        </campo>
+                    </campos>
+                </flujo>
+            </bodyIn>
+        </ser:validacionPoliticasListas01>
+    </soapenv:Body>
+</soapenv:Envelope>'
+ 
