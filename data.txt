@@ -447,4 +447,9 @@ curl -L 'http://10.60.128.58:6921/WSProductos0001/soap/WSProductos0001Request' -
       </ser:ConsultaCuentasCliente02>
    </soapenv:Body>
 </soapenv:Envelope>
+
+
+https://tia-msa-sp-wstecnicos0063-enp.apps.ocptest.uiotest.bpichinchatest.test/WSTecnicos0063/soap/WSTecnicos0063Request
+
+
  
