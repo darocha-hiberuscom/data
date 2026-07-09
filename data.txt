@@ -452,8 +452,7 @@ curl -L 'http://10.60.128.58:6921/WSProductos0001/soap/WSProductos0001Request' -
 https://tia-msa-sp-wstecnicos0063-enp.apps.ocptest.uiotest.bpichinchatest.test/WSTecnicos0063/soap/WSTecnicos0063Request
 
 
-Clave de acceso:   AKIAZRBAHSETXOXOVYOM
- 
-Clave de acceso secreta: 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
 
+
+https://pichincha.sharepoint.com/sites/CapaComun/Documentos%20compartidos/Forms/AllItems.aspx?id=%2Fsites%2FCapaComun%2FDocumentos%20compartidos%2FLiftAndShift%2FDiscovery%2Fdata%2Fola2&viewid=9d4733ab%2Da2d2%2D4a8f%2Db4d4%2D0dbc683e7e7d&TeamsCID=2644d2a4%2Df641%2D4d79%2Da312%2D6b7cf9c36270&OR=Teams%2DHL&CT=1781190800161&ovuser=077b766b%2D61f0%2D4e7c%2D9373%2D928832aa9fef%2Cdarocha%40hiberus%2Ecom&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNjA1MTQxNjcxMyIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D
  
