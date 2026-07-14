@@ -633,3 +633,6 @@ https://pichincha.sharepoint.com/sites/CapaComun/Documentos%20compartidos/Forms/
 </ban:processMessage>
 </soapenv:Body>
 </soapenv:Envelope>
+
+curl --location 'https://tpr-msa-ad-bnc-products-ownership-enp.apps.ocptest.uiotest.bpichinchatest.test/bancs/trx/060605-1%27 --header 'Accept: application/json' --header 'Content-Type: application/json' --header 'x-app: 12332' --header 'x-channel: 10' --header 'x-device: movil' --header 'x-device-ip: 0.0.0.0' --header 'x-guid: 550e8400-e29b-41d4-a716-4466554400XX' --header 'x-medium: 131213' --header 'x-session: abs' --header 'Cookie: 04b8e4ec460e4e574dde3bf200020c26=936fa25ced590fd0ee1ee8a1c05161ff; 04b8e4ec460e4e574dde3bf200020c26=d62fd2253c6315db0f7ea63b8d240d4b; cd3ebfc8ec289c22d3eb88043df625b7=99572b215b2385c8bbf8048f70caafae' --data '{"transactionId":"060605","header":{"bancsUser":{"teller":"00099000","terminal":"14","institution":"003","branch":"14","workstation":"1","channel":""}},"body":{"accntNumber1":"00000002100392517","system1":"DEP","action1":1,"accntNumber2":"00000000000000000","linktype1":"Y","narration":null,"custNumber":"00000000002623750","custName":"","idType":"0001","idNumber":"1715897763","custNumber1":"00000000004108775","custName1":"","idType1":"0001","idNumber1":"1717788242"}}'
+
