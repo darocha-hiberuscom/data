@@ -1,174 +1,89 @@
+campos en blanco · accntNumber, system, action, linktype, narration, custNumber, custName, idType
+⚠ Contrato Etapa 6 incompleto — corrige blanks/mappers antes de Etapa 7
+✓ Contrato Etapa 6: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\06-aplicacion-service\stage6-application-contract-validation.json
+✓ Completado: application services
+⚠ Quedan 2 hueco(s) tras reconciliación:
+  · Clase Java planificada ausente: QueryAccountCoHoldersSoapToDomainMapper
+  · Clase Java planificada ausente: QueryAccountCoHoldersSoapToDomainMapperRequestBancsMapper
 
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114>gradlew.bat test --console=plain --quiet
-SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Loading FrontEnd jaxws ...
-Loading DataBinding jaxb ...
-wsdl2java -d C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\build\generated\sources\wsdl -p com.pichincha.sp.generated -verbose -autoNameResolution -xjc-enableIntrospection -xjc-XautoNameResolution -exsh true -mark-generated -b C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\gradle\wrapper\jaxb-bindings.xml C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\resources\legacy\WSProductos0114.wsdl
-wsdl2java - Apache CXF 4.1.1
 
-Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
-Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
-Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.ModifyAccountOwnershipDomainToSoapMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.ModificarTitularidadCuenta22Response toOperationResponse(com.pichincha.sp.domain.dto.ModifyAccountOwnershipResultDto result).
-Note: -- MapStruct: mapping property: result to: setError(com.pichincha.sp.generated.GenericError).
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getCode() to: setCodigo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getCode().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getMessage() to: setMensaje(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getMessage().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getMensajeNegocio() to: setMensajeNegocio(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getMensajeNegocio().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getType() to: setTipo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getType().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getRecurso() to: setRecurso(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getRecurso().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getComponente() to: setComponente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getComponente().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getBackend() to: setBackend(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getBackend().
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.GenericError #modifyAccountOwnershipResultDtoToGenericError(result).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.GenericError #modifyAccountOwnershipResultDtoToGenericError(result).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ModificarTitularidadCuenta22Response operationResponse).
-Note: -- MapStruct: mapping property: operationResponse to: body(com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse).
-Note: -- MapStruct: mapping property: modificarTitularidadCuenta22Response to: modificarTitularidadCuenta22Response(com.pichincha.sp.generated.ModificarTitularidadCuenta22Response).
-Note: -- MapStruct: selecting property mapping: modificarTitularidadCuenta22Response.
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #modificarTitularidadCuenta22ResponseToSoapBodyResponse(operationResponse).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #modificarTitularidadCuenta22ResponseToSoapBodyResponse(operationResponse).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.GenericHeaderOut toHeaderOut(com.pichincha.sp.generated.GenericHeaderIn headerIn).
-Note: -- MapStruct: mapping property: headerIn.getDispositivo() to: setDispositivo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getDispositivo().
-Note: -- MapStruct: mapping property: headerIn.getEmpresa() to: setEmpresa(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getEmpresa().
-Note: -- MapStruct: mapping property: headerIn.getCanal() to: setCanal(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getCanal().
-Note: -- MapStruct: mapping property: headerIn.getMedio() to: setMedio(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getMedio().
-Note: -- MapStruct: mapping property: headerIn.getAplicacion() to: setAplicacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getAplicacion().
-Note: -- MapStruct: mapping property: headerIn.getAgencia() to: setAgencia(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getAgencia().
-Note: -- MapStruct: mapping property: headerIn.getTipoTransaccion() to: setTipoTransaccion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getTipoTransaccion().
-Note: -- MapStruct: mapping property: headerIn.getGeolocalizacion() to: setGeolocalizacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getGeolocalizacion().
-Note: -- MapStruct: mapping property: headerIn.getUsuario() to: setUsuario(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getUsuario().
-Note: -- MapStruct: mapping property: headerIn.getUnicidad() to: setUnicidad(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getUnicidad().
-Note: -- MapStruct: mapping property: headerIn.getGuid() to: setGuid(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getGuid().
-Note: -- MapStruct: mapping property: headerIn.getFechaHora() to: setFechaHora(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getFechaHora().
-Note: -- MapStruct: mapping property: headerIn.getFiller() to: setFiller(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getFiller().
-Note: -- MapStruct: mapping property: headerIn.getIdioma() to: setIdioma(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIdioma().
-Note: -- MapStruct: mapping property: headerIn.getSesion() to: setSesion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getSesion().
-Note: -- MapStruct: mapping property: headerIn.getIp() to: setIp(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIp().
-Note: -- MapStruct: mapping property: headerIn.getIdCliente() to: setIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIdCliente().
-Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
-Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
-Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.QueryAccountCoHoldersDomainToSoapMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response toOperationResponse(com.pichincha.sp.domain.dto.QueryAccountCoHoldersResultDto result).
-Note: -- MapStruct: mapping property: result to: setError(com.pichincha.sp.generated.GenericError).
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCode() to: setCodigo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getCode().
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getMessage() to: setMensaje(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getMessage().
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getMensajeNegocio() to: setMensajeNegocio(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getMensajeNegocio().
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getType() to: setTipo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getType().
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getRecurso() to: setRecurso(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getRecurso().
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getComponente() to: setComponente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getComponente().
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getBackend() to: setBackend(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getBackend().
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.GenericError #queryAccountCoHoldersResultDtoToGenericError(result).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.GenericError #queryAccountCoHoldersResultDtoToGenericError(result).
-Note: -- MapStruct: mapping property: result.getHolder() to: setBodyOut(com.pichincha.sp.generated.BodyOutConsultarCotitularesCuenta01).
-Note: -- MapStruct: mapping property: holderResponseDto.getCoHolders() to: setCotitulares(com.pichincha.sp.generated.Cotitulares).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.Cotitulares #toCotitulares(holderResponseDto.getCoHolders()).
-Note: -- MapStruct: creating property mapping: void #holderResponseDtoToBodyOutConsultarCotitularesCuenta01(result.getHolder()).
-Note: -- MapStruct: selecting property mapping: void #holderResponseDtoToBodyOutConsultarCotitularesCuenta01(result.getHolder()).
-Note: -- MapStruct: mapping property: result to: setBodyOut(com.pichincha.sp.generated.BodyOutConsultarCotitularesCuenta01).
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCondition() to: setCondicion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getCondition().
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCreditAccount() to: setCuentaCredito(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getCreditAccount().
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getRemarks() to: setObservaciones(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getRemarks().
-Note: -- MapStruct: creating property mapping: void #queryAccountCoHoldersResultDtoToBodyOutConsultarCotitularesCuenta01(result).
-Note: -- MapStruct: selecting property mapping: void #queryAccountCoHoldersResultDtoToBodyOutConsultarCotitularesCuenta01(result).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response operationResponse).
-Note: -- MapStruct: mapping property: operationResponse to: body(com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse).
-Note: -- MapStruct: mapping property: consultarCotitularesCuenta01Response to: consultarCotitularesCuenta01Response(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response).
-Note: -- MapStruct: selecting property mapping: consultarCotitularesCuenta01Response.
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.Datos toDatos(com.pichincha.sp.domain.dto.CoHolderResponseDto source).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.GenericHeaderOut toHeaderOut(com.pichincha.sp.generated.GenericHeaderIn headerIn).
-Note: -- MapStruct: mapping property: headerIn.getDispositivo() to: setDispositivo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getDispositivo().
-Note: -- MapStruct: mapping property: headerIn.getEmpresa() to: setEmpresa(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getEmpresa().
-Note: -- MapStruct: mapping property: headerIn.getCanal() to: setCanal(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getCanal().
-Note: -- MapStruct: mapping property: headerIn.getMedio() to: setMedio(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getMedio().
-Note: -- MapStruct: mapping property: headerIn.getAplicacion() to: setAplicacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getAplicacion().
-Note: -- MapStruct: mapping property: headerIn.getAgencia() to: setAgencia(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getAgencia().
-Note: -- MapStruct: mapping property: headerIn.getTipoTransaccion() to: setTipoTransaccion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getTipoTransaccion().
-Note: -- MapStruct: mapping property: headerIn.getGeolocalizacion() to: setGeolocalizacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getGeolocalizacion().
-Note: -- MapStruct: mapping property: headerIn.getUsuario() to: setUsuario(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getUsuario().
-Note: -- MapStruct: mapping property: headerIn.getUnicidad() to: setUnicidad(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getUnicidad().
-Note: -- MapStruct: mapping property: headerIn.getGuid() to: setGuid(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getGuid().
-Note: -- MapStruct: mapping property: headerIn.getFechaHora() to: setFechaHora(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getFechaHora().
-Note: -- MapStruct: mapping property: headerIn.getFiller() to: setFiller(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getFiller().
-Note: -- MapStruct: mapping property: headerIn.getIdioma() to: setIdioma(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIdioma().
-Note: -- MapStruct: mapping property: headerIn.getSesion() to: setSesion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getSesion().
-Note: -- MapStruct: mapping property: headerIn.getIp() to: setIp(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIp().
-Note: -- MapStruct: mapping property: headerIn.getIdCliente() to: setIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIdCliente().
-Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
-Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
-Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.QueryAccountCoHoldersSoapToDomainMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.ModifyAccountOwnershipSoapToDomainMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
-OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
 
-88 tests completed, 4 failed
 
-FAILURE: Build failed with an exception.
+╔══════════════════════════════════════════════════╗
+║  Checklist completo · Etapas 1–9                 ║
+╚══════════════════════════════════════════════════╝
 
-* What went wrong:
-Execution failed for task ':test'.
-> There were failing tests. See the report at: file:///C:/Users/darochar/Documents/tpr-msa-sp-wsproductos0114/build/reports/tests/test/index.html
+Workspace: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114
+Análisis: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114
+Paquete: com.pichincha.sp
 
-* Try:
-> Run with --scan to get full insights.
+Árbol: WSProductos0114 · 2 operación(es) WSDL
+✓ Checklist JSON: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\migration-full-checklist.json
+✓ Checklist MD:   c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\migration-full-checklist.md
 
-BUILD FAILED in 16s
+── Resumen por etapa ──
+✓ Etapa 1 · Análisis: ok=7 missing=0
+✓ Etapa 2 · Dominio DTO: ok=11 missing=0
+✓ Etapa 3 · TX DTOs + mappers: ok=10 missing=0 · mappers 2/2
+✓ Etapa 4 · Puertos: ok=7 missing=0
+✓ Etapa 5 · Adaptadores output: ok=4 missing=0
+⚠ Etapa 6 · Services + builders + MapStruct: ok=10 missing=2 · mappers 2/4 · builders 2/2
+✓ Etapa 7 · Infra input SOAP: ok=13 missing=0 · mappers 4/4
+✓ Etapa 8 · Validación: ok=2 missing=0
+✓ Etapa 9 · Tests: ok=2 missing=0
+
+── Mappers ──
+  ✓ [E3] Tx060602Mapper
+  ✓ [E3] Tx060605Mapper
+  ✓ [E6] ModifyAccountOwnershipRequestBancsMapper
+  ✓ [E6] QueryAccountCoHoldersRequestBancsMapper
+  ✗ [E6] QueryAccountCoHoldersSoapToDomainMapper (Clase Java ausente en disco)
+  ✗ [E6] QueryAccountCoHoldersSoapToDomainMapperRequestBancsMapper (Clase Java ausente en disco)
+  ✓ [E7] ModifyAccountOwnershipDomainToSoapMapper
+  ✓ [E7] ModifyAccountOwnershipSoapToDomainMapper
+  ✓ [E7] QueryAccountCoHoldersDomainToSoapMapper
+  ✓ [E7] QueryAccountCoHoldersSoapToDomainMapper
+
+── Builders ──
+  ✓ [E6] ModifyAccountOwnershipRequestBuilder
+  ✓ [E6] QueryAccountCoHoldersRequestBuilder
+
+── Faltantes (2) ──
+  · [E6][mapper] QueryAccountCoHoldersSoapToDomainMapper
+      c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114/src/main/java/com/pichincha/sp/application/mappers/QueryAccountCoHoldersSoapToDomainMapper.java
+  · [E6][mapper] QueryAccountCoHoldersSoapToDomainMapperRequestBancsMapper
+      c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114/src/main/java/com/pichincha/sp/application/mappers/QueryAccountCoHoldersSoapToDomainMapperRequestBancsMapper.java
+
+⚠ Checklist incompleto: 2 hueco(s)
+
+── Checklist componentes (árbol Etapa 1) ──
+Mappers: 8 ok / 2 missing · Builders: 2 ok / 0 missing
+Informe: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\migration-full-checklist.md
+
+⏳ Validando referencias de clases del proyecto (no inventadas)...
+  Archivos escaneados: 96 · Tipos definidos: 97
+  · Fuentes JAXB/WSDL generadas: 24 archivo(s) (válidos como tipos del proyecto)
+  ✓ Todas las clases referenciadas existen (sin "cannot find symbol").
+
+── Gate Etapa 8 (contrato final) ──
+Servicio: wsproductos0114
+Checklist: ready=no  mappers missing=2  builders missing=0
+Artifacts/classes: missing=0
+Compile: failed
+Class refs: issues=0
+Ready: no
+Resumen: ok=2 warning=0 missing=2 skipped=0
+  ✗ [checklist] Checklist incompleto (mappers missing=2, builders missing=0) · c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\migration-full-checklist.md
+  ✗ [compile] Compilación falló (gradlew.bat compileJava) · Corrige los errores de compilación Java/MapStruct/JAXB y vuelve a ejecutar la Etapa 8.
+Checklist MD: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\migration-full-checklist.md
+Contrato: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\stage8-validation-contract.json
+⚠ Etapa 8 NO lista — no avances a Etapa 9 hasta corregir findings
+✓ Contrato Etapa 8: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\stage8-validation-contract.json
+
+
+
+
+
+Error en Etapa 9 Generación de tests: Etapa 9 bloqueada por contrato (Stage 8 ready=false, mappers missing=2, builders missing=0, elegibles=25). Revisa c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\09-tests\stage9-unit-test-contract-validation.json
+
+
