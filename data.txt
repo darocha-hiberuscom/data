@@ -639,30 +639,62 @@ curl --location 'https://tpr-msa-ad-bnc-products-ownership-enp.apps.ocptest.uiot
 
 
 
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "condicion" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "bodyOut"?
-    ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                         ^
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "cotitulares" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "bodyOut"?
-    ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                         ^
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "cuentaCredito" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "headerOut"?
-    ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                         ^
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "observaciones" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "error"?
-    ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                         ^
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "titular" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "error"?
-    ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                         ^
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response operationResponse).
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114>gradlew build
+
+> Task :generateJavaFromWsdl
+Generando clases desde: WSProductos0114.wsdl
+   Γ£ô Usando binding global: jaxb-bindings.xml
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Loading FrontEnd jaxws ...
+Loading DataBinding jaxb ...
+wsdl2java -d C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\build\generated\sources\wsdl -p com.pichincha.sp.generated -verbose -autoNameResolution -xjc-enableIntrospection -xjc-XautoNameResolution -exsh true -mark-generated -b C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\gradle\wrapper\jaxb-bindings.xml C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\resources\legacy\WSProductos0114.wsdl
+wsdl2java - Apache CXF 4.1.1
+
+
+> Task :postProcessGeneratedWsdl
+Γ£à Post-procesamiento unificado completado
+
+> Task :compileJava
+Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
+Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
+Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.QueryAccountCoHoldersSoapToDomainMapper.
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
+Note: -- MapStruct: mapping property: requestBodyConsultarCotitularesCuenta01BodyInCuenta( request ) to: account(com.pichincha.sp.domain.dto.AccountRequestDto).
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuentaToAccountRequestDto(requestBodyConsultarCotitularesCuenta01BodyInCuenta( request )).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuentaToAccountRequestDto(requestBodyConsultarCotitularesCuenta01BodyInCuenta( request )).
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.ModifyAccountOwnershipSoapToDomainMapper.
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
+Note: -- MapStruct: mapping property: requestBodyModificarTitularidadCuenta22BodyInCuenta( request ) to: account(com.pichincha.sp.domain.dto.AccountRequestDto).
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuenta2ToAccountRequestDto(requestBodyModificarTitularidadCuenta22BodyInCuenta( request )).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuenta2ToAccountRequestDto(requestBodyModificarTitularidadCuenta22BodyInCuenta( request )).
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.ModifyAccountOwnershipDomainToSoapMapper.
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.ModificarTitularidadCuenta22Response toOperationResponse(com.pichincha.sp.domain.dto.ModifyAccountOwnershipResultDto result).
+Note: -- MapStruct: mapping property: result to: setError(com.pichincha.sp.generated.GenericError).
+Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getCode() to: setCodigo(java.lang.String).
+Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getCode().
+Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getMessage() to: setMensaje(java.lang.String).
+Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getMessage().
+Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getMensajeNegocio() to: setMensajeNegocio(java.lang.String).
+Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getMensajeNegocio().
+Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getType() to: setTipo(java.lang.String).
+Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getType().
+Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getRecurso() to: setRecurso(java.lang.String).
+Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getRecurso().
+Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getComponente() to: setComponente(java.lang.String).
+Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getComponente().
+Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getBackend() to: setBackend(java.lang.String).
+Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getBackend().
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.GenericError #modifyAccountOwnershipResultDtoToGenericError(result).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.GenericError #modifyAccountOwnershipResultDtoToGenericError(result).
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ModificarTitularidadCuenta22Response operationResponse).
 Note: -- MapStruct: mapping property: operationResponse to: body(com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse).
-Note: -- MapStruct: mapping property: consultarCotitularesCuenta01Response to: consultarCotitularesCuenta01Response(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response).
-Note: -- MapStruct: selecting property mapping: consultarCotitularesCuenta01Response.
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:42: warning: Unmapped target property: "header".
-    SoapEnvelopeResponse toEnvelope(ConsultarCotitularesCuenta01Response operationResponse);
-                         ^
+Note: -- MapStruct: mapping property: modificarTitularidadCuenta22Response to: modificarTitularidadCuenta22Response(com.pichincha.sp.generated.ModificarTitularidadCuenta22Response).
+Note: -- MapStruct: selecting property mapping: modificarTitularidadCuenta22Response.
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #modificarTitularidadCuenta22ResponseToSoapBodyResponse(operationResponse).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #modificarTitularidadCuenta22ResponseToSoapBodyResponse(operationResponse).
 Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.GenericHeaderOut toHeaderOut(com.pichincha.sp.generated.GenericHeaderIn headerIn).
 Note: -- MapStruct: mapping property: headerIn.getDispositivo() to: setDispositivo(java.lang.String).
 Note: -- MapStruct: selecting property mapping: headerIn.getDispositivo().
@@ -702,22 +734,87 @@ Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdC
 Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
 Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
 Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.QueryAccountCoHoldersSoapToDomainMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "accion" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
-    QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
-                                  ^
-Note: -- MapStruct: mapping property: requestBodyConsultarCotitularesCuenta01BodyInCuenta( request ) to: account(com.pichincha.sp.domain.dto.AccountRequestDto).
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuentaToAccountRequestDto(requestBodyConsultarCotitularesCuenta01BodyInCuenta( request )).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuentaToAccountRequestDto(requestBodyConsultarCotitularesCuenta01BodyInCuenta( request )).
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "number" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
-    QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
-                                  ^
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "product" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
-    QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
-                                  ^
-23 errors
-2 warnings
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.QueryAccountCoHoldersDomainToSoapMapper.
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response toOperationResponse(com.pichincha.sp.domain.dto.QueryAccountCoHoldersResultDto result).
+Note: -- MapStruct: mapping property: result to: setError(com.pichincha.sp.generated.GenericError).
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCode() to: setCodigo(java.lang.String).
+Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getCode().
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getMessage() to: setMensaje(java.lang.String).
+Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getMessage().
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getMensajeNegocio() to: setMensajeNegocio(java.lang.String).
+Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getMensajeNegocio().
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getType() to: setTipo(java.lang.String).
+Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getType().
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getRecurso() to: setRecurso(java.lang.String).
+Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getRecurso().
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getComponente() to: setComponente(java.lang.String).
+Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getComponente().
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getBackend() to: setBackend(java.lang.String).
+Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getBackend().
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.GenericError #queryAccountCoHoldersResultDtoToGenericError(result).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.GenericError #queryAccountCoHoldersResultDtoToGenericError(result).
+Note: -- MapStruct: mapping property: result to: setBodyOut(com.pichincha.sp.generated.BodyOutConsultarCotitularesCuenta01).
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCondition() to: setCondicion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getCondition().
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCoHolders() to: setCotitulares(com.pichincha.sp.generated.Cotitulares).
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:31: error: Can't map property "java.util.List<com.pichincha.sp.domain.dto.CoHolderResponseDto> result.coHolders" to "com.pichincha.sp.generated.Cotitulares bodyOut.cotitulares". Consider to declare/implement a mapping method: "com.pichincha.sp.generated.Cotitulares map(java.util.List<com.pichincha.sp.domain.dto.CoHolderResponseDto> value)".
+    ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                         ^
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCreditAccount() to: setCuentaCredito(java.lang.String).
+Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getCreditAccount().
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getRemarks() to: setObservaciones(java.lang.String).
+Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getRemarks().
+Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getHolder() to: setTitular(com.pichincha.sp.generated.Datos).
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.Datos #holderResponseDtoToDatos(queryAccountCoHoldersResultDto.getHolder()).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.Datos #holderResponseDtoToDatos(queryAccountCoHoldersResultDto.getHolder()).
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.BodyOutConsultarCotitularesCuenta01 #queryAccountCoHoldersResultDtoToBodyOutConsultarCotitularesCuenta01(result).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.BodyOutConsultarCotitularesCuenta01 #queryAccountCoHoldersResultDtoToBodyOutConsultarCotitularesCuenta01(result).
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response operationResponse).
+Note: -- MapStruct: mapping property: operationResponse to: body(com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse).
+Note: -- MapStruct: mapping property: consultarCotitularesCuenta01Response to: consultarCotitularesCuenta01Response(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response).
+Note: -- MapStruct: selecting property mapping: consultarCotitularesCuenta01Response.
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.GenericHeaderOut toHeaderOut(com.pichincha.sp.generated.GenericHeaderIn headerIn).
+Note: -- MapStruct: mapping property: headerIn.getDispositivo() to: setDispositivo(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getDispositivo().
+Note: -- MapStruct: mapping property: headerIn.getEmpresa() to: setEmpresa(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getEmpresa().
+Note: -- MapStruct: mapping property: headerIn.getCanal() to: setCanal(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getCanal().
+Note: -- MapStruct: mapping property: headerIn.getMedio() to: setMedio(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getMedio().
+Note: -- MapStruct: mapping property: headerIn.getAplicacion() to: setAplicacion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getAplicacion().
+Note: -- MapStruct: mapping property: headerIn.getAgencia() to: setAgencia(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getAgencia().
+Note: -- MapStruct: mapping property: headerIn.getTipoTransaccion() to: setTipoTransaccion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getTipoTransaccion().
+Note: -- MapStruct: mapping property: headerIn.getGeolocalizacion() to: setGeolocalizacion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getGeolocalizacion().
+Note: -- MapStruct: mapping property: headerIn.getUsuario() to: setUsuario(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getUsuario().
+Note: -- MapStruct: mapping property: headerIn.getUnicidad() to: setUnicidad(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getUnicidad().
+Note: -- MapStruct: mapping property: headerIn.getGuid() to: setGuid(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getGuid().
+Note: -- MapStruct: mapping property: headerIn.getFechaHora() to: setFechaHora(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getFechaHora().
+Note: -- MapStruct: mapping property: headerIn.getFiller() to: setFiller(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getFiller().
+Note: -- MapStruct: mapping property: headerIn.getIdioma() to: setIdioma(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getIdioma().
+Note: -- MapStruct: mapping property: headerIn.getSesion() to: setSesion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getSesion().
+Note: -- MapStruct: mapping property: headerIn.getIp() to: setIp(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getIp().
+Note: -- MapStruct: mapping property: headerIn.getIdCliente() to: setIdCliente(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getIdCliente().
+Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdCliente(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
+Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
+Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
+1 error
 
 > Task :compileJava FAILED
 
@@ -728,77 +825,134 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compileJava'.
 > Compilation failed; see the compiler output below.
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapper.java:30: warning: Unmapped target property: "header".
-      SoapEnvelopeResponse toEnvelope(ModificarTitularidadCuenta22Response operationResponse);
-                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:42: warning: Unmapped target property: "header".
-      SoapEnvelopeResponse toEnvelope(ConsultarCotitularesCuenta01Response operationResponse);
-                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapper.java:27: error: Target property "bodyOut" must not be mapped more than once.
-      ModificarTitularidadCuenta22Response toOperationResponse(ModifyAccountOwnershipResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "accion" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
-      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
-                                     ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "criteriosCorrelacion" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
-      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
-                                     ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "holder" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
-      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
-                                     ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "number" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
-      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
-                                     ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "ownership" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
-      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
-                                     ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "product" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
-      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
-                                     ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Target property "cif" must not be mapped more than once.
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:31: error: Can't map property "java.util.List<com.pichincha.sp.domain.dto.CoHolderResponseDto> result.coHolders" to "com.pichincha.sp.generated.Cotitulares bodyOut.cotitulares". Consider to declare/implement a mapping method: "com.pichincha.sp.generated.Cotitulares map(java.util.List<com.pichincha.sp.domain.dto.CoHolderResponseDto> value)".
       ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
                                            ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Target property "identificacion" must not be mapped more than once.
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Target property "nombre" must not be mapped more than once.
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Target property "tipoIdentificacion" must not be mapped more than once.
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: No property named "cif" exists in source parameter(s). Did you mean "code"?
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: No property named "identification" exists in source parameter(s). Did you mean "condition"?
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: No property named "nombre" exists in source parameter(s). Did you mean "code"?
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: No property named "typeIdentification" exists in source parameter(s). Did you mean "condition"?
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "condicion" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "bodyOut"?
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "cotitulares" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "bodyOut"?
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "cuentaCredito" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "headerOut"?
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "observaciones" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "error"?
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "titular" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "error"?
-      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
-                                           ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "accion" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
-      QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
-                                    ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "number" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
-      QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
-                                    ^
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "product" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
-      QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
+  Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
+  Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
+  Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
+  Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.QueryAccountCoHoldersSoapToDomainMapper.
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
+  Note: -- MapStruct: mapping property: requestBodyConsultarCotitularesCuenta01BodyInCuenta( request ) to: account(com.pichincha.sp.domain.dto.AccountRequestDto).
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuentaToAccountRequestDto(requestBodyConsultarCotitularesCuenta01BodyInCuenta( request )).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuentaToAccountRequestDto(requestBodyConsultarCotitularesCuenta01BodyInCuenta( request )).
+  Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.ModifyAccountOwnershipSoapToDomainMapper.
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
+  Note: -- MapStruct: mapping property: requestBodyModificarTitularidadCuenta22BodyInCuenta( request ) to: account(com.pichincha.sp.domain.dto.AccountRequestDto).
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuenta2ToAccountRequestDto(requestBodyModificarTitularidadCuenta22BodyInCuenta( request )).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuenta2ToAccountRequestDto(requestBodyModificarTitularidadCuenta22BodyInCuenta( request )).
+  Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.ModifyAccountOwnershipDomainToSoapMapper.
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.ModificarTitularidadCuenta22Response toOperationResponse(com.pichincha.sp.domain.dto.ModifyAccountOwnershipResultDto result).
+  Note: -- MapStruct: mapping property: result to: setError(com.pichincha.sp.generated.GenericError).
+  Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getCode() to: setCodigo(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getCode().
+  Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getMessage() to: setMensaje(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getMessage().
+  Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getMensajeNegocio() to: setMensajeNegocio(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getMensajeNegocio().
+  Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getType() to: setTipo(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getType().
+  Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getRecurso() to: setRecurso(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getRecurso().
+  Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getComponente() to: setComponente(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getComponente().
+  Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getBackend() to: setBackend(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getBackend().
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.GenericError #modifyAccountOwnershipResultDtoToGenericError(result).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.GenericError #modifyAccountOwnershipResultDtoToGenericError(result).
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ModificarTitularidadCuenta22Response operationResponse).
+  Note: -- MapStruct: mapping property: operationResponse to: body(com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse).
+  Note: -- MapStruct: mapping property: modificarTitularidadCuenta22Response to: modificarTitularidadCuenta22Response(com.pichincha.sp.generated.ModificarTitularidadCuenta22Response).
+  Note: -- MapStruct: selecting property mapping: modificarTitularidadCuenta22Response.
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #modificarTitularidadCuenta22ResponseToSoapBodyResponse(operationResponse).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #modificarTitularidadCuenta22ResponseToSoapBodyResponse(operationResponse).
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.GenericHeaderOut toHeaderOut(com.pichincha.sp.generated.GenericHeaderIn headerIn).
+  Note: -- MapStruct: mapping property: headerIn.getDispositivo() to: setDispositivo(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getDispositivo().
+  Note: -- MapStruct: mapping property: headerIn.getEmpresa() to: setEmpresa(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getEmpresa().
+  Note: -- MapStruct: mapping property: headerIn.getCanal() to: setCanal(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getCanal().
+  Note: -- MapStruct: mapping property: headerIn.getMedio() to: setMedio(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getMedio().
+  Note: -- MapStruct: mapping property: headerIn.getAplicacion() to: setAplicacion(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getAplicacion().
+  Note: -- MapStruct: mapping property: headerIn.getAgencia() to: setAgencia(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getAgencia().
+  Note: -- MapStruct: mapping property: headerIn.getTipoTransaccion() to: setTipoTransaccion(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getTipoTransaccion().
+  Note: -- MapStruct: mapping property: headerIn.getGeolocalizacion() to: setGeolocalizacion(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getGeolocalizacion().
+  Note: -- MapStruct: mapping property: headerIn.getUsuario() to: setUsuario(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getUsuario().
+  Note: -- MapStruct: mapping property: headerIn.getUnicidad() to: setUnicidad(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getUnicidad().
+  Note: -- MapStruct: mapping property: headerIn.getGuid() to: setGuid(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getGuid().
+  Note: -- MapStruct: mapping property: headerIn.getFechaHora() to: setFechaHora(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getFechaHora().
+  Note: -- MapStruct: mapping property: headerIn.getFiller() to: setFiller(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getFiller().
+  Note: -- MapStruct: mapping property: headerIn.getIdioma() to: setIdioma(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getIdioma().
+  Note: -- MapStruct: mapping property: headerIn.getSesion() to: setSesion(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getSesion().
+  Note: -- MapStruct: mapping property: headerIn.getIp() to: setIp(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getIp().
+  Note: -- MapStruct: mapping property: headerIn.getIdCliente() to: setIdCliente(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getIdCliente().
+  Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdCliente(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
+  Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
+  Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
+  Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.QueryAccountCoHoldersDomainToSoapMapper.
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response toOperationResponse(com.pichincha.sp.domain.dto.QueryAccountCoHoldersResultDto result).
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCode() to: setCodigo(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getCode().
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getMessage() to: setMensaje(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getMessage().
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getMensajeNegocio() to: setMensajeNegocio(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getMensajeNegocio().
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getType() to: setTipo(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getType().
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getRecurso() to: setRecurso(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getRecurso().
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getComponente() to: setComponente(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getComponente().
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getBackend() to: setBackend(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getBackend().
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.GenericError #queryAccountCoHoldersResultDtoToGenericError(result).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.GenericError #queryAccountCoHoldersResultDtoToGenericError(result).
+  Note: -- MapStruct: mapping property: result to: setBodyOut(com.pichincha.sp.generated.BodyOutConsultarCotitularesCuenta01).
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCondition() to: setCondicion(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getCondition().
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCoHolders() to: setCotitulares(com.pichincha.sp.generated.Cotitulares).
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCreditAccount() to: setCuentaCredito(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getCreditAccount().
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getRemarks() to: setObservaciones(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getRemarks().
+  Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getHolder() to: setTitular(com.pichincha.sp.generated.Datos).
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.Datos #holderResponseDtoToDatos(queryAccountCoHoldersResultDto.getHolder()).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.Datos #holderResponseDtoToDatos(queryAccountCoHoldersResultDto.getHolder()).
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.BodyOutConsultarCotitularesCuenta01 #queryAccountCoHoldersResultDtoToBodyOutConsultarCotitularesCuenta01(result).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.BodyOutConsultarCotitularesCuenta01 #queryAccountCoHoldersResultDtoToBodyOutConsultarCotitularesCuenta01(result).
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response operationResponse).
+  Note: -- MapStruct: mapping property: consultarCotitularesCuenta01Response to: consultarCotitularesCuenta01Response(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response).
+  Note: -- MapStruct: selecting property mapping: consultarCotitularesCuenta01Response.
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
+  1 error
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 7s
+4 actionable tasks: 4 executed
+
