@@ -636,3 +636,169 @@ https://pichincha.sharepoint.com/sites/CapaComun/Documentos%20compartidos/Forms/
 
 curl --location 'https://tpr-msa-ad-bnc-products-ownership-enp.apps.ocptest.uiotest.bpichinchatest.test/bancs/trx/060605-1%27 --header 'Accept: application/json' --header 'Content-Type: application/json' --header 'x-app: 12332' --header 'x-channel: 10' --header 'x-device: movil' --header 'x-device-ip: 0.0.0.0' --header 'x-guid: 550e8400-e29b-41d4-a716-4466554400XX' --header 'x-medium: 131213' --header 'x-session: abs' --header 'Cookie: 04b8e4ec460e4e574dde3bf200020c26=936fa25ced590fd0ee1ee8a1c05161ff; 04b8e4ec460e4e574dde3bf200020c26=d62fd2253c6315db0f7ea63b8d240d4b; cd3ebfc8ec289c22d3eb88043df625b7=99572b215b2385c8bbf8048f70caafae' --data '{"transactionId":"060605","header":{"bancsUser":{"teller":"00099000","terminal":"14","institution":"003","branch":"14","workstation":"1","channel":""}},"body":{"accntNumber1":"00000002100392517","system1":"DEP","action1":1,"accntNumber2":"00000000000000000","linktype1":"Y","narration":null,"custNumber":"00000000002623750","custName":"","idType":"0001","idNumber":"1715897763","custNumber1":"00000000004108775","custName1":"","idType1":"0001","idNumber1":"1717788242"}}'
 
+
+
+
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "condicion" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "bodyOut"?
+    ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                         ^
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "cotitulares" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "bodyOut"?
+    ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                         ^
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "cuentaCredito" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "headerOut"?
+    ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                         ^
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "observaciones" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "error"?
+    ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                         ^
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "titular" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "error"?
+    ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                         ^
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response operationResponse).
+Note: -- MapStruct: mapping property: operationResponse to: body(com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse).
+Note: -- MapStruct: mapping property: consultarCotitularesCuenta01Response to: consultarCotitularesCuenta01Response(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response).
+Note: -- MapStruct: selecting property mapping: consultarCotitularesCuenta01Response.
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:42: warning: Unmapped target property: "header".
+    SoapEnvelopeResponse toEnvelope(ConsultarCotitularesCuenta01Response operationResponse);
+                         ^
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.GenericHeaderOut toHeaderOut(com.pichincha.sp.generated.GenericHeaderIn headerIn).
+Note: -- MapStruct: mapping property: headerIn.getDispositivo() to: setDispositivo(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getDispositivo().
+Note: -- MapStruct: mapping property: headerIn.getEmpresa() to: setEmpresa(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getEmpresa().
+Note: -- MapStruct: mapping property: headerIn.getCanal() to: setCanal(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getCanal().
+Note: -- MapStruct: mapping property: headerIn.getMedio() to: setMedio(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getMedio().
+Note: -- MapStruct: mapping property: headerIn.getAplicacion() to: setAplicacion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getAplicacion().
+Note: -- MapStruct: mapping property: headerIn.getAgencia() to: setAgencia(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getAgencia().
+Note: -- MapStruct: mapping property: headerIn.getTipoTransaccion() to: setTipoTransaccion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getTipoTransaccion().
+Note: -- MapStruct: mapping property: headerIn.getGeolocalizacion() to: setGeolocalizacion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getGeolocalizacion().
+Note: -- MapStruct: mapping property: headerIn.getUsuario() to: setUsuario(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getUsuario().
+Note: -- MapStruct: mapping property: headerIn.getUnicidad() to: setUnicidad(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getUnicidad().
+Note: -- MapStruct: mapping property: headerIn.getGuid() to: setGuid(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getGuid().
+Note: -- MapStruct: mapping property: headerIn.getFechaHora() to: setFechaHora(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getFechaHora().
+Note: -- MapStruct: mapping property: headerIn.getFiller() to: setFiller(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getFiller().
+Note: -- MapStruct: mapping property: headerIn.getIdioma() to: setIdioma(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getIdioma().
+Note: -- MapStruct: mapping property: headerIn.getSesion() to: setSesion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getSesion().
+Note: -- MapStruct: mapping property: headerIn.getIp() to: setIp(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getIp().
+Note: -- MapStruct: mapping property: headerIn.getIdCliente() to: setIdCliente(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getIdCliente().
+Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdCliente(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
+Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
+Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.QueryAccountCoHoldersSoapToDomainMapper.
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "accion" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
+    QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
+                                  ^
+Note: -- MapStruct: mapping property: requestBodyConsultarCotitularesCuenta01BodyInCuenta( request ) to: account(com.pichincha.sp.domain.dto.AccountRequestDto).
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuentaToAccountRequestDto(requestBodyConsultarCotitularesCuenta01BodyInCuenta( request )).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.AccountRequestDto #cuentaToAccountRequestDto(requestBodyConsultarCotitularesCuenta01BodyInCuenta( request )).
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "number" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
+    QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
+                                  ^
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "product" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
+    QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
+                                  ^
+23 errors
+2 warnings
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/darochar/Documents/tpr-msa-sp-wsproductos0114/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapper.java:30: warning: Unmapped target property: "header".
+      SoapEnvelopeResponse toEnvelope(ModificarTitularidadCuenta22Response operationResponse);
+                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:42: warning: Unmapped target property: "header".
+      SoapEnvelopeResponse toEnvelope(ConsultarCotitularesCuenta01Response operationResponse);
+                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapper.java:27: error: Target property "bodyOut" must not be mapped more than once.
+      ModificarTitularidadCuenta22Response toOperationResponse(ModifyAccountOwnershipResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "accion" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
+      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
+                                     ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "criteriosCorrelacion" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
+      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
+                                     ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "holder" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
+      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
+                                     ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "number" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
+      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
+                                     ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "ownership" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
+      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
+                                     ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapper.java:18: error: Unknown property "product" in result type com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto.ModifyAccountOwnershipInputDtoBuilder. Did you mean "null"?
+      ModifyAccountOwnershipInputDto toDomain(SoapEnvelopeRequest request);
+                                     ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Target property "cif" must not be mapped more than once.
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Target property "identificacion" must not be mapped more than once.
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Target property "nombre" must not be mapped more than once.
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Target property "tipoIdentificacion" must not be mapped more than once.
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: No property named "cif" exists in source parameter(s). Did you mean "code"?
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: No property named "identification" exists in source parameter(s). Did you mean "condition"?
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: No property named "nombre" exists in source parameter(s). Did you mean "code"?
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: No property named "typeIdentification" exists in source parameter(s). Did you mean "condition"?
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "condicion" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "bodyOut"?
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "cotitulares" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "bodyOut"?
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "cuentaCredito" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "headerOut"?
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "observaciones" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "error"?
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapper.java:39: error: Unknown property "titular" in result type com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response. Did you mean "error"?
+      ConsultarCotitularesCuenta01Response toOperationResponse(QueryAccountCoHoldersResultDto result);
+                                           ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "accion" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
+      QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
+                                    ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "number" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
+      QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
+                                    ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapper.java:15: error: Unknown property "product" in result type com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto.QueryAccountCoHoldersInputDtoBuilder. Did you mean "null"?
+      QueryAccountCoHoldersInputDto toDomain(SoapEnvelopeRequest request);
