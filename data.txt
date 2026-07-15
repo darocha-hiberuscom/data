@@ -638,38 +638,9 @@ curl --location 'https://tpr-msa-ad-bnc-products-ownership-enp.apps.ocptest.uiot
 
 
 
+Causas raíz
 
-# Errores actuales del proyecto
-
-Fecha de generación: 2026-07-15
-
-## 1) Problemas en `WSProductos0114SoapResponseFactory`
-Archivo: `src/main/java/com/pichincha/sp/infrastructure/input/adapter/rest/factory/WSProductos0114SoapResponseFactory.java`
-
-- `variable headerFactory not initialized in the default constructor` (línea 21)
-- `cannot find symbol: method builder()` en:
-  - `QueryAccountCoHoldersResultDto` (línea 27 / 33)
-  - `SoapEnvelopeResponse` (líneas 63 y 87)
-  - `SoapBodyResponse` (líneas 64 y 88)
-- `cannot find symbol` en getters de `BusinessErrorDto`:
-  - `getCode`, `getMessage`, `getBusinessMessage`, `getType`, `getResource`, `getComponent`, `getBackend` (líneas 34 a 40)
-- `cannot find symbol` en getters de `QueryAccountCoHoldersResultDto` y `ModifyAccountOwnershipResultDto`:
-  - `getCode`, `getMessage`, `getMensajeNegocio`, `getType`, `getRecurso`, `getComponente`, `getBackend` (líneas 50 a 56 y 74 a 80)
-- `Import From The Same Package` / `import never used` para `WSProductos0114SoapHeaderFactory` (línea 11)
-
-## 2) Problemas de inicialización de procesador Lombok (javac)
-
-- Archivo: `src/main/java/com/pichincha/sp/infrastructure/output/adapter/mapper/Tx060605Mapper.java` (línea 11)
-  - `Can't initialize javac processor ... NoClassDefFoundError: Could not initialize class lombok.javac.Javac`
-- Archivo: `src/main/java/com/pichincha/sp/infrastructure/output/adapter/mapper/Tx060602Mapper.java` (línea 11)
-  - `Can't initialize javac processor ... NoClassDefFoundError: Could not initialize class lombok.javac.Javac`
-- Archivo: `src/main/java/com/pichincha/sp/infrastructure/exception/error/resolver/ErrorResolver.java` (línea 12)
-  - `Can't initialize javac processor ... NoClassDefFoundError: Could not initialize class lombok.javac.Javac`
-
-## 3) Imports no usados
-
-- `src/main/java/com/pichincha/sp/infrastructure/output/adapter/mapper/Tx060605Mapper.java` (línea 8): `org.mapstruct.Mapping`
-- `src/main/java/com/pichincha/sp/infrastructure/output/adapter/mapper/Tx060602Mapper.java` (línea 8): `org.mapstruct.Mapping`
-- `src/main/java/com/pichincha/sp/infrastructure/exception/error/resolver/ErrorResolver.java` (línea 3): `com.pichincha.sp.infrastructure.input.adapter.rest.dto.SoapFaultDto`
-- `src/main/java/com/pichincha/sp/infrastructure/input/adapter/rest/validator/WSProductos0114RequestValidator.java` (línea 8): `com.pichincha.sp.infrastructure.constants.BancsAdapterConstants`
-
+En QueryAccountCoHoldersDomainToSoapMapper.java:54 tienes mappings duplicados al mismo target (identificacion y tipoIdentificacion) en toDatos(...), por eso aparece Target property ... must not be mapped more than once.
+Ese mismo método mapea propiedades que no existen en el source real CoHolderResponseDto (identification, typeIdentification, nombre, cif, code, message, type), porque CoHolderResponseDto.java hoy tiene otros campos (condition, creditAccount, remarks, holder, coHolders).
+En QueryAccountCoHoldersSoapToDomainMapper.java:20 mapeas account.number, pero AccountRequestDto.java no tiene number; solo tiene account (recursivo), por eso Unknown property "number".
+En ModifyAccountOwnershipDomainToSoapMapper.java:27 mapeas bodyOut.condicion desde condition, pero ModifyAccountOwnershipResultDto.java no tiene condition.
