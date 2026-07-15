@@ -1,311 +1,262 @@
-Note: -- MapStruct: selecting property mapping: void #holderResponseDtoToBodyOutConsultarCotitularesCuenta01(result.getHolder()).
-Note: -- MapStruct: mapping property: result to: setBodyOut(com.pichincha.sp.generated.BodyOutConsultarCotitularesCuenta01).
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCondition() to: setCondicion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getCondition().
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getCreditAccount() to: setCuentaCredito(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getCreditAccount().
-Note: -- MapStruct: mapping property: queryAccountCoHoldersResultDto.getRemarks() to: setObservaciones(java.lang.String).
-Note: -- MapStruct: selecting property mapping: queryAccountCoHoldersResultDto.getRemarks().
-Note: -- MapStruct: creating property mapping: void #queryAccountCoHoldersResultDtoToBodyOutConsultarCotitularesCuenta01(result).
-Note: -- MapStruct: selecting property mapping: void #queryAccountCoHoldersResultDtoToBodyOutConsultarCotitularesCuenta01(result).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response operationResponse).
-Note: -- MapStruct: mapping property: operationResponse to: body(com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse).
-Note: -- MapStruct: mapping property: consultarCotitularesCuenta01Response to: consultarCotitularesCuenta01Response(com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response).
-Note: -- MapStruct: selecting property mapping: consultarCotitularesCuenta01Response.
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarCotitularesCuenta01ResponseToSoapBodyResponse(operationResponse).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.Datos toDatos(com.pichincha.sp.domain.dto.CoHolderResponseDto source).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.GenericHeaderOut toHeaderOut(com.pichincha.sp.generated.GenericHeaderIn headerIn).
-Note: -- MapStruct: mapping property: headerIn.getDispositivo() to: setDispositivo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getDispositivo().
-Note: -- MapStruct: mapping property: headerIn.getEmpresa() to: setEmpresa(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getEmpresa().
-Note: -- MapStruct: mapping property: headerIn.getCanal() to: setCanal(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getCanal().
-Note: -- MapStruct: mapping property: headerIn.getMedio() to: setMedio(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getMedio().
-Note: -- MapStruct: mapping property: headerIn.getAplicacion() to: setAplicacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getAplicacion().
-Note: -- MapStruct: mapping property: headerIn.getAgencia() to: setAgencia(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getAgencia().
-Note: -- MapStruct: mapping property: headerIn.getTipoTransaccion() to: setTipoTransaccion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getTipoTransaccion().
-Note: -- MapStruct: mapping property: headerIn.getGeolocalizacion() to: setGeolocalizacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getGeolocalizacion().
-Note: -- MapStruct: mapping property: headerIn.getUsuario() to: setUsuario(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getUsuario().
-Note: -- MapStruct: mapping property: headerIn.getUnicidad() to: setUnicidad(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getUnicidad().
-Note: -- MapStruct: mapping property: headerIn.getGuid() to: setGuid(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getGuid().
-Note: -- MapStruct: mapping property: headerIn.getFechaHora() to: setFechaHora(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getFechaHora().
-Note: -- MapStruct: mapping property: headerIn.getFiller() to: setFiller(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getFiller().
-Note: -- MapStruct: mapping property: headerIn.getIdioma() to: setIdioma(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIdioma().
-Note: -- MapStruct: mapping property: headerIn.getSesion() to: setSesion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getSesion().
-Note: -- MapStruct: mapping property: headerIn.getIp() to: setIp(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIp().
-Note: -- MapStruct: mapping property: headerIn.getIdCliente() to: setIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIdCliente().
-Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
-Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
-Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.ModifyAccountOwnershipDomainToSoapMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.ModificarTitularidadCuenta22Response toOperationResponse(com.pichincha.sp.domain.dto.ModifyAccountOwnershipResultDto result).
-Note: -- MapStruct: mapping property: result to: setError(com.pichincha.sp.generated.GenericError).
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getCode() to: setCodigo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getCode().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getMessage() to: setMensaje(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getMessage().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getMensajeNegocio() to: setMensajeNegocio(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getMensajeNegocio().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getType() to: setTipo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getType().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getRecurso() to: setRecurso(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getRecurso().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getComponente() to: setComponente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getComponente().
-Note: -- MapStruct: mapping property: modifyAccountOwnershipResultDto.getBackend() to: setBackend(java.lang.String).
-Note: -- MapStruct: selecting property mapping: modifyAccountOwnershipResultDto.getBackend().
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.GenericError #modifyAccountOwnershipResultDtoToGenericError(result).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.GenericError #modifyAccountOwnershipResultDtoToGenericError(result).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ModificarTitularidadCuenta22Response operationResponse).
-Note: -- MapStruct: mapping property: operationResponse to: body(com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse).
-Note: -- MapStruct: mapping property: modificarTitularidadCuenta22Response to: modificarTitularidadCuenta22Response(com.pichincha.sp.generated.ModificarTitularidadCuenta22Response).
-Note: -- MapStruct: selecting property mapping: modificarTitularidadCuenta22Response.
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #modificarTitularidadCuenta22ResponseToSoapBodyResponse(operationResponse).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #modificarTitularidadCuenta22ResponseToSoapBodyResponse(operationResponse).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.GenericHeaderOut toHeaderOut(com.pichincha.sp.generated.GenericHeaderIn headerIn).
-Note: -- MapStruct: mapping property: headerIn.getDispositivo() to: setDispositivo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getDispositivo().
-Note: -- MapStruct: mapping property: headerIn.getEmpresa() to: setEmpresa(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getEmpresa().
-Note: -- MapStruct: mapping property: headerIn.getCanal() to: setCanal(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getCanal().
-Note: -- MapStruct: mapping property: headerIn.getMedio() to: setMedio(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getMedio().
-Note: -- MapStruct: mapping property: headerIn.getAplicacion() to: setAplicacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getAplicacion().
-Note: -- MapStruct: mapping property: headerIn.getAgencia() to: setAgencia(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getAgencia().
-Note: -- MapStruct: mapping property: headerIn.getTipoTransaccion() to: setTipoTransaccion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getTipoTransaccion().
-Note: -- MapStruct: mapping property: headerIn.getGeolocalizacion() to: setGeolocalizacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getGeolocalizacion().
-Note: -- MapStruct: mapping property: headerIn.getUsuario() to: setUsuario(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getUsuario().
-Note: -- MapStruct: mapping property: headerIn.getUnicidad() to: setUnicidad(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getUnicidad().
-Note: -- MapStruct: mapping property: headerIn.getGuid() to: setGuid(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getGuid().
-Note: -- MapStruct: mapping property: headerIn.getFechaHora() to: setFechaHora(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getFechaHora().
-Note: -- MapStruct: mapping property: headerIn.getFiller() to: setFiller(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getFiller().
-Note: -- MapStruct: mapping property: headerIn.getIdioma() to: setIdioma(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIdioma().
-Note: -- MapStruct: mapping property: headerIn.getSesion() to: setSesion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getSesion().
-Note: -- MapStruct: mapping property: headerIn.getIp() to: setIp(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIp().
-Note: -- MapStruct: mapping property: headerIn.getIdCliente() to: setIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIdCliente().
-Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
-Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
-Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.ModifyAccountOwnershipSoapToDomainMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.ModifyAccountOwnershipInputDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.QueryAccountCoHoldersSoapToDomainMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.QueryAccountCoHoldersInputDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
+t\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:42: error: cannot find symbol
+        operationResponse.setCode("12345");
+                         ^
+  symbol:   method setCode(String)
+  location: variable operationResponse of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:43: error: cannot find symbol
+        operationResponse.setMessage("Success");
+                         ^
+  symbol:   method setMessage(String)
+  location: variable operationResponse of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:44: error: cannot find symbol
+        operationResponse.setMensajeNegocio("Negocio exitoso");
+                         ^
+  symbol:   method setMensajeNegocio(String)
+  location: variable operationResponse of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:45: error: cannot find symbol
+        operationResponse.setType("Type");
+                         ^
+  symbol:   method setType(String)
+  location: variable operationResponse of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:46: error: cannot find symbol
+        operationResponse.setRecurso("Recurso");
+                         ^
+  symbol:   method setRecurso(String)
+  location: variable operationResponse of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:47: error: cannot find symbol
+        operationResponse.setComponente("Componente");
+                         ^
+  symbol:   method setComponente(String)
+  location: variable operationResponse of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:48: error: cannot find symbol
+        operationResponse.setBackend("Backend");
+                         ^
+  symbol:   method setBackend(String)
+  location: variable operationResponse of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:51: error: cannot find symbol
+        soapEnvelopeResponse.setHeaderOut(new GenericHeaderOut());
+                            ^
+  symbol:   method setHeaderOut(GenericHeaderOut)
+  location: variable soapEnvelopeResponse of type SoapEnvelopeResponse
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:52: error: cannot find symbol
+        soapEnvelopeResponse.setBodyOut(new Object());
+                            ^
+  symbol:   method setBodyOut(Object)
+  location: variable soapEnvelopeResponse of type SoapEnvelopeResponse
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:57: error: cannot find symbol
+        soapEnvelopeResponse.setBodyOut(new Object());
+                            ^
+  symbol:   method setBodyOut(Object)
+  location: variable soapEnvelopeResponse of type SoapEnvelopeResponse
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:68: error: cannot find symbol
+        soapEnvelopeResponse.setBodyOut(new Object());
+                            ^
+  symbol:   method setBodyOut(Object)
+  location: variable soapEnvelopeResponse of type SoapEnvelopeResponse
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:74: error: cannot find symbol
+        soapEnvelopeResponse.setBodyOut(new Object());
+                            ^
+  symbol:   method setBodyOut(Object)
+  location: variable soapEnvelopeResponse of type SoapEnvelopeResponse
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:82: error: cannot find symbol
+        assertThat(response.getCode()).isEqualTo(resultDto.getCode());
+                           ^
+  symbol:   method getCode()
+  location: variable response of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:83: error: cannot find symbol
+        assertThat(response.getMessage()).isEqualTo(resultDto.getMessage());
+                           ^
+  symbol:   method getMessage()
+  location: variable response of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:84: error: cannot find symbol
+        assertThat(response.getMensajeNegocio()).isEqualTo(resultDto.getMensajeNegocio());
+                           ^
+  symbol:   method getMensajeNegocio()
+  location: variable response of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:85: error: cannot find symbol
+        assertThat(response.getType()).isEqualTo(resultDto.getType());
+                           ^
+  symbol:   method getType()
+  location: variable response of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:86: error: cannot find symbol
+        assertThat(response.getRecurso()).isEqualTo(resultDto.getRecurso());
+                           ^
+  symbol:   method getRecurso()
+  location: variable response of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:87: error: cannot find symbol
+        assertThat(response.getComponente()).isEqualTo(resultDto.getComponente());
+                           ^
+  symbol:   method getComponente()
+  location: variable response of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:88: error: cannot find symbol
+        assertThat(response.getBackend()).isEqualTo(resultDto.getBackend());
+                           ^
+  symbol:   method getBackend()
+  location: variable response of type ModificarTitularidadCuenta22Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:22: error: cannot find symbol
+               .accountId("12345")
+               ^
+  symbol:   method accountId(String)
+  location: class SoapEnvelopeRequestBuilder
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:27: error: cannot find symbol
+               .accountId("12345")
+               ^
+  symbol:   method accountId(String)
+  location: class ModifyAccountOwnershipInputDtoBuilder
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:44: error: cannot find symbol
+        assertThatNullPointerException().isThrownBy(() -> mapper.toDomain(request));
+        ^
+  symbol:   method assertThatNullPointerException()
+  location: class ModifyAccountOwnershipSoapToDomainMapperTest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:51: error: cannot find symbol
+               .accountId("")
+               ^
+  symbol:   method accountId(String)
+  location: class SoapEnvelopeRequestBuilder
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:56: error: cannot find symbol
+        assertThatIllegalArgumentException().isThrownBy(() -> mapper.toDomain(request));
+        ^
+  symbol:   method assertThatIllegalArgumentException()
+  location: class ModifyAccountOwnershipSoapToDomainMapperTest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:63: error: cannot find symbol
+                .accountId("12345")
+                ^
+  symbol:   method accountId(String)
+  location: class SoapEnvelopeRequestBuilder
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:68: error: cannot find symbol
+        assertThatIllegalArgumentException().isThrownBy(() -> mapper.toDomain(request));
+        ^
+  symbol:   method assertThatIllegalArgumentException()
+  location: class ModifyAccountOwnershipSoapToDomainMapperTest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:59: error: cannot find symbol
+        coHolderResponseDto.setDocumento("123456789");
+                           ^
+  symbol:   method setDocumento(String)
+  location: variable coHolderResponseDto of type CoHolderResponseDto
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:60: error: cannot find symbol
+        coHolderResponseDto.setNombre("John Doe");
+                           ^
+  symbol:   method setNombre(String)
+  location: variable coHolderResponseDto of type CoHolderResponseDto
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:64: error: cannot find symbol
+        resultDto.setHolder(new com.pichincha.sp.domain.dto.Holder());
+                                                           ^
+  symbol:   class Holder
+  location: package com.pichincha.sp.domain.dto
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:69: error: cannot find symbol
+        operationResponse.setConsultarCotitularesCuenta01Response(new com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response());
+                         ^
+  symbol:   method setConsultarCotitularesCuenta01Response(ConsultarCotitularesCuenta01Response)
+  location: variable operationResponse of type ConsultarCotitularesCuenta01Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:72: error: cannot find symbol
+        expectedEnvelopeResponse.setHeader(new GenericHeaderInType());
+                                               ^
+  symbol:   class GenericHeaderInType
+  location: class QueryAccountCoHoldersDomainToSoapMapperTest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:73: error: package com.pichincha.sp.generated.soap.SoapEnvelopeResponse does not exist
+        expectedEnvelopeResponse.setBody(new com.pichincha.sp.generated.soap.SoapEnvelopeResponse.Body());
+                                                                                                 ^
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:84: error: cannot find symbol
+        assertThat(envelopeResponse.getConsultarCotitularesCuenta01Response()).isEqualTo(opResponse.getConsultarCotitularesCuenta01Response());
+                                   ^
+  symbol:   method getConsultarCotitularesCuenta01Response()
+  location: variable envelopeResponse of type SoapEnvelopeResponse
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:84: error: cannot find symbol
+        assertThat(envelopeResponse.getConsultarCotitularesCuenta01Response()).isEqualTo(opResponse.getConsultarCotitularesCuenta01Response());
+                                                                                                   ^
+  symbol:   method getConsultarCotitularesCuenta01Response()
+  location: variable opResponse of type ConsultarCotitularesCuenta01Response
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:92: error: cannot find symbol
+        assertThat(envelopeResponse.getConsultarCotitularesCuenta01Response().getHeaderOut()).isNull();
+                                   ^
+  symbol:   method getConsultarCotitularesCuenta01Response()
+  location: variable envelopeResponse of type SoapEnvelopeResponse
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:124: error: cannot find symbol
+        assertThat(headerOut.getJournals()).isNotNull();
+                            ^
+  symbol:   method getJournals()
+  location: variable headerOut of type GenericHeaderOut
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:125: error: cannot find symbol
+        assertThat(headerOut.getJournals().getJournals()).hasSize(1);
+                            ^
+  symbol:   method getJournals()
+  location: variable headerOut of type GenericHeaderOut
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:32: error: cannot find symbol
+        soapEnvelopeRequest.setSomeField("value");
+                           ^
+  symbol:   method setSomeField(String)
+  location: variable soapEnvelopeRequest of type SoapEnvelopeRequest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:33: error: cannot find symbol
+        inputDto.setSomeField("value");
+                ^
+  symbol:   method setSomeField(String)
+  location: variable inputDto of type QueryAccountCoHoldersInputDto
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:36: error: cannot find symbol
+        when(mapper.toDomain(soapEnvelopeRequest)).thenReturn(inputDto);
+        ^
+  symbol:   method when(QueryAccountCoHoldersInputDto)
+  location: class QueryAccountCoHoldersSoapToDomainMapperTest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:58: error: cannot find symbol
+        blankRequest.setSomeField("");
+                    ^
+  symbol:   method setSomeField(String)
+  location: variable blankRequest of type SoapEnvelopeRequest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:61: error: cannot find symbol
+        when(mapper.toDomain(blankRequest)).thenReturn(new QueryAccountCoHoldersInputDto());
+        ^
+  symbol:   method when(QueryAccountCoHoldersInputDto)
+  location: class QueryAccountCoHoldersSoapToDomainMapperTest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:67: error: cannot find symbol
+        assertThat(result.getSomeField()).isEqualTo("");
+                         ^
+  symbol:   method getSomeField()
+  location: variable result of type QueryAccountCoHoldersInputDto
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:43: error: cannot find symbol
+        headerIn.setBancs(new GenericHeaderIn.Bancs());
+                                             ^
+  symbol:   class Bancs
+  location: class GenericHeaderIn
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:44: error: incompatible types: ConsultarCotitularesCuenta01 cannot be converted to SoapBodyRequest
+        request.setBody(consultarCotitularesCuenta01);
+                        ^
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:50: error: cannot find symbol
+        request.setHeaderIn(headerIn);
+               ^
+  symbol:   method setHeaderIn(GenericHeaderIn)
+  location: variable request of type SoapEnvelopeRequest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:51: error: incompatible types: ConsultarCotitularesCuenta01 cannot be converted to SoapBodyRequest
+        request.setBody(consultarCotitularesCuenta01);
+                        ^
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:99: error: incompatible types: ConsultarCotitularesCuenta01 cannot be converted to SoapBodyRequest
+        request.setBody(consultarCotitularesCuenta01);
+                        ^
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:112: error: cannot find symbol
+               .isInstanceOf(ResponseStatusException.class);
+                             ^
+  symbol:   class ResponseStatusException
+  location: class WSProductos0114RequestValidatorTest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:111: error: cannot find symbol
+        assertThatThrownBy(() -> validator.requireConsultarCotitularesCuenta01(request))
+        ^
+  symbol:   method assertThatThrownBy(()->valida[...]uest))
+  location: class WSProductos0114RequestValidatorTest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:118: error: incompatible types: ModificarTitularidadCuenta22 cannot be converted to SoapBodyRequest
+        request.setBody(modificarTitularidadCuenta22);
+                        ^
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:131: error: cannot find symbol
+                .isInstanceOf(ResponseStatusException.class);
+                              ^
+  symbol:   class ResponseStatusException
+  location: class WSProductos0114RequestValidatorTest
+C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:130: error: cannot find symbol
+        assertThatThrownBy(() -> validator.requireModificarTitularidadCuenta22(request))
+        ^
+  symbol:   method assertThatThrownBy(()->valida[...]uest))
+  location: class WSProductos0114RequestValidatorTest
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
 
 > Task :compileTestJava FAILED
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\builders\ModifyAccountOwnershipRequestBuilderTest.java:16: error: cannot find symbol
-    private ModifyAccountOwnershipRequestBancsMapper modifyAccountOwnershipRequestBancsMapper;
-            ^
-  symbol:   class ModifyAccountOwnershipRequestBancsMapper
-  location: class ModifyAccountOwnershipRequestBuilderTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\builders\QueryAccountCoHoldersRequestBuilderTest.java:16: error: cannot find symbol
-    private QueryAccountCoHoldersRequestBancsMapper queryAccountCoHoldersRequestBancsMapper;
-            ^
-  symbol:   class QueryAccountCoHoldersRequestBancsMapper
-  location: class QueryAccountCoHoldersRequestBuilderTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:16: error: cannot find symbol
-    private ModifyAccountOwnershipPortOutput modifyAccountOwnershipOutput;
-            ^
-  symbol:   class ModifyAccountOwnershipPortOutput
-  location: class ModifyAccountOwnershipServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:18: error: cannot find symbol
-    private ModifyAccountOwnershipRequestBuilder requestBuilder;
-            ^
-  symbol:   class ModifyAccountOwnershipRequestBuilder
-  location: class ModifyAccountOwnershipServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:20: error: cannot find symbol
-    private CustomLogLevelHandler customLogLevelHandler;
-            ^
-  symbol:   class CustomLogLevelHandler
-  location: class ModifyAccountOwnershipServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:16: error: cannot find symbol
-    private QueryAccountCoHoldersPortOutput queryAccountCoHoldersOutput;
-            ^
-  symbol:   class QueryAccountCoHoldersPortOutput
-  location: class QueryAccountCoHoldersServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:18: error: cannot find symbol
-    private QueryAccountCoHoldersRequestBuilder requestBuilder;
-            ^
-  symbol:   class QueryAccountCoHoldersRequestBuilder
-  location: class QueryAccountCoHoldersServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:20: error: cannot find symbol
-    private CustomLogLevelHandler customLogLevelHandler;
-            ^
-  symbol:   class CustomLogLevelHandler
-  location: class QueryAccountCoHoldersServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114SoapHeaderFactoryTest.java:15: error: cannot find symbol
-    private QueryAccountCoHoldersDomainToSoapMapper queryAccountCoHoldersDomainToSoapMapper;
-            ^
-  symbol:   class QueryAccountCoHoldersDomainToSoapMapper
-  location: class WSProductos0114SoapHeaderFactoryTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:16: error: cannot find symbol
-    private QueryAccountCoHoldersPortInput queryAccountCoHoldersInput;
-            ^
-  symbol:   class QueryAccountCoHoldersPortInput
-  location: class WSProductos0114ControllerTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:18: error: cannot find symbol
-    private ModifyAccountOwnershipPortInput modifyAccountOwnershipInput;
-            ^
-  symbol:   class ModifyAccountOwnershipPortInput
-  location: class WSProductos0114ControllerTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:20: error: cannot find symbol
-    private QueryAccountCoHoldersSoapToDomainMapper queryAccountCoHoldersSoapToDomainMapper;
-            ^
-  symbol:   class QueryAccountCoHoldersSoapToDomainMapper
-  location: class WSProductos0114ControllerTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:22: error: cannot find symbol
-    private ModifyAccountOwnershipSoapToDomainMapper modifyAccountOwnershipSoapToDomainMapper;
-            ^
-  symbol:   class ModifyAccountOwnershipSoapToDomainMapper
-  location: class WSProductos0114ControllerTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:24: error: cannot find symbol
-    private WSProductos0114OperationRouter operationRouter;
-            ^
-  symbol:   class WSProductos0114OperationRouter
-  location: class WSProductos0114ControllerTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:26: error: cannot find symbol
-    private WSProductos0114SoapResponseFactory responseFactory;
-            ^
-  symbol:   class WSProductos0114SoapResponseFactory
-  location: class WSProductos0114ControllerTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:28: error: cannot find symbol
-    private WSProductos0114RequestValidator validator;
-            ^
-  symbol:   class WSProductos0114RequestValidator
-  location: class WSProductos0114ControllerTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:30: error: cannot find symbol
-    private SoapControllerConstants soapControllerConstants;
-            ^
-  symbol:   class SoapControllerConstants
-  location: class WSProductos0114ControllerTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:19: error: cannot find symbol
-    private SoapControllerConstants soapControllerConstants;
-            ^
-  symbol:   class SoapControllerConstants
-  location: class WSProductos0114RequestValidatorTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\output\adapter\Tx060602AdapterTest.java:16: error: cannot find symbol
-    private Tx060602Mapper mapper;
-            ^
-  symbol:   class Tx060602Mapper
-  location: class Tx060602AdapterTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\output\adapter\Tx060605AdapterTest.java:16: error: cannot find symbol
-    private Tx060605Mapper mapper;
-            ^
-  symbol:   class Tx060605Mapper
-  location: class Tx060605AdapterTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:15: error: cannot find symbol
-    @Mock
-     ^
-  symbol:   class Mock
-  location: class ModifyAccountOwnershipServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:17: error: cannot find symbol
-    @Mock
-     ^
-  symbol:   class Mock
-  location: class ModifyAccountOwnershipServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:19: error: cannot find symbol
-    @Mock
-     ^
-  symbol:   class Mock
-  location: class ModifyAccountOwnershipServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:15: error: cannot find symbol
-    @Mock
-     ^
-  symbol:   class Mock
-  location: class QueryAccountCoHoldersServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:17: error: cannot find symbol
-    @Mock
-     ^
-  symbol:   class Mock
-  location: class QueryAccountCoHoldersServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:19: error: cannot find symbol
-    @Mock
-     ^
-  symbol:   class Mock
-  location: class QueryAccountCoHoldersServiceTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114SoapHeaderFactoryTest.java:14: error: cannot find symbol
-    @Mock
-     ^
-  symbol:   class Mock
-  location: class WSProductos0114SoapHeaderFactoryTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114SoapResponseFactoryTest.java:14: error: cannot find symbol
-    @Mock
-     ^
-  symbol:   class Mock
-  location: class WSProductos0114SoapResponseFactoryTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:18: error: cannot find symbol
-    @Mock
-     ^
-  symbol:   class Mock
-  location: class WSProductos0114RequestValidatorTest
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:33: error: method execute in class ModifyAccountOwnershipService cannot be applied to given types;
-        StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                   ^
-  required: ModifyAccountOwnershipInputDto
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:39: error: method execute in class ModifyAccountOwnershipService cannot be applied to given types;
-        StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                   ^
-  required: ModifyAccountOwnershipInputDto
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:45: error: method execute in class ModifyAccountOwnershipService cannot be applied to given types;
-        StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                   ^
-  required: ModifyAccountOwnershipInputDto
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:33: error: method execute in class QueryAccountCoHoldersService cannot be applied to given types;
-        StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                   ^
-  required: QueryAccountCoHoldersInputDto
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:39: error: method execute in class QueryAccountCoHoldersService cannot be applied to given types;
-        StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                   ^
-  required: QueryAccountCoHoldersInputDto
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:45: error: method execute in class QueryAccountCoHoldersService cannot be applied to given types;
-        StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                   ^
-  required: QueryAccountCoHoldersInputDto
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-35 errors
 
 [Incubating] Problems report is available at: file:///C:/Users/darochar/Documents/tpr-msa-sp-wsproductos0114/build/reports/problems/problems-report.html
 
@@ -314,188 +265,510 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compileTestJava'.
 > Compilation failed; see the compiler output below.
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:33: error: method execute in class ModifyAccountOwnershipService cannot be applied to given types;
-          StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                     ^
-    required: ModifyAccountOwnershipInputDto
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:39: error: method execute in class ModifyAccountOwnershipService cannot be applied to given types;
-          StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                     ^
-    required: ModifyAccountOwnershipInputDto
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:45: error: method execute in class ModifyAccountOwnershipService cannot be applied to given types;
-          StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                     ^
-    required: ModifyAccountOwnershipInputDto
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:33: error: method execute in class QueryAccountCoHoldersService cannot be applied to given types;
-          StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                     ^
-    required: QueryAccountCoHoldersInputDto
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:39: error: method execute in class QueryAccountCoHoldersService cannot be applied to given types;
-          StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                     ^
-    required: QueryAccountCoHoldersInputDto
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:45: error: method execute in class QueryAccountCoHoldersService cannot be applied to given types;
-          StepVerifier.create(service.execute(/* request */)).verifyComplete();
-                                     ^
-    required: QueryAccountCoHoldersInputDto
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\builders\ModifyAccountOwnershipRequestBuilderTest.java:16: error: cannot find symbol
-      private ModifyAccountOwnershipRequestBancsMapper modifyAccountOwnershipRequestBancsMapper;
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114OperationRouterTest.java:64: error: reference to buildSuccessResponse is ambiguous
+          when(responseFactory.buildSuccessResponse(any(), any()))
+                              ^
+    both method buildSuccessResponse(QueryAccountCoHoldersResultDto,GenericHeaderIn) in WSProductos0114SoapResponseFactory and method buildSuccessResponse(ModifyAccountOwnershipResultDto,GenericHeaderIn) in WSProductos0114SoapResponseFactory match
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114OperationRouterTest.java:105: error: reference to buildSuccessResponse is ambiguous
+          when(responseFactory.buildSuccessResponse(any(), any()))
+                              ^
+    both method buildSuccessResponse(QueryAccountCoHoldersResultDto,GenericHeaderIn) in WSProductos0114SoapResponseFactory and method buildSuccessResponse(ModifyAccountOwnershipResultDto,GenericHeaderIn) in WSProductos0114SoapResponseFactory match
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:71: error: reference to validateSoapRequest is ambiguous
+          when(validator.validateSoapRequest(any())).thenReturn(Mono.just(true));
+                        ^
+    both method validateSoapRequest(ConsultarCotitularesCuenta01) in WSProductos0114RequestValidator and method validateSoapRequest(ModificarTitularidadCuenta22) in WSProductos0114RequestValidator match
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:91: error: reference to validateSoapRequest is ambiguous
+          when(validator.validateSoapRequest(any())).thenReturn(Mono.error(new BusinessException("Business Error")));
+                        ^
+    both method validateSoapRequest(ConsultarCotitularesCuenta01) in WSProductos0114RequestValidator and method validateSoapRequest(ModificarTitularidadCuenta22) in WSProductos0114RequestValidator match
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:71: error: no suitable constructor found for BusinessException(String,BusinessErrorDto)
+          BusinessException businessException = new BusinessException("Business Error", new BusinessErrorDto());
+                                                ^
+      constructor BusinessException.BusinessException(String,Throwable) is not applicable
+        (argument mismatch; BusinessErrorDto cannot be converted to Throwable)
+      constructor BusinessException.BusinessException(BusinessErrorDto,Throwable) is not applicable
+        (argument mismatch; String cannot be converted to BusinessErrorDto)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:108: error: no suitable constructor found for BusinessErrorDto(String,String,String,String,String,String)
+          BusinessErrorDto businessError = new BusinessErrorDto("1234", "Business Message", "type", "resource", "component", "backend");
+                                           ^
+      constructor BusinessErrorDto.BusinessErrorDto() is not applicable
+        (actual and formal argument lists differ in length)
+      constructor BusinessErrorDto.BusinessErrorDto(String,String,String,String,String,String,String) is not applicable
+        (actual and formal argument lists differ in length)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:109: error: no suitable constructor found for BusinessException(String,BusinessErrorDto)
+          BusinessException businessException = new BusinessException("Business Error", businessError);
+                                                ^
+      constructor BusinessException.BusinessException(String,Throwable) is not applicable
+        (argument mismatch; BusinessErrorDto cannot be converted to Throwable)
+      constructor BusinessException.BusinessException(BusinessErrorDto,Throwable) is not applicable
+        (argument mismatch; String cannot be converted to BusinessErrorDto)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:50: error: no suitable method found for thenReturn(String)
+                 .thenReturn("mockedRequest");
+                 ^
+      method OngoingStubbing.thenReturn(QueryAccountCoHoldersRequestBancsDto) is not applicable
+        (argument mismatch; String cannot be converted to QueryAccountCoHoldersRequestBancsDto)
+      method OngoingStubbing.thenReturn(QueryAccountCoHoldersRequestBancsDto,QueryAccountCoHoldersRequestBancsDto...) is not applicable
+        (argument mismatch; String cannot be converted to QueryAccountCoHoldersRequestBancsDto)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:65: error: no suitable method found for thenReturn(String)
+                  .thenReturn("mockedRequest");
+                  ^
+      method OngoingStubbing.thenReturn(QueryAccountCoHoldersRequestBancsDto) is not applicable
+        (argument mismatch; String cannot be converted to QueryAccountCoHoldersRequestBancsDto)
+      method OngoingStubbing.thenReturn(QueryAccountCoHoldersRequestBancsDto,QueryAccountCoHoldersRequestBancsDto...) is not applicable
+        (argument mismatch; String cannot be converted to QueryAccountCoHoldersRequestBancsDto)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114OperationRouterTest.java:62: error: no suitable method found for thenReturn(Mono<Object>)
+                 .thenReturn(Mono.just(new Object()));
+                 ^
+      method OngoingStubbing.thenReturn(Mono<QueryAccountCoHoldersResultDto>) is not applicable
+        (argument mismatch; inference variable T has incompatible bounds
+            equality constraints: QueryAccountCoHoldersResultDto
+            lower bounds: Object)
+      method OngoingStubbing.thenReturn(Mono<QueryAccountCoHoldersResultDto>,Mono<QueryAccountCoHoldersResultDto>...) is not applicable
+        (argument mismatch; inference variable T has incompatible bounds
+            equality constraints: QueryAccountCoHoldersResultDto
+            lower bounds: Object)
+    where T is a type-variable:
+      T extends Object declared in method <T>just(T)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114OperationRouterTest.java:103: error: no suitable method found for thenReturn(Mono<Object>)
+                 .thenReturn(Mono.just(new Object()));
+                 ^
+      method OngoingStubbing.thenReturn(Mono<ModifyAccountOwnershipResultDto>) is not applicable
+        (argument mismatch; inference variable T has incompatible bounds
+            equality constraints: ModifyAccountOwnershipResultDto
+            lower bounds: Object)
+      method OngoingStubbing.thenReturn(Mono<ModifyAccountOwnershipResultDto>,Mono<ModifyAccountOwnershipResultDto>...) is not applicable
+        (argument mismatch; inference variable T has incompatible bounds
+            equality constraints: ModifyAccountOwnershipResultDto
+            lower bounds: Object)
+    where T is a type-variable:
+      T extends Object declared in method <T>just(T)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:71: error: no suitable method found for thenReturn(Mono<Boolean>)
+          when(validator.validateSoapRequest(any())).thenReturn(Mono.just(true));
+                                                    ^
+      method OngoingStubbing.thenReturn(Mono<Void>) is not applicable
+        (argument mismatch; inference variable T has incompatible bounds
+            equality constraints: Void
+            lower bounds: Boolean)
+      method OngoingStubbing.thenReturn(Mono<Void>,Mono<Void>...) is not applicable
+        (argument mismatch; inference variable T has incompatible bounds
+            equality constraints: Void
+            lower bounds: Boolean)
+    where T is a type-variable:
+      T extends Object declared in method <T>just(T)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:51: error: incompatible types: inference variable T has incompatible bounds
+          when(queryAccountCoHoldersOutput.queryAccountCoHolders(any(String.class)))
+                                          ^
+      equality constraints: String
+      upper bounds: QueryAccountCoHoldersRequestBancsDto,Object
+    where T is a type-variable:
+      T extends Object declared in method <T>any(Class<T>)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:58: error: incompatible types: inference variable T has incompatible bounds
+          verify(queryAccountCoHoldersOutput).queryAccountCoHolders(any(String.class));
+                                             ^
+      equality constraints: String
+      upper bounds: QueryAccountCoHoldersRequestBancsDto,Object
+    where T is a type-variable:
+      T extends Object declared in method <T>any(Class<T>)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:66: error: incompatible types: inference variable T has incompatible bounds
+          when(queryAccountCoHoldersOutput.queryAccountCoHolders(any(String.class)))
+                                          ^
+      equality constraints: String
+      upper bounds: QueryAccountCoHoldersRequestBancsDto,Object
+    where T is a type-variable:
+      T extends Object declared in method <T>any(Class<T>)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:73: error: incompatible types: inference variable T has incompatible bounds
+          verify(queryAccountCoHoldersOutput).queryAccountCoHolders(any(String.class));
+                                             ^
+      equality constraints: String
+      upper bounds: QueryAccountCoHoldersRequestBancsDto,Object
+    where T is a type-variable:
+      T extends Object declared in method <T>any(Class<T>)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:84: error: incompatible types: inference variable T has incompatible bounds
+          verify(queryAccountCoHoldersOutput, org.mockito.Mockito.never()).queryAccountCoHolders(any(String.class));
+                                                                          ^
+      equality constraints: String
+      upper bounds: QueryAccountCoHoldersRequestBancsDto,Object
+    where T is a type-variable:
+      T extends Object declared in method <T>any(Class<T>)
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:67: error: incompatible types: ConsultarCotitularesCuenta01 cannot be converted to SoapBodyRequest
+                 .body(new ConsultarCotitularesCuenta01())
+                       ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:87: error: incompatible types: ConsultarCotitularesCuenta01 cannot be converted to SoapBodyRequest
+                  .body(new ConsultarCotitularesCuenta01())
+                        ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:44: error: incompatible types: ConsultarCotitularesCuenta01 cannot be converted to SoapBodyRequest
+          request.setBody(consultarCotitularesCuenta01);
+                          ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:51: error: incompatible types: ConsultarCotitularesCuenta01 cannot be converted to SoapBodyRequest
+          request.setBody(consultarCotitularesCuenta01);
+                          ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:99: error: incompatible types: ConsultarCotitularesCuenta01 cannot be converted to SoapBodyRequest
+          request.setBody(consultarCotitularesCuenta01);
+                          ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:118: error: incompatible types: ModificarTitularidadCuenta22 cannot be converted to SoapBodyRequest
+          request.setBody(modificarTitularidadCuenta22);
+                          ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\output\adapter\BancsErrorHandlerAdapterTest.java:33: error: cannot find symbol
+      private TimeoutException timeoutException;
               ^
-    symbol:   class ModifyAccountOwnershipRequestBancsMapper
-    location: class ModifyAccountOwnershipRequestBuilderTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\builders\QueryAccountCoHoldersRequestBuilderTest.java:16: error: cannot find symbol
-      private QueryAccountCoHoldersRequestBancsMapper queryAccountCoHoldersRequestBancsMapper;
-              ^
-    symbol:   class QueryAccountCoHoldersRequestBancsMapper
+    symbol:   class TimeoutException
+    location: class BancsErrorHandlerAdapterTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\output\adapter\BancsErrorHandlerAdapterTest.java:17: error: cannot find symbol
+  import static org.junit.jupiter.api.Assertions.assertThat;
+  ^
+    symbol:   static assertThat
+    location: class Assertions
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:99: error: cannot find symbol
+          BusinessErrorDto businessErrorDto = BusinessErrorDto.builder()
+          ^
+    symbol:   class BusinessErrorDto
+    location: class QueryAccountCoHoldersServiceTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:99: error: cannot find symbol
+          BusinessErrorDto businessErrorDto = BusinessErrorDto.builder()
+                                              ^
+    symbol:   variable BusinessErrorDto
+    location: class QueryAccountCoHoldersServiceTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114OperationRouterTest.java:58: error: cannot find symbol
+          body.setConsultarCotitularesCuenta01(new SoapBodyRequest.ConsultarCotitularesCuenta01());
+                                                                  ^
+    symbol:   class ConsultarCotitularesCuenta01
+    location: class SoapBodyRequest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114OperationRouterTest.java:75: error: cannot find symbol
+          body.setConsultarCotitularesCuenta01(new SoapBodyRequest.ConsultarCotitularesCuenta01());
+                                                                  ^
+    symbol:   class ConsultarCotitularesCuenta01
+    location: class SoapBodyRequest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114OperationRouterTest.java:99: error: cannot find symbol
+          body.setModificarTitularidadCuenta22(new SoapBodyRequest.ModificarTitularidadCuenta22());
+                                                                  ^
+    symbol:   class ModificarTitularidadCuenta22
+    location: class SoapBodyRequest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114OperationRouterTest.java:119: error: cannot find symbol
+                  .expectError(ResponseStatusException.class)
+                               ^
+    symbol:   class ResponseStatusException
+    location: class WSProductos0114OperationRouterTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:109: error: cannot find symbol
+                  .expectErrorMatches(throwable -> throwable instanceof ResponseStatusException && throwable.getMessage().contains("Body cannot be null"))
+                                                                        ^
+    symbol:   class ResponseStatusException
+    location: class WSProductos0114ControllerTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:64: error: cannot find symbol
+          resultDto.setHolder(new com.pichincha.sp.domain.dto.Holder());
+                                                             ^
+    symbol:   class Holder
+    location: package com.pichincha.sp.domain.dto
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:72: error: cannot find symbol
+          expectedEnvelopeResponse.setHeader(new GenericHeaderInType());
+                                                 ^
+    symbol:   class GenericHeaderInType
+    location: class QueryAccountCoHoldersDomainToSoapMapperTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:43: error: cannot find symbol
+          headerIn.setBancs(new GenericHeaderIn.Bancs());
+                                               ^
+    symbol:   class Bancs
+    location: class GenericHeaderIn
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:112: error: cannot find symbol
+                 .isInstanceOf(ResponseStatusException.class);
+                               ^
+    symbol:   class ResponseStatusException
+    location: class WSProductos0114RequestValidatorTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:131: error: cannot find symbol
+                  .isInstanceOf(ResponseStatusException.class);
+                                ^
+    symbol:   class ResponseStatusException
+    location: class WSProductos0114RequestValidatorTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:99: error: toErrorResult(BusinessException) has private access in ModifyAccountOwnershipService
+          ModifyAccountOwnershipResultDto result = ModifyAccountOwnershipService.toErrorResult(businessException);
+                                                                                ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:111: error: toErrorResult(BusinessException) has private access in ModifyAccountOwnershipService
+          ModifyAccountOwnershipResultDto result = ModifyAccountOwnershipService.toErrorResult(businessException);
+                                                                                ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:90: error: toErrorResult(BusinessException) has private access in QueryAccountCoHoldersService
+          QueryAccountCoHoldersResultDto result = QueryAccountCoHoldersService.toErrorResult(businessException);
+                                                                              ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:108: error: toErrorResult(BusinessException) has private access in QueryAccountCoHoldersService
+          QueryAccountCoHoldersResultDto result = QueryAccountCoHoldersService.toErrorResult(businessException);
+                                                                              ^
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\builders\ModifyAccountOwnershipRequestBuilderTest.java:26: error: cannot find symbol
+                 .accountId("12345")
+                 ^
+    symbol:   method accountId(String)
+    location: class ModifyAccountOwnershipInputDtoBuilder
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\builders\ModifyAccountOwnershipRequestBuilderTest.java:30: error: cannot find symbol
+                 .accountId("12345")
+                 ^
+    symbol:   method accountId(String)
+    location: class ModifyAccountOwnershipRequestBancsDtoBuilder
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\builders\ModifyAccountOwnershipRequestBuilderTest.java:53: error: cannot find symbol
+                 .accountId("12345")
+                 ^
+    symbol:   method accountId(String)
+    location: class ModifyAccountOwnershipInputDtoBuilder
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\builders\ModifyAccountOwnershipRequestBuilderTest.java:67: error: cannot find symbol
+                 .accountId("12345")
+                 ^
+    symbol:   method accountId(String)
+    location: class ModifyAccountOwnershipInputDtoBuilder
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\builders\ModifyAccountOwnershipRequestBuilderTest.java:71: error: cannot find symbol
+                 .accountId("12345")
+                 ^
+    symbol:   method accountId(String)
+    location: class ModifyAccountOwnershipRequestBancsDtoBuilder
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\builders\QueryAccountCoHoldersRequestBuilderTest.java:50: error: cannot find symbol
+          assertThatThrownBy(() -> queryAccountCoHoldersRequestBuilder.buildQueryAccountCoHoldersRequest(nullInputDto))
+          ^
+    symbol:   method assertThatThrownBy(()->queryA[...]tDto))
     location: class QueryAccountCoHoldersRequestBuilderTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:16: error: cannot find symbol
-      private ModifyAccountOwnershipPortOutput modifyAccountOwnershipOutput;
-              ^
-    symbol:   class ModifyAccountOwnershipPortOutput
-    location: class ModifyAccountOwnershipServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:18: error: cannot find symbol
-      private ModifyAccountOwnershipRequestBuilder requestBuilder;
-              ^
-    symbol:   class ModifyAccountOwnershipRequestBuilder
-    location: class ModifyAccountOwnershipServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:20: error: cannot find symbol
-      private CustomLogLevelHandler customLogLevelHandler;
-              ^
-    symbol:   class CustomLogLevelHandler
-    location: class ModifyAccountOwnershipServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:16: error: cannot find symbol
-      private QueryAccountCoHoldersPortOutput queryAccountCoHoldersOutput;
-              ^
-    symbol:   class QueryAccountCoHoldersPortOutput
-    location: class QueryAccountCoHoldersServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:18: error: cannot find symbol
-      private QueryAccountCoHoldersRequestBuilder requestBuilder;
-              ^
-    symbol:   class QueryAccountCoHoldersRequestBuilder
-    location: class QueryAccountCoHoldersServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:20: error: cannot find symbol
-      private CustomLogLevelHandler customLogLevelHandler;
-              ^
-    symbol:   class CustomLogLevelHandler
-    location: class QueryAccountCoHoldersServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114SoapHeaderFactoryTest.java:15: error: cannot find symbol
-      private QueryAccountCoHoldersDomainToSoapMapper queryAccountCoHoldersDomainToSoapMapper;
-              ^
-    symbol:   class QueryAccountCoHoldersDomainToSoapMapper
-    location: class WSProductos0114SoapHeaderFactoryTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:16: error: cannot find symbol
-      private QueryAccountCoHoldersPortInput queryAccountCoHoldersInput;
-              ^
-    symbol:   class QueryAccountCoHoldersPortInput
-    location: class WSProductos0114ControllerTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:18: error: cannot find symbol
-      private ModifyAccountOwnershipPortInput modifyAccountOwnershipInput;
-              ^
-    symbol:   class ModifyAccountOwnershipPortInput
-    location: class WSProductos0114ControllerTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:20: error: cannot find symbol
-      private QueryAccountCoHoldersSoapToDomainMapper queryAccountCoHoldersSoapToDomainMapper;
-              ^
-    symbol:   class QueryAccountCoHoldersSoapToDomainMapper
-    location: class WSProductos0114ControllerTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:22: error: cannot find symbol
-      private ModifyAccountOwnershipSoapToDomainMapper modifyAccountOwnershipSoapToDomainMapper;
-              ^
-    symbol:   class ModifyAccountOwnershipSoapToDomainMapper
-    location: class WSProductos0114ControllerTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:24: error: cannot find symbol
-      private WSProductos0114OperationRouter operationRouter;
-              ^
-    symbol:   class WSProductos0114OperationRouter
-    location: class WSProductos0114ControllerTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:26: error: cannot find symbol
-      private WSProductos0114SoapResponseFactory responseFactory;
-              ^
-    symbol:   class WSProductos0114SoapResponseFactory
-    location: class WSProductos0114ControllerTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:28: error: cannot find symbol
-      private WSProductos0114RequestValidator validator;
-              ^
-    symbol:   class WSProductos0114RequestValidator
-    location: class WSProductos0114ControllerTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\WSProductos0114ControllerTest.java:30: error: cannot find symbol
-      private SoapControllerConstants soapControllerConstants;
-              ^
-    symbol:   class SoapControllerConstants
-    location: class WSProductos0114ControllerTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:19: error: cannot find symbol
-      private SoapControllerConstants soapControllerConstants;
-              ^
-    symbol:   class SoapControllerConstants
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\builders\QueryAccountCoHoldersRequestBuilderTest.java:61: error: cannot find symbol
+          assertThatThrownBy(() -> queryAccountCoHoldersRequestBuilder.buildQueryAccountCoHoldersRequest(inputDto))
+          ^
+    symbol:   method assertThatThrownBy(()->queryA[...]tDto))
+    location: class QueryAccountCoHoldersRequestBuilderTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:42: error: cannot find symbol
+          operationResponse.setCode("12345");
+                           ^
+    symbol:   method setCode(String)
+    location: variable operationResponse of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:43: error: cannot find symbol
+          operationResponse.setMessage("Success");
+                           ^
+    symbol:   method setMessage(String)
+    location: variable operationResponse of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:44: error: cannot find symbol
+          operationResponse.setMensajeNegocio("Negocio exitoso");
+                           ^
+    symbol:   method setMensajeNegocio(String)
+    location: variable operationResponse of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:45: error: cannot find symbol
+          operationResponse.setType("Type");
+                           ^
+    symbol:   method setType(String)
+    location: variable operationResponse of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:46: error: cannot find symbol
+          operationResponse.setRecurso("Recurso");
+                           ^
+    symbol:   method setRecurso(String)
+    location: variable operationResponse of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:47: error: cannot find symbol
+          operationResponse.setComponente("Componente");
+                           ^
+    symbol:   method setComponente(String)
+    location: variable operationResponse of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:48: error: cannot find symbol
+          operationResponse.setBackend("Backend");
+                           ^
+    symbol:   method setBackend(String)
+    location: variable operationResponse of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:51: error: cannot find symbol
+          soapEnvelopeResponse.setHeaderOut(new GenericHeaderOut());
+                              ^
+    symbol:   method setHeaderOut(GenericHeaderOut)
+    location: variable soapEnvelopeResponse of type SoapEnvelopeResponse
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:52: error: cannot find symbol
+          soapEnvelopeResponse.setBodyOut(new Object());
+                              ^
+    symbol:   method setBodyOut(Object)
+    location: variable soapEnvelopeResponse of type SoapEnvelopeResponse
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:57: error: cannot find symbol
+          soapEnvelopeResponse.setBodyOut(new Object());
+                              ^
+    symbol:   method setBodyOut(Object)
+    location: variable soapEnvelopeResponse of type SoapEnvelopeResponse
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:68: error: cannot find symbol
+          soapEnvelopeResponse.setBodyOut(new Object());
+                              ^
+    symbol:   method setBodyOut(Object)
+    location: variable soapEnvelopeResponse of type SoapEnvelopeResponse
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:74: error: cannot find symbol
+          soapEnvelopeResponse.setBodyOut(new Object());
+                              ^
+    symbol:   method setBodyOut(Object)
+    location: variable soapEnvelopeResponse of type SoapEnvelopeResponse
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:82: error: cannot find symbol
+          assertThat(response.getCode()).isEqualTo(resultDto.getCode());
+                             ^
+    symbol:   method getCode()
+    location: variable response of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:83: error: cannot find symbol
+          assertThat(response.getMessage()).isEqualTo(resultDto.getMessage());
+                             ^
+    symbol:   method getMessage()
+    location: variable response of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:84: error: cannot find symbol
+          assertThat(response.getMensajeNegocio()).isEqualTo(resultDto.getMensajeNegocio());
+                             ^
+    symbol:   method getMensajeNegocio()
+    location: variable response of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:85: error: cannot find symbol
+          assertThat(response.getType()).isEqualTo(resultDto.getType());
+                             ^
+    symbol:   method getType()
+    location: variable response of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:86: error: cannot find symbol
+          assertThat(response.getRecurso()).isEqualTo(resultDto.getRecurso());
+                             ^
+    symbol:   method getRecurso()
+    location: variable response of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:87: error: cannot find symbol
+          assertThat(response.getComponente()).isEqualTo(resultDto.getComponente());
+                             ^
+    symbol:   method getComponente()
+    location: variable response of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipDomainToSoapMapperTest.java:88: error: cannot find symbol
+          assertThat(response.getBackend()).isEqualTo(resultDto.getBackend());
+                             ^
+    symbol:   method getBackend()
+    location: variable response of type ModificarTitularidadCuenta22Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:22: error: cannot find symbol
+                 .accountId("12345")
+                 ^
+    symbol:   method accountId(String)
+    location: class SoapEnvelopeRequestBuilder
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:27: error: cannot find symbol
+                 .accountId("12345")
+                 ^
+    symbol:   method accountId(String)
+    location: class ModifyAccountOwnershipInputDtoBuilder
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:44: error: cannot find symbol
+          assertThatNullPointerException().isThrownBy(() -> mapper.toDomain(request));
+          ^
+    symbol:   method assertThatNullPointerException()
+    location: class ModifyAccountOwnershipSoapToDomainMapperTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:51: error: cannot find symbol
+                 .accountId("")
+                 ^
+    symbol:   method accountId(String)
+    location: class SoapEnvelopeRequestBuilder
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:56: error: cannot find symbol
+          assertThatIllegalArgumentException().isThrownBy(() -> mapper.toDomain(request));
+          ^
+    symbol:   method assertThatIllegalArgumentException()
+    location: class ModifyAccountOwnershipSoapToDomainMapperTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:63: error: cannot find symbol
+                  .accountId("12345")
+                  ^
+    symbol:   method accountId(String)
+    location: class SoapEnvelopeRequestBuilder
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\ModifyAccountOwnershipSoapToDomainMapperTest.java:68: error: cannot find symbol
+          assertThatIllegalArgumentException().isThrownBy(() -> mapper.toDomain(request));
+          ^
+    symbol:   method assertThatIllegalArgumentException()
+    location: class ModifyAccountOwnershipSoapToDomainMapperTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:59: error: cannot find symbol
+          coHolderResponseDto.setDocumento("123456789");
+                             ^
+    symbol:   method setDocumento(String)
+    location: variable coHolderResponseDto of type CoHolderResponseDto
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:60: error: cannot find symbol
+          coHolderResponseDto.setNombre("John Doe");
+                             ^
+    symbol:   method setNombre(String)
+    location: variable coHolderResponseDto of type CoHolderResponseDto
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:69: error: cannot find symbol
+          operationResponse.setConsultarCotitularesCuenta01Response(new com.pichincha.sp.generated.ConsultarCotitularesCuenta01Response());
+                           ^
+    symbol:   method setConsultarCotitularesCuenta01Response(ConsultarCotitularesCuenta01Response)
+    location: variable operationResponse of type ConsultarCotitularesCuenta01Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:84: error: cannot find symbol
+          assertThat(envelopeResponse.getConsultarCotitularesCuenta01Response()).isEqualTo(opResponse.getConsultarCotitularesCuenta01Response());
+                                     ^
+    symbol:   method getConsultarCotitularesCuenta01Response()
+    location: variable envelopeResponse of type SoapEnvelopeResponse
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:84: error: cannot find symbol
+          assertThat(envelopeResponse.getConsultarCotitularesCuenta01Response()).isEqualTo(opResponse.getConsultarCotitularesCuenta01Response());
+                                                                                                     ^
+    symbol:   method getConsultarCotitularesCuenta01Response()
+    location: variable opResponse of type ConsultarCotitularesCuenta01Response
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:92: error: cannot find symbol
+          assertThat(envelopeResponse.getConsultarCotitularesCuenta01Response().getHeaderOut()).isNull();
+                                     ^
+    symbol:   method getConsultarCotitularesCuenta01Response()
+    location: variable envelopeResponse of type SoapEnvelopeResponse
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:124: error: cannot find symbol
+          assertThat(headerOut.getJournals()).isNotNull();
+                              ^
+    symbol:   method getJournals()
+    location: variable headerOut of type GenericHeaderOut
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:125: error: cannot find symbol
+          assertThat(headerOut.getJournals().getJournals()).hasSize(1);
+                              ^
+    symbol:   method getJournals()
+    location: variable headerOut of type GenericHeaderOut
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:32: error: cannot find symbol
+          soapEnvelopeRequest.setSomeField("value");
+                             ^
+    symbol:   method setSomeField(String)
+    location: variable soapEnvelopeRequest of type SoapEnvelopeRequest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:33: error: cannot find symbol
+          inputDto.setSomeField("value");
+                  ^
+    symbol:   method setSomeField(String)
+    location: variable inputDto of type QueryAccountCoHoldersInputDto
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:36: error: cannot find symbol
+          when(mapper.toDomain(soapEnvelopeRequest)).thenReturn(inputDto);
+          ^
+    symbol:   method when(QueryAccountCoHoldersInputDto)
+    location: class QueryAccountCoHoldersSoapToDomainMapperTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:58: error: cannot find symbol
+          blankRequest.setSomeField("");
+                      ^
+    symbol:   method setSomeField(String)
+    location: variable blankRequest of type SoapEnvelopeRequest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:61: error: cannot find symbol
+          when(mapper.toDomain(blankRequest)).thenReturn(new QueryAccountCoHoldersInputDto());
+          ^
+    symbol:   method when(QueryAccountCoHoldersInputDto)
+    location: class QueryAccountCoHoldersSoapToDomainMapperTest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersSoapToDomainMapperTest.java:67: error: cannot find symbol
+          assertThat(result.getSomeField()).isEqualTo("");
+                           ^
+    symbol:   method getSomeField()
+    location: variable result of type QueryAccountCoHoldersInputDto
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:50: error: cannot find symbol
+          request.setHeaderIn(headerIn);
+                 ^
+    symbol:   method setHeaderIn(GenericHeaderIn)
+    location: variable request of type SoapEnvelopeRequest
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:111: error: cannot find symbol
+          assertThatThrownBy(() -> validator.requireConsultarCotitularesCuenta01(request))
+          ^
+    symbol:   method assertThatThrownBy(()->valida[...]uest))
     location: class WSProductos0114RequestValidatorTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\output\adapter\Tx060602AdapterTest.java:16: error: cannot find symbol
-      private Tx060602Mapper mapper;
-              ^
-    symbol:   class Tx060602Mapper
-    location: class Tx060602AdapterTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\output\adapter\Tx060605AdapterTest.java:16: error: cannot find symbol
-      private Tx060605Mapper mapper;
-              ^
-    symbol:   class Tx060605Mapper
-    location: class Tx060605AdapterTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:15: error: cannot find symbol
-      @Mock
-       ^
-    symbol:   class Mock
-    location: class ModifyAccountOwnershipServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:17: error: cannot find symbol
-      @Mock
-       ^
-    symbol:   class Mock
-    location: class ModifyAccountOwnershipServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\ModifyAccountOwnershipServiceTest.java:19: error: cannot find symbol
-      @Mock
-       ^
-    symbol:   class Mock
-    location: class ModifyAccountOwnershipServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:15: error: cannot find symbol
-      @Mock
-       ^
-    symbol:   class Mock
-    location: class QueryAccountCoHoldersServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:17: error: cannot find symbol
-      @Mock
-       ^
-    symbol:   class Mock
-    location: class QueryAccountCoHoldersServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\application\service\QueryAccountCoHoldersServiceTest.java:19: error: cannot find symbol
-      @Mock
-       ^
-    symbol:   class Mock
-    location: class QueryAccountCoHoldersServiceTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114SoapHeaderFactoryTest.java:14: error: cannot find symbol
-      @Mock
-       ^
-    symbol:   class Mock
-    location: class WSProductos0114SoapHeaderFactoryTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\WSProductos0114SoapResponseFactoryTest.java:14: error: cannot find symbol
-      @Mock
-       ^
-    symbol:   class Mock
-    location: class WSProductos0114SoapResponseFactoryTest
-  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:18: error: cannot find symbol
-      @Mock
-       ^
-    symbol:   class Mock
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\validator\WSProductos0114RequestValidatorTest.java:130: error: cannot find symbol
+          assertThatThrownBy(() -> validator.requireModificarTitularidadCuenta22(request))
+          ^
+    symbol:   method assertThatThrownBy(()->valida[...]uest))
     location: class WSProductos0114RequestValidatorTest
-  35 errors
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:13: error: package com.pichincha.sp.generated.soap does not exist
+  import com.pichincha.sp.generated.soap.ConsultarCotitularesCuenta01Response;
+                                        ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:14: error: package com.pichincha.sp.generated.soap does not exist
+  import com.pichincha.sp.generated.soap.CotitularesType;
+                                        ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:15: error: package com.pichincha.sp.generated.soap does not exist
+  import com.pichincha.sp.generated.soap.DatosType;
+                                        ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:16: error: package com.pichincha.sp.generated.soap does not exist
+  import com.pichincha.sp.generated.soap.GenericHeaderInType;
+                                        ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:17: error: package com.pichincha.sp.generated.soap does not exist
+  import com.pichincha.sp.generated.soap.GenericHeaderOutType;
+                                        ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:18: error: package com.pichincha.sp.generated.soap does not exist
+  import com.pichincha.sp.generated.soap.JournalType;
+                                        ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:19: error: package com.pichincha.sp.generated.soap does not exist
+  import com.pichincha.sp.generated.soap.JournalsType;
+                                        ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:20: error: package com.pichincha.sp.generated.soap does not exist
+  import com.pichincha.sp.generated.soap.TransaccionFinancieraTypeType;
+                                        ^
+  C:\Users\darochar\Documents\tpr-msa-sp-wsproductos0114\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\QueryAccountCoHoldersDomainToSoapMapperTest.java:73: error: package com.pichincha.sp.generated.soap.SoapEnvelopeResponse does not exist
+          expectedEnvelopeResponse.setBody(new com.pichincha.sp.generated.soap.SoapEnvelopeResponse.Body());
+                                                                                                   ^
+  100 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
@@ -507,5 +780,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 15s
+BUILD FAILED in 13s
 9 actionable tasks: 8 executed, 1 up-to-date
