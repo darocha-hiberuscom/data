@@ -94,25 +94,112 @@ Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAcc
 Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
 Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
 Note:  MapStruct: processing: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper.
-Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper.
-Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper.
-Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:3: error: cannot find symbol
-import com.pichincha.sp.domain.dto.DocumentoDto;
-                                  ^
-  symbol:   class DocumentoDto
-  location: package com.pichincha.sp.domain.dto
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:34: error: cannot find symbol
-    DocumentoDto toDocumentoDto(DocumentoOut documentoOut);
-    ^
-  symbol:   class DocumentoDto
-  location: interface WsClientes0141SoapMapper
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:21: error: No implementation was created for WsClientes0141SoapMapper due to having a problem in the erroneous element DocumentoDto. Hint: this often means that some other annotation processor was supposed to process the erroneous element. You can also enable MapStruct verbose mode by setting -Amapstruct.verbose=true as a compilation argument.
-public interface WsClientes0141SoapMapper {
-       ^
-3 errors
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.output.adapter.request.HeaderIn toHeaderIn(com.pichincha.sp.domain.dto.HeaderInDto headerInDto).
+Note: -- MapStruct: mapping property: headerInDto.guid() to: setGuid(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerInDto.guid().
+Note: -- MapStruct: mapping property: headerInDto.filler() to: setFiller(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerInDto.filler().
+Note: -- MapStruct: mapping property: headerInDto.ip() to: setIp(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerInDto.ip().
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:23: warning: Unmapped target properties: "dispositivo, empresa, canal, medio, aplicacion, agencia, tipoTransaccion, geolocalizacion, usuario, unicidad, fechaHora, idioma, sesion, idCliente, tipoIdCliente".
+    HeaderIn toHeaderIn(HeaderInDto headerInDto);
+             ^
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141 toBodyIn(com.pichincha.sp.domain.dto.WsClientes0141RequestBodyInDto bodyInDto).
+Note: -- MapStruct: mapping property: bodyInDto.ordenante() to: setOrdenante(com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante).
+Note: -- MapStruct: mapping property: wsClientes0141OrdenanteDto.identificacion() to: setIdentificacion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: wsClientes0141OrdenanteDto.identificacion().
+Note: -- MapStruct: mapping property: wsClientes0141OrdenanteDto.tipoIdentificacion() to: setTipoIdentificacion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: wsClientes0141OrdenanteDto.tipoIdentificacion().
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:25: warning: Unmapped target property: "cif". Mapping from property "com.pichincha.sp.domain.dto.WsClientes0141OrdenanteDto ordenante" to "com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante ordenante".
+    BodyInWsClientes0141 toBodyIn(WsClientes0141RequestBodyInDto bodyInDto);
+                         ^
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante #wsClientes0141OrdenanteDtoToBodyInWsClientes0141Ordenante(bodyInDto.ordenante()).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante #wsClientes0141OrdenanteDtoToBodyInWsClientes0141Ordenante(bodyInDto.ordenante()).
+Note: -- MapStruct: mapping property: bodyInDto.criteriosBusqueda() to: setCriteriosBusqueda(com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda).
+Note: -- MapStruct: mapping property: wsClientes0141CriteriosBusquedaDto.operacion() to: setOperacion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: wsClientes0141CriteriosBusquedaDto.operacion().
+Note: -- MapStruct: mapping property: wsClientes0141CriteriosBusquedaDto.tipoTarjeta() to: setTipoTarjeta(java.lang.String).
+Note: -- MapStruct: selecting property mapping: wsClientes0141CriteriosBusquedaDto.tipoTarjeta().
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda #wsClientes0141CriteriosBusquedaDtoToBodyInWsClientes0141CriteriosBusqueda(bodyInDto.criteriosBusqueda()).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda #wsClientes0141CriteriosBusquedaDtoToBodyInWsClientes0141CriteriosBusqueda(bodyInDto.criteriosBusqueda()).
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.WsClientes0141ResponseDto toDomainResponse(com.pichincha.sp.infrastructure.output.adapter.response.ConsultarTarjetasDebitoCliente01Response operation).
+Note: -- MapStruct: mapping property: operation.getHeaderOut() to: headerOut.
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.HeaderOutDto #toHeaderOutDto(operation.getHeaderOut()).
+Note: -- MapStruct: mapping property: operation.getBodyOut() to: bodyOut.
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.WsClientes0141ResponseBodyOutDto #toBodyOutDto(operation.getBodyOut()).
+Note: -- MapStruct: mapping property: operation.getError() to: error.
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.ErrorDto #toErrorDto(operation.getError()).
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.HeaderOutDto toHeaderOutDto(com.pichincha.sp.infrastructure.output.adapter.response.HeaderOut headerOut).
+Note: -- MapStruct: mapping property: headerOut.getDispositivo() to: device.
+Note: -- MapStruct: selecting property mapping: headerOut.getDispositivo().
+Note: -- MapStruct: mapping property: headerOut.getEmpresa() to: company.
+Note: -- MapStruct: selecting property mapping: headerOut.getEmpresa().
+Note: -- MapStruct: mapping property: headerOut.getCanal() to: channel.
+Note: -- MapStruct: selecting property mapping: headerOut.getCanal().
+Note: -- MapStruct: mapping property: headerOut.getMedio() to: medium.
+Note: -- MapStruct: selecting property mapping: headerOut.getMedio().
+Note: -- MapStruct: mapping property: headerOut.getAplicacion() to: application.
+Note: -- MapStruct: selecting property mapping: headerOut.getAplicacion().
+Note: -- MapStruct: mapping property: headerOut.getAgencia() to: agency.
+Note: -- MapStruct: selecting property mapping: headerOut.getAgencia().
+Note: -- MapStruct: mapping property: headerOut.getTipoTransaccion() to: transactionType.
+Note: -- MapStruct: selecting property mapping: headerOut.getTipoTransaccion().
+Note: -- MapStruct: mapping property: headerOut.getGeolocalizacion() to: geolocation.
+Note: -- MapStruct: selecting property mapping: headerOut.getGeolocalizacion().
+Note: -- MapStruct: mapping property: headerOut.getUsuario() to: user.
+Note: -- MapStruct: selecting property mapping: headerOut.getUsuario().
+Note: -- MapStruct: mapping property: headerOut.getUnicidad() to: uniqueness.
+Note: -- MapStruct: selecting property mapping: headerOut.getUnicidad().
+Note: -- MapStruct: mapping property: headerOut.getFechaHora() to: dateTime.
+Note: -- MapStruct: selecting property mapping: headerOut.getFechaHora().
+Note: -- MapStruct: mapping property: headerOut.getIdioma() to: language.
+Note: -- MapStruct: selecting property mapping: headerOut.getIdioma().
+Note: -- MapStruct: mapping property: headerOut.getSesion() to: session.
+Note: -- MapStruct: selecting property mapping: headerOut.getSesion().
+Note: -- MapStruct: mapping property: headerOut.getIdCliente() to: customerId.
+Note: -- MapStruct: selecting property mapping: headerOut.getIdCliente().
+Note: -- MapStruct: mapping property: headerOut.getTipoIdCliente() to: customerIdType.
+Note: -- MapStruct: selecting property mapping: headerOut.getTipoIdCliente().
+Note: -- MapStruct: mapping property: headerOut.getGuid() to: guid.
+Note: -- MapStruct: selecting property mapping: headerOut.getGuid().
+Note: -- MapStruct: mapping property: headerOut.getFiller() to: filler.
+Note: -- MapStruct: selecting property mapping: headerOut.getFiller().
+Note: -- MapStruct: mapping property: headerOut.getIp() to: ip.
+Note: -- MapStruct: selecting property mapping: headerOut.getIp().
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:47: warning: Unmapped target properties: "document, bancs".
+    HeaderOutDto toHeaderOutDto(HeaderOut headerOut);
+                 ^
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.DocumentDto toDocumentDto(com.pichincha.sp.infrastructure.output.adapter.response.DocumentoOut documentoOut).
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:49: warning: Unmapped target properties: "dateContable, numberDocument, journals".
+    DocumentDto toDocumentDto(DocumentoOut documentoOut);
+                ^
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.WsClientes0141ResponseBodyOutDto toBodyOutDto(com.pichincha.sp.infrastructure.output.adapter.response.BodyOutWsClientes0141 bodyOut).
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:51: error: Unknown property "cards" in result type com.pichincha.sp.domain.dto.WsClientes0141ResponseBodyOutDto. Did you mean "tarjetas"?
+    @Mapping(target = "cards", source = "tarjetas")
+                      ^
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.ErrorDto toErrorDto(com.pichincha.sp.infrastructure.output.adapter.response.ErrorOut errorOut).
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "codigo" exists in source parameter(s). Did you mean "code"?
+    ErrorDto toErrorDto(ErrorOut errorOut);
+             ^
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "mensaje" exists in source parameter(s). Did you mean "message"?
+    ErrorDto toErrorDto(ErrorOut errorOut);
+             ^
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "mensajenegocio" exists in source parameter(s). Did you mean "message"?
+    ErrorDto toErrorDto(ErrorOut errorOut);
+             ^
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "tipo" exists in source parameter(s). Did you mean "type"?
+    ErrorDto toErrorDto(ErrorOut errorOut);
+             ^
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "recurso" exists in source parameter(s). Did you mean "resource"?
+    ErrorDto toErrorDto(ErrorOut errorOut);
+             ^
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "componente" exists in source parameter(s). Did you mean "component"?
+    ErrorDto toErrorDto(ErrorOut errorOut);
+             ^
+Note: -- MapStruct: mapping property: errorOut.getBackend() to: backend.
+Note: -- MapStruct: selecting property mapping: errorOut.getBackend().
+7 errors
+4 warnings
 
 > Task :compileJava FAILED
 
@@ -123,25 +210,116 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compileJava'.
 > Compilation failed; see the compiler output below.
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:21: error: No implementation was created for WsClientes0141SoapMapper due to having a problem in the erroneous element DocumentoDto. Hint: this often means that some other annotation processor was supposed to process the erroneous element. You can also enable MapStruct verbose mode by setting -Amapstruct.verbose=true as a compilation argument.
-  public interface WsClientes0141SoapMapper {
-         ^
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:3: error: cannot find symbol
-  import com.pichincha.sp.domain.dto.DocumentoDto;
-                                    ^
-    symbol:   class DocumentoDto
-    location: package com.pichincha.sp.domain.dto
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:34: error: cannot find symbol
-      DocumentoDto toDocumentoDto(DocumentoOut documentoOut);
-      ^
-    symbol:   class DocumentoDto
-    location: interface WsClientes0141SoapMapper
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:23: warning: Unmapped target properties: "dispositivo, empresa, canal, medio, aplicacion, agencia, tipoTransaccion, geolocalizacion, usuario, unicidad, fechaHora, idioma, sesion, idCliente, tipoIdCliente".
+      HeaderIn toHeaderIn(HeaderInDto headerInDto);
+               ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:25: warning: Unmapped target property: "cif". Mapping from property "com.pichincha.sp.domain.dto.WsClientes0141OrdenanteDto ordenante" to "com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante ordenante".
+      BodyInWsClientes0141 toBodyIn(WsClientes0141RequestBodyInDto bodyInDto);
+                           ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:47: warning: Unmapped target properties: "document, bancs".
+      HeaderOutDto toHeaderOutDto(HeaderOut headerOut);
+                   ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:49: warning: Unmapped target properties: "dateContable, numberDocument, journals".
+      DocumentDto toDocumentDto(DocumentoOut documentoOut);
+                  ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:51: error: Unknown property "cards" in result type com.pichincha.sp.domain.dto.WsClientes0141ResponseBodyOutDto. Did you mean "tarjetas"?
+      @Mapping(target = "cards", source = "tarjetas")
+                        ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "codigo" exists in source parameter(s). Did you mean "code"?
+      ErrorDto toErrorDto(ErrorOut errorOut);
+               ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "mensaje" exists in source parameter(s). Did you mean "message"?
+      ErrorDto toErrorDto(ErrorOut errorOut);
+               ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "mensajenegocio" exists in source parameter(s). Did you mean "message"?
+      ErrorDto toErrorDto(ErrorOut errorOut);
+               ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "tipo" exists in source parameter(s). Did you mean "type"?
+      ErrorDto toErrorDto(ErrorOut errorOut);
+               ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "recurso" exists in source parameter(s). Did you mean "resource"?
+      ErrorDto toErrorDto(ErrorOut errorOut);
+               ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:61: error: No property named "componente" exists in source parameter(s). Did you mean "component"?
+      ErrorDto toErrorDto(ErrorOut errorOut);
+               ^
   Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
   Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
   Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
   Note:  MapStruct: processing: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper.
-  Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper
-  3 errors
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.output.adapter.request.HeaderIn toHeaderIn(com.pichincha.sp.domain.dto.HeaderInDto headerInDto).
+  Note: -- MapStruct: mapping property: headerInDto.guid() to: setGuid(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerInDto.guid().
+  Note: -- MapStruct: mapping property: headerInDto.filler() to: setFiller(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerInDto.filler().
+  Note: -- MapStruct: mapping property: headerInDto.ip() to: setIp(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: headerInDto.ip().
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141 toBodyIn(com.pichincha.sp.domain.dto.WsClientes0141RequestBodyInDto bodyInDto).
+  Note: -- MapStruct: mapping property: bodyInDto.ordenante() to: setOrdenante(com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante).
+  Note: -- MapStruct: mapping property: wsClientes0141OrdenanteDto.identificacion() to: setIdentificacion(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: wsClientes0141OrdenanteDto.identificacion().
+  Note: -- MapStruct: mapping property: wsClientes0141OrdenanteDto.tipoIdentificacion() to: setTipoIdentificacion(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: wsClientes0141OrdenanteDto.tipoIdentificacion().
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante #wsClientes0141OrdenanteDtoToBodyInWsClientes0141Ordenante(bodyInDto.ordenante()).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante #wsClientes0141OrdenanteDtoToBodyInWsClientes0141Ordenante(bodyInDto.ordenante()).
+  Note: -- MapStruct: mapping property: bodyInDto.criteriosBusqueda() to: setCriteriosBusqueda(com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda).
+  Note: -- MapStruct: mapping property: wsClientes0141CriteriosBusquedaDto.operacion() to: setOperacion(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: wsClientes0141CriteriosBusquedaDto.operacion().
+  Note: -- MapStruct: mapping property: wsClientes0141CriteriosBusquedaDto.tipoTarjeta() to: setTipoTarjeta(java.lang.String).
+  Note: -- MapStruct: selecting property mapping: wsClientes0141CriteriosBusquedaDto.tipoTarjeta().
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda #wsClientes0141CriteriosBusquedaDtoToBodyInWsClientes0141CriteriosBusqueda(bodyInDto.criteriosBusqueda()).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda #wsClientes0141CriteriosBusquedaDtoToBodyInWsClientes0141CriteriosBusqueda(bodyInDto.criteriosBusqueda()).
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.WsClientes0141ResponseDto toDomainResponse(com.pichincha.sp.infrastructure.output.adapter.response.ConsultarTarjetasDebitoCliente01Response operation).
+  Note: -- MapStruct: mapping property: operation.getHeaderOut() to: headerOut.
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.HeaderOutDto #toHeaderOutDto(operation.getHeaderOut()).
+  Note: -- MapStruct: mapping property: operation.getBodyOut() to: bodyOut.
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.WsClientes0141ResponseBodyOutDto #toBodyOutDto(operation.getBodyOut()).
+  Note: -- MapStruct: mapping property: operation.getError() to: error.
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.ErrorDto #toErrorDto(operation.getError()).
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.HeaderOutDto toHeaderOutDto(com.pichincha.sp.infrastructure.output.adapter.response.HeaderOut headerOut).
+  Note: -- MapStruct: mapping property: headerOut.getDispositivo() to: device.
+  Note: -- MapStruct: selecting property mapping: headerOut.getDispositivo().
+  Note: -- MapStruct: mapping property: headerOut.getEmpresa() to: company.
+  Note: -- MapStruct: selecting property mapping: headerOut.getEmpresa().
+  Note: -- MapStruct: mapping property: headerOut.getCanal() to: channel.
+  Note: -- MapStruct: selecting property mapping: headerOut.getCanal().
+  Note: -- MapStruct: mapping property: headerOut.getMedio() to: medium.
+  Note: -- MapStruct: selecting property mapping: headerOut.getMedio().
+  Note: -- MapStruct: mapping property: headerOut.getAplicacion() to: application.
+  Note: -- MapStruct: selecting property mapping: headerOut.getAplicacion().
+  Note: -- MapStruct: mapping property: headerOut.getAgencia() to: agency.
+  Note: -- MapStruct: selecting property mapping: headerOut.getAgencia().
+  Note: -- MapStruct: mapping property: headerOut.getTipoTransaccion() to: transactionType.
+  Note: -- MapStruct: selecting property mapping: headerOut.getTipoTransaccion().
+  Note: -- MapStruct: mapping property: headerOut.getGeolocalizacion() to: geolocation.
+  Note: -- MapStruct: selecting property mapping: headerOut.getGeolocalizacion().
+  Note: -- MapStruct: mapping property: headerOut.getUsuario() to: user.
+  Note: -- MapStruct: selecting property mapping: headerOut.getUsuario().
+  Note: -- MapStruct: mapping property: headerOut.getUnicidad() to: uniqueness.
+  Note: -- MapStruct: selecting property mapping: headerOut.getUnicidad().
+  Note: -- MapStruct: mapping property: headerOut.getFechaHora() to: dateTime.
+  Note: -- MapStruct: selecting property mapping: headerOut.getFechaHora().
+  Note: -- MapStruct: mapping property: headerOut.getIdioma() to: language.
+  Note: -- MapStruct: selecting property mapping: headerOut.getIdioma().
+  Note: -- MapStruct: mapping property: headerOut.getSesion() to: session.
+  Note: -- MapStruct: selecting property mapping: headerOut.getSesion().
+  Note: -- MapStruct: mapping property: headerOut.getIdCliente() to: customerId.
+  Note: -- MapStruct: selecting property mapping: headerOut.getIdCliente().
+  Note: -- MapStruct: mapping property: headerOut.getTipoIdCliente() to: customerIdType.
+  Note: -- MapStruct: selecting property mapping: headerOut.getTipoIdCliente().
+  Note: -- MapStruct: mapping property: headerOut.getGuid() to: guid.
+  Note: -- MapStruct: selecting property mapping: headerOut.getGuid().
+  Note: -- MapStruct: mapping property: headerOut.getFiller() to: filler.
+  Note: -- MapStruct: selecting property mapping: headerOut.getFiller().
+  Note: -- MapStruct: mapping property: headerOut.getIp() to: ip.
+  Note: -- MapStruct: selecting property mapping: headerOut.getIp().
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.DocumentDto toDocumentDto(com.pichincha.sp.infrastructure.output.adapter.response.DocumentoOut documentoOut).
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.WsClientes0141ResponseBodyOutDto toBodyOutDto(com.pichincha.sp.infrastructure.output.adapter.response.BodyOutWsClientes0141 bodyOut).
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.ErrorDto toErrorDto(com.pichincha.sp.infrastructure.output.adapter.response.ErrorOut errorOut).
+  Note: -- MapStruct: mapping property: errorOut.getBackend() to: backend.
+  Note: -- MapStruct: selecting property mapping: errorOut.getBackend().
+  7 errors
+  4 warnings
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
