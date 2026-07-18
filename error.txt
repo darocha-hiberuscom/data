@@ -12,24 +12,42 @@ C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
 
 ---------------------------------------------------------------
 ≡ƒÅù∩╕Å  ARQUITECTURA:
-   Estilo detectado: UNKNOWN
-   Archivos analizados: 33
-   Paquetes encontrados: 8
+   Estilo detectado: HEXAGONAL
+   Archivos analizados: 76
+   Paquetes encontrados: 19
    Java 21: Γ£à
 
    ≡ƒôè Desglose de puntos:
-      ΓÇó Arquitectura: 4 / 5
+      ΓÇó Arquitectura: 5 / 5
       ΓÇó Paquetes: 2 / 4
       ΓÇó Nomenclatura: 5 / 7
       ΓÇó Archivos requeridos: 2 / 2
 
-   Puntaje final: 7.6 / 10
+   Puntaje final: 8.2 / 10
    BLOQUEAR PR: NO Γ£à
 
    Γ£à Todos los archivos requeridos est├ín presentes
 
-   ≡ƒôï Observaciones generales (1):
+   ≡ƒôï Observaciones generales (19):
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.port.config': 'OrquestadorSoapErrorPort' | Archivo: OrquestadorSoapErrorPort.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.util': 'EsbGenericoUtils' | Archivo: EsbGenericoUtils.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.exception': 'ErrorCatalogConstants' | Archivo: ErrorCatalogConstants.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.config': 'OrquestadorErrorFactory' | Archivo: OrquestadorErrorFactory.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter': 'ConsultarsServicioTarjetasAdapterOutput' | Archivo: ConsultarsServicioTarjetasAdapterOutput.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.properties.webclient': 'WebClientProperties' | Archivo: WebClientProperties.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'BodyInWsClientes0141' | Archivo: BodyInWsClientes0141.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'BodyInWsClientes0141CriteriosBusqueda' | Archivo: BodyInWsClientes0141CriteriosBusqueda.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'BodyInWsClientes0141Ordenante' | Archivo: BodyInWsClientes0141Ordenante.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'ConsultarTarjetasDebitoCliente01' | Archivo: ConsultarTarjetasDebitoCliente01.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'HeaderIn' | Archivo: HeaderIn.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'SoapHeader' | Archivo: SoapHeader.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'BodyOutWsClientes0141' | Archivo: BodyOutWsClientes0141.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'BodyOutWsClientes0141Tarjetas' | Archivo: BodyOutWsClientes0141Tarjetas.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'BodyOutWsClientes0141TarjetasTarjeta' | Archivo: BodyOutWsClientes0141TarjetasTarjeta.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'DocumentoOut' | Archivo: DocumentoOut.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'ErrorOut' | Archivo: ErrorOut.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'HeaderOut' | Archivo: HeaderOut.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'SoapHeader' | Archivo: SoapHeader.java
 
    Γ£à Arquitectura aprobada
 
@@ -72,32 +90,29 @@ wsdl2java - Apache CXF 4.1.1
 Γ£à Post-procesamiento unificado completado
 
 > Task :compileJava
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:19: error: cannot find symbol
-    private List<CardDto> cards;
-                 ^
-  symbol:   class CardDto
-  location: class FlowResponseDto
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:19: error: cannot find symbol
-    private List<CardDto> cards;
-                          ^
-  symbol:   class CardDto
-  location: class FlowResponseDto
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:13: error: cannot find symbol
-@Setter
-^
-  symbol:   class CardDto
-  location: class FlowResponseDto
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:16: error: cannot find symbol
-@AllArgsConstructor
-^
-  symbol:   class CardDto
-  location: class FlowResponseDto
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:14: error: cannot find symbol
-@Builder
-^
-  symbol:   class CardDto
-  location: class FlowResponseDtoBuilder
-5 errors
+Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
+Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
+Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper.
+Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper.
+Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper.
+Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:3: error: cannot find symbol
+import com.pichincha.sp.domain.dto.DocumentoDto;
+                                  ^
+  symbol:   class DocumentoDto
+  location: package com.pichincha.sp.domain.dto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:34: error: cannot find symbol
+    DocumentoDto toDocumentoDto(DocumentoOut documentoOut);
+    ^
+  symbol:   class DocumentoDto
+  location: interface WsClientes0141SoapMapper
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:21: error: No implementation was created for WsClientes0141SoapMapper due to having a problem in the erroneous element DocumentoDto. Hint: this often means that some other annotation processor was supposed to process the erroneous element. You can also enable MapStruct verbose mode by setting -Amapstruct.verbose=true as a compilation argument.
+public interface WsClientes0141SoapMapper {
+       ^
+3 errors
 
 > Task :compileJava FAILED
 
@@ -108,32 +123,25 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compileJava'.
 > Compilation failed; see the compiler output below.
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:19: error: cannot find symbol
-      private List<CardDto> cards;
-                   ^
-    symbol:   class CardDto
-    location: class FlowResponseDto
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:19: error: cannot find symbol
-      private List<CardDto> cards;
-                            ^
-    symbol:   class CardDto
-    location: class FlowResponseDto
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:13: error: cannot find symbol
-  @Setter
-  ^
-    symbol:   class CardDto
-    location: class FlowResponseDto
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:16: error: cannot find symbol
-  @AllArgsConstructor
-  ^
-    symbol:   class CardDto
-    location: class FlowResponseDto
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:14: error: cannot find symbol
-  @Builder
-  ^
-    symbol:   class CardDto
-    location: class FlowResponseDtoBuilder
-  5 errors
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:21: error: No implementation was created for WsClientes0141SoapMapper due to having a problem in the erroneous element DocumentoDto. Hint: this often means that some other annotation processor was supposed to process the erroneous element. You can also enable MapStruct verbose mode by setting -Amapstruct.verbose=true as a compilation argument.
+  public interface WsClientes0141SoapMapper {
+         ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:3: error: cannot find symbol
+  import com.pichincha.sp.domain.dto.DocumentoDto;
+                                    ^
+    symbol:   class DocumentoDto
+    location: package com.pichincha.sp.domain.dto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:34: error: cannot find symbol
+      DocumentoDto toDocumentoDto(DocumentoOut documentoOut);
+      ^
+    symbol:   class DocumentoDto
+    location: interface WsClientes0141SoapMapper
+  Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
+  Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
+  Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
+  Note:  MapStruct: processing: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper.
+  Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper
+  3 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
