@@ -1,94 +1,149 @@
 
-Cuando Ejecuto etapa 7
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
 
-campos en blanco · accntNumber, system, action, linktype, narration, custNumber, custName, idType
-⚠ Contrato Etapa 6 incompleto — corrige blanks/mappers antes de Etapa 7
-✓ Contrato Etapa 6: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\06-aplicacion-service\stage6-application-contract-validation.json
-✓ Completado: application services
-⚠ Quedan 2 hueco(s) tras reconciliación:
-  · Clase Java planificada ausente: QueryAccountCoHoldersSoapToDomainMapper
-  · Clase Java planificada ausente: QueryAccountCoHoldersSoapToDomainMapperRequestBancsMapper
+> Task :architectureReview
 
-Pero si compila
+===============================================================
+================ PEER REVIEW AUTOMATIZADO ====================
+===============================================================
 
+≡ƒôü Proyecto: tnd-msa-sp-orqclientes0052
+≡ƒôè Threshold Configurado: 7 / 10
 
-En la Etapa 8
+---------------------------------------------------------------
+≡ƒÅù∩╕Å  ARQUITECTURA:
+   Estilo detectado: UNKNOWN
+   Archivos analizados: 33
+   Paquetes encontrados: 8
+   Java 21: Γ£à
 
-╔══════════════════════════════════════════════════╗
-║  Checklist completo · Etapas 1–9                 ║
-╚══════════════════════════════════════════════════╝
+   ≡ƒôè Desglose de puntos:
+      ΓÇó Arquitectura: 4 / 5
+      ΓÇó Paquetes: 2 / 4
+      ΓÇó Nomenclatura: 5 / 7
+      ΓÇó Archivos requeridos: 2 / 2
 
-Workspace: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114
-Análisis: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114
-Paquete: com.pichincha.sp
+   Puntaje final: 7.6 / 10
+   BLOQUEAR PR: NO Γ£à
 
-Árbol: WSProductos0114 · 2 operación(es) WSDL
-✓ Checklist JSON: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\migration-full-checklist.json
-✓ Checklist MD:   c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\migration-full-checklist.md
+   Γ£à Todos los archivos requeridos est├ín presentes
 
-── Resumen por etapa ──
-✓ Etapa 1 · Análisis: ok=7 missing=0
-✓ Etapa 2 · Dominio DTO: ok=11 missing=0
-✓ Etapa 3 · TX DTOs + mappers: ok=10 missing=0 · mappers 2/2
-✓ Etapa 4 · Puertos: ok=7 missing=0
-✓ Etapa 5 · Adaptadores output: ok=4 missing=0
-⚠ Etapa 6 · Services + builders + MapStruct: ok=10 missing=2 · mappers 2/4 · builders 2/2
-✓ Etapa 7 · Infra input SOAP: ok=13 missing=0 · mappers 4/4
-✓ Etapa 8 · Validación: ok=2 missing=0
-✓ Etapa 9 · Tests: ok=2 missing=0
+   ≡ƒôï Observaciones generales (1):
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.exception': 'ErrorCatalogConstants' | Archivo: ErrorCatalogConstants.java
 
-── Mappers ──
-  ✓ [E3] Tx060602Mapper
-  ✓ [E3] Tx060605Mapper
-  ✓ [E6] ModifyAccountOwnershipRequestBancsMapper
-  ✓ [E6] QueryAccountCoHoldersRequestBancsMapper
-  ✗ [E6] QueryAccountCoHoldersSoapToDomainMapper (Clase Java ausente en disco)
-  ✗ [E6] QueryAccountCoHoldersSoapToDomainMapperRequestBancsMapper (Clase Java ausente en disco)
-  ✓ [E7] ModifyAccountOwnershipDomainToSoapMapper
-  ✓ [E7] ModifyAccountOwnershipSoapToDomainMapper
-  ✓ [E7] QueryAccountCoHoldersDomainToSoapMapper
-  ✓ [E7] QueryAccountCoHoldersSoapToDomainMapper
+   Γ£à Arquitectura aprobada
 
-── Builders ──
-  ✓ [E6] ModifyAccountOwnershipRequestBuilder
-  ✓ [E6] QueryAccountCoHoldersRequestBuilder
+---------------------------------------------------------------
+≡ƒº¬ PRUEBAS UNITARIAS:
+   Archivos de test analizados: 0
 
-── Faltantes (2) ──
-  · [E6][mapper] QueryAccountCoHoldersSoapToDomainMapper
-      c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114/src/main/java/com/pichincha/sp/application/mappers/QueryAccountCoHoldersSoapToDomainMapper.java
-  · [E6][mapper] QueryAccountCoHoldersSoapToDomainMapperRequestBancsMapper
-      c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114/src/main/java/com/pichincha/sp/application/mappers/QueryAccountCoHoldersSoapToDomainMapperRequestBancsMapper.java
+   Γ¥î ERROR: No se encontraron archivos de pruebas unitarias
+   El proyecto DEBE tener pruebas unitarias en src/test/java
 
-⚠ Checklist incompleto: 2 hueco(s)
+   Puntaje final: 0 / 10
+   BLOQUEAR PR: SI Γ¥î
 
-── Checklist componentes (árbol Etapa 1) ──
-Mappers: 8 ok / 2 missing · Builders: 2 ok / 0 missing
-Informe: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\migration-full-checklist.md
+   ΓÜá∩╕Å  El proyecto NO tiene pruebas unitarias - Esto es OBLIGATORIO
 
-⏳ Validando referencias de clases del proyecto (no inventadas)...
-  Archivos escaneados: 96 · Tipos definidos: 97
-  · Fuentes JAXB/WSDL generadas: 24 archivo(s) (válidos como tipos del proyecto)
-  ✓ Todas las clases referenciadas existen (sin "cannot find symbol").
+===============================================================
 
-── Gate Etapa 8 (contrato final) ──
-Servicio: wsproductos0114
-Checklist: ready=no  mappers missing=2  builders missing=0
-Artifacts/classes: missing=0
-Compile: failed
-Class refs: issues=0
-Ready: no
-Resumen: ok=2 warning=0 missing=2 skipped=0
-  ✗ [checklist] Checklist incompleto (mappers missing=2, builders missing=0) · c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\migration-full-checklist.md
-  ✗ [compile] Compilación falló (gradlew.bat compileJava) · Corrige los errores de compilación Java/MapStruct/JAXB y vuelve a ejecutar la Etapa 8.
-Checklist MD: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\migration-full-checklist.md
-Contrato: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\stage8-validation-contract.json
-⚠ Etapa 8 NO lista — no avances a Etapa 9 hasta corregir findings
-✓ Contrato Etapa 8: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\stage8-validation-contract.json
+ΓÜá∩╕Å        PEER REVIEW - ADVERTENCIAS DETECTADAS         ΓÜá∩╕Å
+
+   ΓÜá∩╕Å  Pruebas Unitarias: NO EXISTEN - El proyecto DEBE tener pruebas unitarias
+
+Por favor, revisa y corrige los problemas antes de continuar.
+
+ΓÜá∩╕Å    PEER REVIEW COMPLETADO CON ADVERTENCIAS     ΓÜá∩╕Å
 
 
-Etapa 9 me da
+> Task :generateJavaFromWsdl
+Generando clases desde: ORQClientes0052.wsdl
+   Γ£ô Usando binding global: jaxb-bindings.xml
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Loading FrontEnd jaxws ...
+Loading DataBinding jaxb ...
+wsdl2java -d C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\build\generated\sources\wsdl -p com.pichincha.sp.generated -verbose -autoNameResolution -xjc-enableIntrospection -xjc-XautoNameResolution -exsh true -mark-generated -b C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\gradle\wrapper\jaxb-bindings.xml C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\resources\legacy\ORQClientes0052.wsdl
+wsdl2java - Apache CXF 4.1.1
 
 
-Error en Etapa 9 Generación de tests: Etapa 9 bloqueada por contrato (Stage 8 ready=false, mappers missing=2, builders missing=0, elegibles=25). Revisa c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\09-tests\stage9-unit-test-contract-validation.json
+> Task :postProcessGeneratedWsdl
+Γ£à Post-procesamiento unificado completado
 
+> Task :compileJava
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:19: error: cannot find symbol
+    private List<CardDto> cards;
+                 ^
+  symbol:   class CardDto
+  location: class FlowResponseDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:19: error: cannot find symbol
+    private List<CardDto> cards;
+                          ^
+  symbol:   class CardDto
+  location: class FlowResponseDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:13: error: cannot find symbol
+@Setter
+^
+  symbol:   class CardDto
+  location: class FlowResponseDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:16: error: cannot find symbol
+@AllArgsConstructor
+^
+  symbol:   class CardDto
+  location: class FlowResponseDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:14: error: cannot find symbol
+@Builder
+^
+  symbol:   class CardDto
+  location: class FlowResponseDtoBuilder
+5 errors
 
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/darochar/Documents/pruebas/tnd-msa-sp-orqclientes0052/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:19: error: cannot find symbol
+      private List<CardDto> cards;
+                   ^
+    symbol:   class CardDto
+    location: class FlowResponseDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:19: error: cannot find symbol
+      private List<CardDto> cards;
+                            ^
+    symbol:   class CardDto
+    location: class FlowResponseDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:13: error: cannot find symbol
+  @Setter
+  ^
+    symbol:   class CardDto
+    location: class FlowResponseDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:16: error: cannot find symbol
+  @AllArgsConstructor
+  ^
+    symbol:   class CardDto
+    location: class FlowResponseDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\domain\dto\FlowResponseDto.java:14: error: cannot find symbol
+  @Builder
+  ^
+    symbol:   class CardDto
+    location: class FlowResponseDtoBuilder
+  5 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 7s
+5 actionable tasks: 5 executed
