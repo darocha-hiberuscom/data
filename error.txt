@@ -1,3 +1,6 @@
+
+Cuando Ejecuto etapa 7
+
 campos en blanco · accntNumber, system, action, linktype, narration, custNumber, custName, idType
 ⚠ Contrato Etapa 6 incompleto — corrige blanks/mappers antes de Etapa 7
 ✓ Contrato Etapa 6: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\06-aplicacion-service\stage6-application-contract-validation.json
@@ -6,8 +9,10 @@ campos en blanco · accntNumber, system, action, linktype, narration, custNumber
   · Clase Java planificada ausente: QueryAccountCoHoldersSoapToDomainMapper
   · Clase Java planificada ausente: QueryAccountCoHoldersSoapToDomainMapperRequestBancsMapper
 
+Pero si compila
 
 
+En la Etapa 8
 
 ╔══════════════════════════════════════════════════╗
 ║  Checklist completo · Etapas 1–9                 ║
@@ -81,7 +86,7 @@ Contrato: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-
 ✓ Contrato Etapa 8: c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\08-validacion\stage8-validation-contract.json
 
 
-
+Etapa 9 me da
 
 
 Error en Etapa 9 Generación de tests: Etapa 9 bloqueada por contrato (Stage 8 ready=false, mappers missing=2, builders missing=0, elegibles=25). Revisa c:\Users\darochar\Documents\New folder\tpr-msa-sp-wsproductos0114\tpr-msa-sp-wsproductos0114\hiberus-analysis\wsproductos0114\09-tests\stage9-unit-test-contract-validation.json
