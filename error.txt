@@ -1,5 +1,85 @@
+Note: -- MapStruct: selecting property mapping: errorDto.businessMessage().
+Note: -- MapStruct: mapping property: errorDto.type() to: setTipo(java.lang.String).
+Note: -- MapStruct: selecting property mapping: errorDto.type().
+Note: -- MapStruct: mapping property: errorDto.resource() to: setRecurso(java.lang.String).
+Note: -- MapStruct: selecting property mapping: errorDto.resource().
+Note: -- MapStruct: mapping property: errorDto.component() to: setComponente(java.lang.String).
+Note: -- MapStruct: selecting property mapping: errorDto.component().
+Note: -- MapStruct: mapping property: errorDto.backend() to: setBackend(java.lang.String).
+Note: -- MapStruct: selecting property mapping: errorDto.backend().
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.GenericError #errorDtoToGenericError(result.error()).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.GenericError #errorDtoToGenericError(result.error()).
+Note: -- MapStruct: mapping property: result.bodyOut() to: setBodyOut(com.pichincha.sp.generated.BodyOutConsultarTarjetasDebitoClientes01).
+Note: -- MapStruct: mapping property: orchestratorBodyOutDto.flow() to: setFlujo(com.pichincha.sp.generated.GenericFlow).
+Note: -- MapStruct: mapping property: flowDto.status() to: setEstado(java.lang.String).
+Note: -- MapStruct: selecting property mapping: flowDto.status().
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.GenericFlow #flowDtoToGenericFlow(orchestratorBodyOutDto.flow()).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.GenericFlow #flowDtoToGenericFlow(orchestratorBodyOutDto.flow()).
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.BodyOutConsultarTarjetasDebitoClientes01 #orchestratorBodyOutDtoToBodyOutConsultarTarjetasDebitoClientes01(result.bodyOut()).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.BodyOutConsultarTarjetasDebitoClientes01 #orchestratorBodyOutDtoToBodyOutConsultarTarjetasDebitoClientes01(result.bodyOut()).
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ConsultarTarjetasDebitoClientes01Response operationResponse).
+Note: -- MapStruct: mapping property: operationResponse to: body(com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse).
+Note: -- MapStruct: mapping property: consultarTarjetasDebitoClientes01Response to: consultarTarjetasDebitoClientes01Response(com.pichincha.sp.generated.ConsultarTarjetasDebitoClientes01Response).
+Note: -- MapStruct: selecting property mapping: consultarTarjetasDebitoClientes01Response.
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarTarjetasDebitoClientes01ResponseToSoapBodyResponse(operationResponse).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarTarjetasDebitoClientes01ResponseToSoapBodyResponse(operationResponse).
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.GenericHeaderOut toHeaderOut(com.pichincha.sp.generated.GenericHeaderIn headerIn).
+Note: -- MapStruct: mapping property: headerIn.getDispositivo() to: setDispositivo(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getDispositivo().
+Note: -- MapStruct: mapping property: headerIn.getEmpresa() to: setEmpresa(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getEmpresa().
+Note: -- MapStruct: mapping property: headerIn.getCanal() to: setCanal(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getCanal().
+Note: -- MapStruct: mapping property: headerIn.getMedio() to: setMedio(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getMedio().
+Note: -- MapStruct: mapping property: headerIn.getAplicacion() to: setAplicacion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getAplicacion().
+Note: -- MapStruct: mapping property: headerIn.getAgencia() to: setAgencia(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getAgencia().
+Note: -- MapStruct: mapping property: headerIn.getTipoTransaccion() to: setTipoTransaccion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getTipoTransaccion().
+Note: -- MapStruct: mapping property: headerIn.getGeolocalizacion() to: setGeolocalizacion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getGeolocalizacion().
+Note: -- MapStruct: mapping property: headerIn.getUsuario() to: setUsuario(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getUsuario().
+Note: -- MapStruct: mapping property: headerIn.getUnicidad() to: setUnicidad(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getUnicidad().
+Note: -- MapStruct: mapping property: headerIn.getGuid() to: setGuid(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getGuid().
+Note: -- MapStruct: mapping property: headerIn.getFechaHora() to: setFechaHora(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getFechaHora().
+Note: -- MapStruct: mapping property: headerIn.getFiller() to: setFiller(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getFiller().
+Note: -- MapStruct: mapping property: headerIn.getIdioma() to: setIdioma(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getIdioma().
+Note: -- MapStruct: mapping property: headerIn.getSesion() to: setSesion(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getSesion().
+Note: -- MapStruct: mapping property: headerIn.getIp() to: setIp(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getIp().
+Note: -- MapStruct: mapping property: headerIn.getIdCliente() to: setIdCliente(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getIdCliente().
+Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdCliente(java.lang.String).
+Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
+Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
+Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
 
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
+[Incubating] Problems report is available at: file:///C:/Users/darochar/Documents/pruebas/tnd-msa-sp-orqclientes0052/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 13s
+10 actionable tasks: 9 executed, 1 up-to-date
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>
+ *  History restored 
+
+Microsoft Windows [Version 10.0.26100.8655]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-or              gradlew build
 
 > Task :architectureReview
 
@@ -71,17 +151,18 @@ C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
       ΓÇó Estructura: 1 / 3
       ΓÇó Nomenclatura: 1 / 1
       ΓÇó Anotaciones: 0 / 1
-      ΓÇó Mocks/Stubbing: 1 / 1
+      ΓÇó Mocks/Stubbing: 0 / 1
       ΓÇó Assertions: 0 / 2
       ΓÇó Integraci├│n: 0 / 2
 
-   Puntaje final: 3.3 / 10
+   Puntaje final: 2.2 / 10
    BLOQUEAR PR: SI Γ¥î
 
-   ≡ƒôï Observaciones de tests (6):
+   ≡ƒôï Observaciones de tests (7):
       ΓÇó [Configuraci├│n] Falta application-test.yml/.properties
       ΓÇó [Configuraci├│n] No se detecta uso de H2 en las pruebas
       ΓÇó [Anotaciones] Faltan anotaciones requeridas: @SpringBootTest
+      ΓÇó [Mocking] Hay pruebas sin mocks/stubbing o imports est├íticos para m├⌐todos stub
       ΓÇó [Asserts] Debe haber al menos una aserci├│n JUnit b├ísica en los tests
       ΓÇó [Integraci├│n] Falta validaci├│n de HTTP status en tests de integraci├│n
       ΓÇó [Integraci├│n] Falta validaci├│n de error HTTP 404/500
@@ -92,7 +173,7 @@ C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
 
 ΓÜá∩╕Å        PEER REVIEW - ADVERTENCIAS DETECTADAS         ΓÜá∩╕Å
 
-   ΓÜá∩╕Å  Pruebas Unitarias: 3.3 / 10 (m├¡nimo: 7)
+   ΓÜá∩╕Å  Pruebas Unitarias: 2.2 / 10 (m├¡nimo: 7)
 
 Por favor, revisa y corrige los problemas antes de continuar.
 
@@ -118,6 +199,16 @@ wsdl2java - Apache CXF 4.1.1
 Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
 Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
 Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.SoapToDomainMapper.
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.OrchestratorRequestDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
+Note: -- MapStruct: mapping property: requestBodyConsultarTarjetasDebitoClientes01BodyIn( request ) to: bodyIn.
+Note: -- MapStruct: mapping property: bodyInConsultarTarjetasDebitoClientes01.getOrdenante() to: ordenante.
+Note: -- MapStruct: mapping property: ordenante.getCif() to: cif.
+Note: -- MapStruct: selecting property mapping: ordenante.getCif().
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
 Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
 Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.ConsultarTarjetasDebitoClientes01Response toOperationResponse(com.pichincha.sp.domain.dto.OrchestratorResponseDto result).
 Note: -- MapStruct: mapping property: result.error() to: setError(com.pichincha.sp.generated.GenericError).
@@ -190,16 +281,6 @@ Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdC
 Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
 Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
 Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.SoapToDomainMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.OrchestratorRequestDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
-Note: -- MapStruct: mapping property: requestBodyConsultarTarjetasDebitoClientes01BodyIn( request ) to: bodyIn.
-Note: -- MapStruct: mapping property: bodyInConsultarTarjetasDebitoClientes01.getOrdenante() to: ordenante.
-Note: -- MapStruct: mapping property: ordenante.getCif() to: cif.
-Note: -- MapStruct: selecting property mapping: ordenante.getCif().
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
 
 > Task :compileTestJava FAILED
 C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\soap\WsClientes0141SoapFactoryTest.java:3: error: cannot find symbol
@@ -212,143 +293,9 @@ C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com
             ^
   symbol:   class WsClientes0141SoapFactory
   location: class WsClientes0141SoapFactoryTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\context\OrchestrationContextTest.java:50: error: constructor HeaderInDto in record HeaderInDto cannot be applied to given types;
-        when(request.headerIn()).thenReturn(new com.pichincha.sp.domain.dto.HeaderInDto());
-                                            ^
-  required: String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,BancsHeaderInDto
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\context\OrchestrationContextTest.java:51: error: constructor OrchestratorBodyInDto in record OrchestratorBodyInDto cannot be applied to given types;
-        when(request.bodyIn()).thenReturn(new com.pichincha.sp.domain.dto.OrchestratorBodyInDto());
-                                          ^
-  required: FlowDto,OrdenanteQueryCardsDebitCustomersRequestDto,CardQueryCardsDebitCustomersRequestDto
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:30: error: constructor BancsHeaderInDto in record BancsHeaderInDto cannot be applied to given types;
-                "device", "company", "channel", "medium", "application", "agency", "transactionType", "geolocation", "user", "uniqueness", "guid", "dateTime", "filler", "language", "session", "ip", "customerId", "customerIdType", new com.pichincha.sp.domain.dto.BancsHeaderInDto()
-                                                                                                                                                                                                                                      ^
-  required: String,String,String,String,String,String,String
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:34: error: constructor FlowDto in record FlowDto cannot be applied to given types;
-                new com.pichincha.sp.domain.dto.FlowDto(),
-                ^
-  required: String,List<OrchestratorFieldDto>
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:35: error: constructor OrdenanteQueryCardsDebitCustomersRequestDto in record OrdenanteQueryCardsDebitCustomersRequestDto cannot be applied to given types;
-                new com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto(),
-                ^
-  required: String,String,String
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:36: error: constructor CardQueryCardsDebitCustomersRequestDto in record CardQueryCardsDebitCustomersRequestDto cannot be applied to given types;
-                new com.pichincha.sp.domain.dto.CardQueryCardsDebitCustomersRequestDto()
-                ^
-  required: String,String
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:56: error: constructor BancsHeaderInDto in record BancsHeaderInDto cannot be applied to given types;
-                "device", "company", "channel", "medium", "application", "agency", "transactionType", "geolocation", "user", "uniqueness", "guid", "dateTime", "filler", "language", "session", "ip", "customerId", "customerIdType", new com.pichincha.sp.domain.dto.BancsHeaderInDto()
-                                                                                                                                                                                                                                      ^
-  required: String,String,String,String,String,String,String
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:60: error: constructor FlowDto in record FlowDto cannot be applied to given types;
-                new com.pichincha.sp.domain.dto.FlowDto(),
-                ^
-  required: String,List<OrchestratorFieldDto>
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:61: error: constructor OrdenanteQueryCardsDebitCustomersRequestDto in record OrdenanteQueryCardsDebitCustomersRequestDto cannot be applied to given types;
-                new com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto(),
-                ^
-  required: String,String,String
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:62: error: constructor CardQueryCardsDebitCustomersRequestDto in record CardQueryCardsDebitCustomersRequestDto cannot be applied to given types;
-                new com.pichincha.sp.domain.dto.CardQueryCardsDebitCustomersRequestDto()
-                ^
-  required: String,String
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:35: error: cannot find symbol
-                new HeaderInDto(),
-                    ^
-  symbol:   class HeaderInDto
-  location: class QueryTarjetasDebitCustomersServiceTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:36: error: cannot find symbol
-                new OrchestratorBodyInDto()
-                    ^
-  symbol:   class OrchestratorBodyInDto
-  location: class QueryTarjetasDebitCustomersServiceTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:39: error: cannot find symbol
-                new HeaderOutDto(),
-                    ^
-  symbol:   class HeaderOutDto
-  location: class QueryTarjetasDebitCustomersServiceTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:40: error: cannot find symbol
-                new OrchestratorBodyOutDto(),
-                    ^
-  symbol:   class OrchestratorBodyOutDto
-  location: class QueryTarjetasDebitCustomersServiceTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:49: error: cannot find symbol
-        OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-        ^
-  symbol:   class OrchestrationStrategy
-  location: class QueryTarjetasDebitCustomersServiceTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:49: error: cannot find symbol
-        OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-                                                          ^
-  symbol:   class OrchestrationStrategy
-  location: class QueryTarjetasDebitCustomersServiceTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:49: error: cannot find symbol
-        OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-                                             ^
-  symbol:   variable Mockito
-  location: class QueryTarjetasDebitCustomersServiceTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:62: error: cannot find symbol
-        OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-        ^
-  symbol:   class OrchestrationStrategy
-  location: class QueryTarjetasDebitCustomersServiceTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:62: error: cannot find symbol
-        OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-                                                          ^
-  symbol:   class OrchestrationStrategy
-  location: class QueryTarjetasDebitCustomersServiceTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:62: error: cannot find symbol
-        OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-                                             ^
-  symbol:   variable Mockito
-  location: class QueryTarjetasDebitCustomersServiceTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:43: error: constructor BancsHeaderInDto in record BancsHeaderInDto cannot be applied to given types;
-        headerIn = new HeaderInDto("device", "company", "channel", "medium", "application", "agency", "transactionType", "geolocation", "user", "uniqueness", "guid", "dateTime", "filler", "language", "session", "ip", "customerId", "customerIdType", new com.pichincha.sp.domain.dto.BancsHeaderInDto());
-                                                                                                                                                                                                                                                         ^
-  required: String,String,String,String,String,String,String
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:55: error: constructor ErrorDto in record ErrorDto cannot be applied to given types;
-               .thenReturn(new com.pichincha.sp.domain.dto.ErrorDto());
-                           ^
-  required: String,String,String,String,String,String,String
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:64: error: constructor ErrorDto in record ErrorDto cannot be applied to given types;
-        com.pichincha.sp.domain.dto.ErrorDto errorDto = new com.pichincha.sp.domain.dto.ErrorDto("1", "error message", "resource", "component", "backend");
-                                                        ^
-  required: String,String,String,String,String,String,String
-  found:    String,String,String,String,String
-  reason: actual and formal argument lists differ in length
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:85: error: constructor ErrorDto in record ErrorDto cannot be applied to given types;
-                .thenReturn(new com.pichincha.sp.domain.dto.ErrorDto());
-                            ^
-  required: String,String,String,String,String,String,String
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-Note: C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\context\OrchestrationContextTest.java uses or overrides a deprecated API.
+Note: C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\OrquestadorSoapErrorFactoryTest.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
-26 errors
+2 errors
 
 [Incubating] Problems report is available at: file:///C:/Users/darochar/Documents/pruebas/tnd-msa-sp-orqclientes0052/build/reports/problems/problems-report.html
 
@@ -357,91 +304,7 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compileTestJava'.
 > Compilation failed; see the compiler output below.
-  Note: C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\context\OrchestrationContextTest.java uses or overrides a deprecated API.
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\context\OrchestrationContextTest.java:50: error: constructor HeaderInDto in record HeaderInDto cannot be applied to given types;
-          when(request.headerIn()).thenReturn(new com.pichincha.sp.domain.dto.HeaderInDto());
-                                              ^
-    required: String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,String,BancsHeaderInDto
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\context\OrchestrationContextTest.java:51: error: constructor OrchestratorBodyInDto in record OrchestratorBodyInDto cannot be applied to given types;
-          when(request.bodyIn()).thenReturn(new com.pichincha.sp.domain.dto.OrchestratorBodyInDto());
-                                            ^
-    required: FlowDto,OrdenanteQueryCardsDebitCustomersRequestDto,CardQueryCardsDebitCustomersRequestDto
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:30: error: constructor BancsHeaderInDto in record BancsHeaderInDto cannot be applied to given types;
-                  "device", "company", "channel", "medium", "application", "agency", "transactionType", "geolocation", "user", "uniqueness", "guid", "dateTime", "filler", "language", "session", "ip", "customerId", "customerIdType", new com.pichincha.sp.domain.dto.BancsHeaderInDto()
-                                                                                                                                                                                                                                        ^
-    required: String,String,String,String,String,String,String
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:34: error: constructor FlowDto in record FlowDto cannot be applied to given types;
-                  new com.pichincha.sp.domain.dto.FlowDto(),
-                  ^
-    required: String,List<OrchestratorFieldDto>
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:35: error: constructor OrdenanteQueryCardsDebitCustomersRequestDto in record OrdenanteQueryCardsDebitCustomersRequestDto cannot be applied to given types;
-                  new com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto(),
-                  ^
-    required: String,String,String
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:36: error: constructor CardQueryCardsDebitCustomersRequestDto in record CardQueryCardsDebitCustomersRequestDto cannot be applied to given types;
-                  new com.pichincha.sp.domain.dto.CardQueryCardsDebitCustomersRequestDto()
-                  ^
-    required: String,String
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:56: error: constructor BancsHeaderInDto in record BancsHeaderInDto cannot be applied to given types;
-                  "device", "company", "channel", "medium", "application", "agency", "transactionType", "geolocation", "user", "uniqueness", "guid", "dateTime", "filler", "language", "session", "ip", "customerId", "customerIdType", new com.pichincha.sp.domain.dto.BancsHeaderInDto()
-                                                                                                                                                                                                                                        ^
-    required: String,String,String,String,String,String,String
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:60: error: constructor FlowDto in record FlowDto cannot be applied to given types;
-                  new com.pichincha.sp.domain.dto.FlowDto(),
-                  ^
-    required: String,List<OrchestratorFieldDto>
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:61: error: constructor OrdenanteQueryCardsDebitCustomersRequestDto in record OrdenanteQueryCardsDebitCustomersRequestDto cannot be applied to given types;
-                  new com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto(),
-                  ^
-    required: String,String,String
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\OrchestrationConfigurationServiceTest.java:62: error: constructor CardQueryCardsDebitCustomersRequestDto in record CardQueryCardsDebitCustomersRequestDto cannot be applied to given types;
-                  new com.pichincha.sp.domain.dto.CardQueryCardsDebitCustomersRequestDto()
-                  ^
-    required: String,String
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:43: error: constructor BancsHeaderInDto in record BancsHeaderInDto cannot be applied to given types;
-          headerIn = new HeaderInDto("device", "company", "channel", "medium", "application", "agency", "transactionType", "geolocation", "user", "uniqueness", "guid", "dateTime", "filler", "language", "session", "ip", "customerId", "customerIdType", new com.pichincha.sp.domain.dto.BancsHeaderInDto());
-                                                                                                                                                                                                                                                           ^
-    required: String,String,String,String,String,String,String
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:55: error: constructor ErrorDto in record ErrorDto cannot be applied to given types;
-                 .thenReturn(new com.pichincha.sp.domain.dto.ErrorDto());
-                             ^
-    required: String,String,String,String,String,String,String
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:64: error: constructor ErrorDto in record ErrorDto cannot be applied to given types;
-          com.pichincha.sp.domain.dto.ErrorDto errorDto = new com.pichincha.sp.domain.dto.ErrorDto("1", "error message", "resource", "component", "backend");
-                                                          ^
-    required: String,String,String,String,String,String,String
-    found:    String,String,String,String,String
-    reason: actual and formal argument lists differ in length
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:85: error: constructor ErrorDto in record ErrorDto cannot be applied to given types;
-                  .thenReturn(new com.pichincha.sp.domain.dto.ErrorDto());
-                              ^
-    required: String,String,String,String,String,String,String
-    found:    no arguments
-    reason: actual and formal argument lists differ in length
+  Note: C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\OrquestadorSoapErrorFactoryTest.java uses or overrides a deprecated API.
   Note: Recompile with -Xlint:deprecation for details.
   C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\soap\WsClientes0141SoapFactoryTest.java:3: error: cannot find symbol
   import com.pichincha.sp.infrastructure.output.adapter.soap.WsClientes0141SoapFactory;
@@ -453,57 +316,7 @@ Execution failed for task ':compileTestJava'.
               ^
     symbol:   class WsClientes0141SoapFactory
     location: class WsClientes0141SoapFactoryTest
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:35: error: cannot find symbol
-                  new HeaderInDto(),
-                      ^
-    symbol:   class HeaderInDto
-    location: class QueryTarjetasDebitCustomersServiceTest
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:36: error: cannot find symbol
-                  new OrchestratorBodyInDto()
-                      ^
-    symbol:   class OrchestratorBodyInDto
-    location: class QueryTarjetasDebitCustomersServiceTest
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:39: error: cannot find symbol
-                  new HeaderOutDto(),
-                      ^
-    symbol:   class HeaderOutDto
-    location: class QueryTarjetasDebitCustomersServiceTest
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:40: error: cannot find symbol
-                  new OrchestratorBodyOutDto(),
-                      ^
-    symbol:   class OrchestratorBodyOutDto
-    location: class QueryTarjetasDebitCustomersServiceTest
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:49: error: cannot find symbol
-          OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-          ^
-    symbol:   class OrchestrationStrategy
-    location: class QueryTarjetasDebitCustomersServiceTest
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:49: error: cannot find symbol
-          OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-                                                            ^
-    symbol:   class OrchestrationStrategy
-    location: class QueryTarjetasDebitCustomersServiceTest
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:49: error: cannot find symbol
-          OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-                                               ^
-    symbol:   variable Mockito
-    location: class QueryTarjetasDebitCustomersServiceTest
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:62: error: cannot find symbol
-          OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-          ^
-    symbol:   class OrchestrationStrategy
-    location: class QueryTarjetasDebitCustomersServiceTest
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:62: error: cannot find symbol
-          OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-                                                            ^
-    symbol:   class OrchestrationStrategy
-    location: class QueryTarjetasDebitCustomersServiceTest
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:62: error: cannot find symbol
-          OrchestrationStrategy mockStrategy = Mockito.mock(OrchestrationStrategy.class);
-                                               ^
-    symbol:   variable Mockito
-    location: class QueryTarjetasDebitCustomersServiceTest
-  26 errors
+  2 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
@@ -515,5 +328,7 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 14s
+BUILD FAILED in 16s
 10 actionable tasks: 9 executed, 1 up-to-date
+
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>
