@@ -28,16 +28,15 @@ C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
 
    Γ£à Todos los archivos requeridos est├ín presentes
 
-   ≡ƒôï Observaciones generales (27):
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.builders': 'OrquestacionRequestBodyFactory' | Archivo: OrquestacionRequestBodyFactory.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.builders': 'OrquestacionResponseAssembler' | Archivo: OrquestacionResponseAssembler.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.port.config': 'OrquestacionConfigurationPort' | Archivo: OrquestacionConfigurationPort.java
+   ≡ƒôï Observaciones generales (26):
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.builders': 'OrchestrationRequestBodyFactory' | Archivo: OrchestrationRequestBodyFactory.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.builders': 'OrchestrationResponseAssembler' | Archivo: OrchestrationResponseAssembler.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.port.config': 'OrchestrationConfigurationPort' | Archivo: OrchestrationConfigurationPort.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.port.config': 'OrquestadorSoapErrorPort' | Archivo: OrquestadorSoapErrorPort.java
-      ΓÇó [Naming] Clase debe ser CamelCase: '0OrquestacionStrategy' | Archivo: 0OrquestacionStrategy.java
-      ΓÇó [Naming] Interface debe terminar en sufijo apropiado (Service, ServicePort, Repository, RepositoryPort, Mapper, Handler, Provider, Factory, Port, PortInput, PortOutput): 'OrquestacionStrategy' | Archivo: OrquestacionStrategy.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.service.strategy': 'OrquestacionStrategyResolver' | Archivo: OrquestacionStrategyResolver.java
+      ΓÇó [Naming] Interface debe terminar en sufijo apropiado (Service, ServicePort, Repository, RepositoryPort, Mapper, Handler, Provider, Factory, Port, PortInput, PortOutput): 'OrchestrationStrategy' | Archivo: OrchestrationStrategy.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.service.strategy': 'OrchestrationStrategyResolver' | Archivo: OrchestrationStrategyResolver.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.constants': 'QueryTarjetasDebitCustomersMsFlowConstants' | Archivo: QueryTarjetasDebitCustomersMsFlowConstants.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.dto': 'OrquestacionConfiguration' | Archivo: OrquestacionConfiguration.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.dto': 'OrchestrationConfiguration' | Archivo: OrchestrationConfiguration.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.util': 'EsbGenericoUtils' | Archivo: EsbGenericoUtils.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.util': 'EsqlExpressionSupport' | Archivo: EsqlExpressionSupport.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.exception': 'ErrorCatalogConstants' | Archivo: ErrorCatalogConstants.java
@@ -97,17 +96,17 @@ wsdl2java - Apache CXF 4.1.1
 > Task :postProcessGeneratedWsdl
 Γ£à Post-procesamiento unificado completado
 
+> Task :compileJava
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\OrchestrationConfigurationService.java:33: error: cannot find symbol
+                + safe(bodyIn == null ? null : bodyIn.productType());
+                                                     ^
+  symbol:   method productType()
+  location: variable bodyIn of type OrchestratorBodyInDto
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+
 > Task :compileJava FAILED
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:13: error: <identifier> expected
-public class 0OrquestacionStrategy implements OrquestacionStrategy {
-            ^
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:18: error: illegal start of type
-    public 0OrquestacionStrategy(
-           ^
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:18: error: invalid method declaration; return type required
-    public 0OrquestacionStrategy(
-            ^
-3 errors
 
 [Incubating] Problems report is available at: file:///C:/Users/darochar/Documents/pruebas/tnd-msa-sp-orqclientes0052/build/reports/problems/problems-report.html
 
@@ -116,16 +115,14 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compileJava'.
 > Compilation failed; see the compiler output below.
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:18: error: illegal start of type
-      public 0OrquestacionStrategy(
-             ^
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:18: error: invalid method declaration; return type required
-      public 0OrquestacionStrategy(
-              ^
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:13: error: <identifier> expected
-  public class 0OrquestacionStrategy implements OrquestacionStrategy {
-              ^
-  3 errors
+  Note: Recompile with -Xlint:unchecked for details.
+  Note: Some input files use unchecked or unsafe operations.
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\OrchestrationConfigurationService.java:33: error: cannot find symbol
+                  + safe(bodyIn == null ? null : bodyIn.productType());
+                                                       ^
+    symbol:   method productType()
+    location: variable bodyIn of type OrchestratorBodyInDto
+  1 error
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
@@ -137,5 +134,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 4s
+BUILD FAILED in 7s
 5 actionable tasks: 5 executed
