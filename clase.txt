@@ -1,0 +1,65 @@
+package com.pichincha.sp.application.service;
+
+import com.pichincha.sp.application.service.context.OrchestrationContext;
+import com.pichincha.sp.application.builders.OrchestrationRequestBodyFactory;
+import com.pichincha.sp.application.builders.OrchestrationResponseAssembler;
+import com.pichincha.sp.domain.dto.OrchestratorRequestDto;
+import com.pichincha.sp.domain.dto.OrchestrationConfiguration;
+import com.pichincha.sp.domain.exception.OrquestacionBusinessException;
+import com.pichincha.sp.domain.util.EsqlExpressionSupport;
+import com.pichincha.sp.application.port.config.OrchestrationConfigurationPort;
+
+
+import org.springframework.stereotype.Service;
+import java.util.List;
+import reactor.core.publisher.Mono;
+import reactor.core.publisher.Flux;
+
+@Service
+public class OrchestrateTxService {
+
+
+    private final ProductOrchestrationService productOrchestrationService;
+    private final OrchestrationRequestBodyFactory requestBodyFactory;
+    private final OrchestrationResponseAssembler responseAssembler;
+    private final OrchestrationConfigurationPort configurationPort;
+
+    public OrchestrateTxService(
+            ProductOrchestrationService productOrchestrationService,
+            OrchestrationRequestBodyFactory requestBodyFactory,
+            OrchestrationResponseAssembler responseAssembler,
+            OrchestrationConfigurationPort configurationPort) {
+
+        this.productOrchestrationService = productOrchestrationService;
+        this.requestBodyFactory = requestBodyFactory;
+        this.responseAssembler = responseAssembler;
+        this.configurationPort = configurationPort;
+    }
+
+    public Mono<OrchestrationContext> execute(OrchestratorRequestDto request, String estado) {
+        OrchestrationContext context = new OrchestrationContext(request);
+        if (estado == null) {
+            return Mono.just(context);
+        }
+        return Mono.just(context)
+                .flatMap(current -> switch (estado.toLowerCase()) {
+                    case "iniciar" -> executeStart(request, current);
+                    default -> Mono.just(current);
+                })
+                .flatMap(productOrchestrationService::finalizar);
+    }
+
+    private List<?> flowItems(OrchestratorRequestDto request) {
+        if (request == null || request.bodyIn() == null || request.bodyIn().flow() == null) {
+            return List.of();
+        }
+        return request.bodyIn().flow().fields();
+    }
+
+    private Mono<OrchestrationContext> executeStart(
+            OrchestratorRequestDto request,
+            OrchestrationContext context) {
+        Mono<OrchestrationContext> chain = Mono.just(context);
+        return chain;
+    }
+}
