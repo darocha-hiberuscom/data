@@ -13,14 +13,14 @@ C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
 ---------------------------------------------------------------
 ≡ƒÅù∩╕Å  ARQUITECTURA:
    Estilo detectado: HEXAGONAL
-   Archivos analizados: 76
-   Paquetes encontrados: 19
+   Archivos analizados: 92
+   Paquetes encontrados: 25
    Java 21: Γ£à
 
    ≡ƒôè Desglose de puntos:
       ΓÇó Arquitectura: 5 / 5
-      ΓÇó Paquetes: 2 / 4
-      ΓÇó Nomenclatura: 5 / 7
+      ΓÇó Paquetes: 3 / 4
+      ΓÇó Nomenclatura: 4 / 7
       ΓÇó Archivos requeridos: 2 / 2
 
    Puntaje final: 8.2 / 10
@@ -28,12 +28,20 @@ C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
 
    Γ£à Todos los archivos requeridos est├ín presentes
 
-   ≡ƒôï Observaciones generales (19):
+   ≡ƒôï Observaciones generales (27):
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.builders': 'OrquestacionRequestBodyFactory' | Archivo: OrquestacionRequestBodyFactory.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.builders': 'OrquestacionResponseAssembler' | Archivo: OrquestacionResponseAssembler.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.port.config': 'OrquestacionConfigurationPort' | Archivo: OrquestacionConfigurationPort.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.port.config': 'OrquestadorSoapErrorPort' | Archivo: OrquestadorSoapErrorPort.java
+      ΓÇó [Naming] Clase debe ser CamelCase: '0OrquestacionStrategy' | Archivo: 0OrquestacionStrategy.java
+      ΓÇó [Naming] Interface debe terminar en sufijo apropiado (Service, ServicePort, Repository, RepositoryPort, Mapper, Handler, Provider, Factory, Port, PortInput, PortOutput): 'OrquestacionStrategy' | Archivo: OrquestacionStrategy.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.service.strategy': 'OrquestacionStrategyResolver' | Archivo: OrquestacionStrategyResolver.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.constants': 'QueryTarjetasDebitCustomersMsFlowConstants' | Archivo: QueryTarjetasDebitCustomersMsFlowConstants.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.dto': 'OrquestacionConfiguration' | Archivo: OrquestacionConfiguration.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.util': 'EsbGenericoUtils' | Archivo: EsbGenericoUtils.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.util': 'EsqlExpressionSupport' | Archivo: EsqlExpressionSupport.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.exception': 'ErrorCatalogConstants' | Archivo: ErrorCatalogConstants.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.config': 'OrquestadorErrorFactory' | Archivo: OrquestadorErrorFactory.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter': 'ConsultarsServicioTarjetasAdapterOutput' | Archivo: ConsultarsServicioTarjetasAdapterOutput.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.properties.webclient': 'WebClientProperties' | Archivo: WebClientProperties.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'BodyInWsClientes0141' | Archivo: BodyInWsClientes0141.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'BodyInWsClientes0141CriteriosBusqueda' | Archivo: BodyInWsClientes0141CriteriosBusqueda.java
@@ -89,223 +97,17 @@ wsdl2java - Apache CXF 4.1.1
 > Task :postProcessGeneratedWsdl
 Γ£à Post-procesamiento unificado completado
 
-> Task :compileJava
-Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
-Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
-Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.output.adapter.request.HeaderIn toHeaderIn(com.pichincha.sp.domain.dto.HeaderInDto headerInDto).
-Note: -- MapStruct: mapping property: headerInDto.device() to: setDispositivo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.device().
-Note: -- MapStruct: mapping property: headerInDto.company() to: setEmpresa(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.company().
-Note: -- MapStruct: mapping property: headerInDto.channel() to: setCanal(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.channel().
-Note: -- MapStruct: mapping property: headerInDto.medium() to: setMedio(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.medium().
-Note: -- MapStruct: mapping property: headerInDto.application() to: setAplicacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.application().
-Note: -- MapStruct: mapping property: headerInDto.agency() to: setAgencia(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.agency().
-Note: -- MapStruct: mapping property: headerInDto.transactionType() to: setTipoTransaccion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.transactionType().
-Note: -- MapStruct: mapping property: headerInDto.geolocation() to: setGeolocalizacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.geolocation().
-Note: -- MapStruct: mapping property: headerInDto.user() to: setUsuario(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.user().
-Note: -- MapStruct: mapping property: headerInDto.uniqueness() to: setUnicidad(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.uniqueness().
-Note: -- MapStruct: mapping property: headerInDto.dateTime() to: setFechaHora(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.dateTime().
-Note: -- MapStruct: mapping property: headerInDto.language() to: setIdioma(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.language().
-Note: -- MapStruct: mapping property: headerInDto.session() to: setSesion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.session().
-Note: -- MapStruct: mapping property: headerInDto.customerId() to: setIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.customerId().
-Note: -- MapStruct: mapping property: headerInDto.customerIdType() to: setTipoIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.customerIdType().
-Note: -- MapStruct: mapping property: headerInDto.guid() to: setGuid(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.guid().
-Note: -- MapStruct: mapping property: headerInDto.filler() to: setFiller(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.filler().
-Note: -- MapStruct: mapping property: headerInDto.ip() to: setIp(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerInDto.ip().
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141 toBodyIn(com.pichincha.sp.domain.dto.WsClientes0141RequestBodyInDto bodyInDto).
-Note: -- MapStruct: mapping property: bodyInDto.ordenante() to: setOrdenante(com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante).
-Note: -- MapStruct: mapping property: wsClientes0141OrdenanteDto.identificacion() to: setIdentificacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: wsClientes0141OrdenanteDto.identificacion().
-Note: -- MapStruct: mapping property: wsClientes0141OrdenanteDto.tipoIdentificacion() to: setTipoIdentificacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: wsClientes0141OrdenanteDto.tipoIdentificacion().
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:40: warning: Unmapped target property: "cif". Mapping from property "com.pichincha.sp.domain.dto.WsClientes0141OrdenanteDto ordenante" to "com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante ordenante".
-    BodyInWsClientes0141 toBodyIn(WsClientes0141RequestBodyInDto bodyInDto);
-                         ^
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante #wsClientes0141OrdenanteDtoToBodyInWsClientes0141Ordenante(bodyInDto.ordenante()).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante #wsClientes0141OrdenanteDtoToBodyInWsClientes0141Ordenante(bodyInDto.ordenante()).
-Note: -- MapStruct: mapping property: bodyInDto.criteriosBusqueda() to: setCriteriosBusqueda(com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda).
-Note: -- MapStruct: mapping property: wsClientes0141CriteriosBusquedaDto.operacion() to: setOperacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: wsClientes0141CriteriosBusquedaDto.operacion().
-Note: -- MapStruct: mapping property: wsClientes0141CriteriosBusquedaDto.tipoTarjeta() to: setTipoTarjeta(java.lang.String).
-Note: -- MapStruct: selecting property mapping: wsClientes0141CriteriosBusquedaDto.tipoTarjeta().
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda #wsClientes0141CriteriosBusquedaDtoToBodyInWsClientes0141CriteriosBusqueda(bodyInDto.criteriosBusqueda()).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda #wsClientes0141CriteriosBusquedaDtoToBodyInWsClientes0141CriteriosBusqueda(bodyInDto.criteriosBusqueda()).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.WsClientes0141ResponseDto toDomainResponse(com.pichincha.sp.infrastructure.output.adapter.response.ConsultarTarjetasDebitoCliente01Response operation).
-Note: -- MapStruct: mapping property: operation.getHeaderOut() to: headerOut.
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.HeaderOutDto #toHeaderOutDto(operation.getHeaderOut()).
-Note: -- MapStruct: mapping property: operation.getBodyOut() to: bodyOut.
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.WsClientes0141ResponseBodyOutDto #toBodyOutDto(operation.getBodyOut()).
-Note: -- MapStruct: mapping property: operation.getError() to: error.
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.ErrorDto #toErrorDto(operation.getError()).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.HeaderOutDto toHeaderOutDto(com.pichincha.sp.infrastructure.output.adapter.response.HeaderOut headerOut).
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:63: error: No property named "documento" exists in source parameter(s). Did you mean "medio"?
-    HeaderOutDto toHeaderOutDto(HeaderOut headerOut);
-                 ^
-Note: -- MapStruct: mapping property: headerOut.getDispositivo() to: device.
-Note: -- MapStruct: selecting property mapping: headerOut.getDispositivo().
-Note: -- MapStruct: mapping property: headerOut.getEmpresa() to: company.
-Note: -- MapStruct: selecting property mapping: headerOut.getEmpresa().
-Note: -- MapStruct: mapping property: headerOut.getCanal() to: channel.
-Note: -- MapStruct: selecting property mapping: headerOut.getCanal().
-Note: -- MapStruct: mapping property: headerOut.getMedio() to: medium.
-Note: -- MapStruct: selecting property mapping: headerOut.getMedio().
-Note: -- MapStruct: mapping property: headerOut.getAplicacion() to: application.
-Note: -- MapStruct: selecting property mapping: headerOut.getAplicacion().
-Note: -- MapStruct: mapping property: headerOut.getAgencia() to: agency.
-Note: -- MapStruct: selecting property mapping: headerOut.getAgencia().
-Note: -- MapStruct: mapping property: headerOut.getTipoTransaccion() to: transactionType.
-Note: -- MapStruct: selecting property mapping: headerOut.getTipoTransaccion().
-Note: -- MapStruct: mapping property: headerOut.getGeolocalizacion() to: geolocation.
-Note: -- MapStruct: selecting property mapping: headerOut.getGeolocalizacion().
-Note: -- MapStruct: mapping property: headerOut.getUsuario() to: user.
-Note: -- MapStruct: selecting property mapping: headerOut.getUsuario().
-Note: -- MapStruct: mapping property: headerOut.getUnicidad() to: uniqueness.
-Note: -- MapStruct: selecting property mapping: headerOut.getUnicidad().
-Note: -- MapStruct: mapping property: headerOut.getFechaHora() to: dateTime.
-Note: -- MapStruct: selecting property mapping: headerOut.getFechaHora().
-Note: -- MapStruct: mapping property: headerOut.getIdioma() to: language.
-Note: -- MapStruct: selecting property mapping: headerOut.getIdioma().
-Note: -- MapStruct: mapping property: headerOut.getSesion() to: session.
-Note: -- MapStruct: selecting property mapping: headerOut.getSesion().
-Note: -- MapStruct: mapping property: headerOut.getIdCliente() to: customerId.
-Note: -- MapStruct: selecting property mapping: headerOut.getIdCliente().
-Note: -- MapStruct: mapping property: headerOut.getTipoIdCliente() to: customerIdType.
-Note: -- MapStruct: selecting property mapping: headerOut.getTipoIdCliente().
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.DocumentDto toDocumentDto(com.pichincha.sp.infrastructure.output.adapter.response.DocumentoOut documentoOut).
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:65: warning: Unmapped target properties: "dateContable, numberDocument, journals".
-    DocumentDto toDocumentDto(DocumentoOut documentoOut);
-                ^
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.WsClientes0141ResponseBodyOutDto toBodyOutDto(com.pichincha.sp.infrastructure.output.adapter.response.BodyOutWsClientes0141 bodyOut).
-Note: -- MapStruct: mapping property: bodyOut.getTarjetas() to: tarjetas.
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141Tarjetas.getTarjeta() to: tarjeta.
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoTarjeta() to: codigoTarjeta.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoTarjeta().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoProducto() to: codigoProducto.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoProducto().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoEmpresa() to: codigoEmpresa.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoEmpresa().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getEstadoTransaccion() to: estadoTransaccion.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getEstadoTransaccion().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoPersona() to: codigoPersona.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoPersona().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoClienteAdicional() to: codigoClienteAdicional.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoClienteAdicional().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoSecuencia() to: codigoSecuencia.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoSecuencia().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoTarjetaCifrada() to: codigoTarjetaCifrada.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoTarjetaCifrada().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoOficinaSolicita() to: codigoOficinaSolicita.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoOficinaSolicita().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoOficinaEntrega() to: codigoOficinaEntrega.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoOficinaEntrega().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNombreImpreso() to: nombreImpreso.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNombreImpreso().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getTipoTarjeta() to: tipoTarjeta.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getTipoTarjeta().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getPrioridad() to: prioridad.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getPrioridad().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getFechaExpiracion() to: fechaExpiracion.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getFechaExpiracion().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getFechaEntrega() to: fechaEntrega.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getFechaEntrega().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getDestino() to: destino.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getDestino().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getDireccionEntrega() to: direccionEntrega.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getDireccionEntrega().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getTelefonoEntrega() to: telefonoEntrega.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getTelefonoEntrega().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getMotivoSolicitud() to: motivoSolicitud.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getMotivoSolicitud().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getObservacion() to: observacion.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getObservacion().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoEstadoTarjeta() to: codigoEstadoTarjeta.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoEstadoTarjeta().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getUsuarioCreacion() to: usuarioCreacion.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getUsuarioCreacion().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getFechaCreacion() to: fechaCreacion.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getFechaCreacion().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getUsuarioModificacion() to: usuarioModificacion.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getUsuarioModificacion().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getFechaModificacion() to: fechaModificacion.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getFechaModificacion().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getGestionCallCenter() to: gestionCallCenter.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getGestionCallCenter().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoPromocion() to: codigoPromocion.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoPromocion().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNombreProducto() to: nombreProducto.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNombreProducto().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNombreEstadoTarjeta() to: nombreEstadoTarjeta.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNombreEstadoTarjeta().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getEstadoTarjeta() to: estadoTarjeta.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getEstadoTarjeta().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getEstado() to: estado.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getEstado().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getPrioridadTarjeta() to: prioridadTarjeta.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getPrioridadTarjeta().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getVirtual() to: virtual.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getVirtual().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNumeroMaximoCuentasTrx() to: numeroMaximoCuentasTrx.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNumeroMaximoCuentasTrx().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNumeroMaximoCuentasCobro() to: numeroMaximoCuentasCobro.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNumeroMaximoCuentasCobro().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNumeroTarjetasPrincipal() to: numeroTarjetasPrincipal.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNumeroTarjetasPrincipal().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNumeroTarjetasAdicional() to: numeroTarjetasAdicional.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNumeroTarjetasAdicional().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoServicio() to: codigoServicio.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoServicio().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getOficinaEvento() to: oficinaEvento.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getOficinaEvento().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getUltimoEvento() to: ultimoEvento.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getUltimoEvento().
-Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCanal() to: canal.
-Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCanal().
-Note: -- MapStruct: creating element mapping: com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasTarjetaDto #bodyOutWsClientes0141TarjetasTarjetaToWsClientes0141OutTarjetasTarjetaDto(bodyOutWsClientes0141TarjetasTarjeta).
-Note: -- MapStruct: selecting element mapping: com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasTarjetaDto #bodyOutWsClientes0141TarjetasTarjetaToWsClientes0141OutTarjetasTarjetaDto(bodyOutWsClientes0141TarjetasTarjeta).
-Note: -- MapStruct: creating property mapping: java.util.List<com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasTarjetaDto> #bodyOutWsClientes0141TarjetasTarjetaListToWsClientes0141OutTarjetasTarjetaDtoList(bodyOutWsClientes0141Tarjetas.getTarjeta()).
-Note: -- MapStruct: selecting property mapping: java.util.List<com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasTarjetaDto> #bodyOutWsClientes0141TarjetasTarjetaListToWsClientes0141OutTarjetasTarjetaDtoList(bodyOutWsClientes0141Tarjetas.getTarjeta()).
-Note: -- MapStruct: creating element mapping: com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasDto #bodyOutWsClientes0141TarjetasToWsClientes0141OutTarjetasDto(bodyOutWsClientes0141Tarjetas).
-Note: -- MapStruct: selecting element mapping: com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasDto #bodyOutWsClientes0141TarjetasToWsClientes0141OutTarjetasDto(bodyOutWsClientes0141Tarjetas).
-Note: -- MapStruct: creating property mapping: java.util.List<com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasDto> #bodyOutWsClientes0141TarjetasListToWsClientes0141OutTarjetasDtoList(bodyOut.getTarjetas()).
-Note: -- MapStruct: selecting property mapping: java.util.List<com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasDto> #bodyOutWsClientes0141TarjetasListToWsClientes0141OutTarjetasDtoList(bodyOut.getTarjetas()).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.ErrorDto toErrorDto(com.pichincha.sp.infrastructure.output.adapter.response.ErrorOut errorOut).
-Note: -- MapStruct: mapping property: errorOut.getCode() to: code.
-Note: -- MapStruct: selecting property mapping: errorOut.getCode().
-Note: -- MapStruct: mapping property: errorOut.getMessage() to: message.
-Note: -- MapStruct: selecting property mapping: errorOut.getMessage().
-Note: -- MapStruct: mapping property: errorOut.getBusinessMessage() to: businessMessage.
-Note: -- MapStruct: selecting property mapping: errorOut.getBusinessMessage().
-Note: -- MapStruct: mapping property: errorOut.getType() to: type.
-Note: -- MapStruct: selecting property mapping: errorOut.getType().
-Note: -- MapStruct: mapping property: errorOut.getResource() to: resource.
-Note: -- MapStruct: selecting property mapping: errorOut.getResource().
-Note: -- MapStruct: mapping property: errorOut.getComponent() to: component.
-Note: -- MapStruct: selecting property mapping: errorOut.getComponent().
-Note: -- MapStruct: mapping property: errorOut.getBackend() to: backend.
-Note: -- MapStruct: selecting property mapping: errorOut.getBackend().
-1 error
-2 warnings
-
 > Task :compileJava FAILED
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:13: error: <identifier> expected
+public class 0OrquestacionStrategy implements OrquestacionStrategy {
+            ^
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:18: error: illegal start of type
+    public 0OrquestacionStrategy(
+           ^
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:18: error: invalid method declaration; return type required
+    public 0OrquestacionStrategy(
+            ^
+3 errors
 
 [Incubating] Problems report is available at: file:///C:/Users/darochar/Documents/pruebas/tnd-msa-sp-orqclientes0052/build/reports/problems/problems-report.html
 
@@ -314,220 +116,16 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compileJava'.
 > Compilation failed; see the compiler output below.
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:40: warning: Unmapped target property: "cif". Mapping from property "com.pichincha.sp.domain.dto.WsClientes0141OrdenanteDto ordenante" to "com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante ordenante".
-      BodyInWsClientes0141 toBodyIn(WsClientes0141RequestBodyInDto bodyInDto);
-                           ^
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:65: warning: Unmapped target properties: "dateContable, numberDocument, journals".
-      DocumentDto toDocumentDto(DocumentoOut documentoOut);
-                  ^
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\output\adapter\mapper\WsClientes0141SoapMapper.java:63: error: No property named "documento" exists in source parameter(s). Did you mean "medio"?
-      HeaderOutDto toHeaderOutDto(HeaderOut headerOut);
-                   ^
-  Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
-  Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
-  Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
-  Note:  MapStruct: processing: com.pichincha.sp.infrastructure.output.adapter.mapper.WsClientes0141SoapMapper.
-  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.output.adapter.request.HeaderIn toHeaderIn(com.pichincha.sp.domain.dto.HeaderInDto headerInDto).
-  Note: -- MapStruct: mapping property: headerInDto.device() to: setDispositivo(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.device().
-  Note: -- MapStruct: mapping property: headerInDto.company() to: setEmpresa(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.company().
-  Note: -- MapStruct: mapping property: headerInDto.channel() to: setCanal(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.channel().
-  Note: -- MapStruct: mapping property: headerInDto.medium() to: setMedio(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.medium().
-  Note: -- MapStruct: mapping property: headerInDto.application() to: setAplicacion(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.application().
-  Note: -- MapStruct: mapping property: headerInDto.agency() to: setAgencia(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.agency().
-  Note: -- MapStruct: mapping property: headerInDto.transactionType() to: setTipoTransaccion(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.transactionType().
-  Note: -- MapStruct: mapping property: headerInDto.geolocation() to: setGeolocalizacion(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.geolocation().
-  Note: -- MapStruct: mapping property: headerInDto.user() to: setUsuario(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.user().
-  Note: -- MapStruct: mapping property: headerInDto.uniqueness() to: setUnicidad(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.uniqueness().
-  Note: -- MapStruct: mapping property: headerInDto.dateTime() to: setFechaHora(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.dateTime().
-  Note: -- MapStruct: mapping property: headerInDto.language() to: setIdioma(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.language().
-  Note: -- MapStruct: mapping property: headerInDto.session() to: setSesion(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.session().
-  Note: -- MapStruct: mapping property: headerInDto.customerId() to: setIdCliente(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.customerId().
-  Note: -- MapStruct: mapping property: headerInDto.customerIdType() to: setTipoIdCliente(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.customerIdType().
-  Note: -- MapStruct: mapping property: headerInDto.guid() to: setGuid(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.guid().
-  Note: -- MapStruct: mapping property: headerInDto.filler() to: setFiller(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.filler().
-  Note: -- MapStruct: mapping property: headerInDto.ip() to: setIp(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: headerInDto.ip().
-  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141 toBodyIn(com.pichincha.sp.domain.dto.WsClientes0141RequestBodyInDto bodyInDto).
-  Note: -- MapStruct: mapping property: bodyInDto.ordenante() to: setOrdenante(com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante).
-  Note: -- MapStruct: mapping property: wsClientes0141OrdenanteDto.identificacion() to: setIdentificacion(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: wsClientes0141OrdenanteDto.identificacion().
-  Note: -- MapStruct: mapping property: wsClientes0141OrdenanteDto.tipoIdentificacion() to: setTipoIdentificacion(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: wsClientes0141OrdenanteDto.tipoIdentificacion().
-  Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante #wsClientes0141OrdenanteDtoToBodyInWsClientes0141Ordenante(bodyInDto.ordenante()).
-  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141Ordenante #wsClientes0141OrdenanteDtoToBodyInWsClientes0141Ordenante(bodyInDto.ordenante()).
-  Note: -- MapStruct: mapping property: bodyInDto.criteriosBusqueda() to: setCriteriosBusqueda(com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda).
-  Note: -- MapStruct: mapping property: wsClientes0141CriteriosBusquedaDto.operacion() to: setOperacion(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: wsClientes0141CriteriosBusquedaDto.operacion().
-  Note: -- MapStruct: mapping property: wsClientes0141CriteriosBusquedaDto.tipoTarjeta() to: setTipoTarjeta(java.lang.String).
-  Note: -- MapStruct: selecting property mapping: wsClientes0141CriteriosBusquedaDto.tipoTarjeta().
-  Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda #wsClientes0141CriteriosBusquedaDtoToBodyInWsClientes0141CriteriosBusqueda(bodyInDto.criteriosBusqueda()).
-  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.output.adapter.request.BodyInWsClientes0141CriteriosBusqueda #wsClientes0141CriteriosBusquedaDtoToBodyInWsClientes0141CriteriosBusqueda(bodyInDto.criteriosBusqueda()).
-  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.WsClientes0141ResponseDto toDomainResponse(com.pichincha.sp.infrastructure.output.adapter.response.ConsultarTarjetasDebitoCliente01Response operation).
-  Note: -- MapStruct: mapping property: operation.getHeaderOut() to: headerOut.
-  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.HeaderOutDto #toHeaderOutDto(operation.getHeaderOut()).
-  Note: -- MapStruct: mapping property: operation.getBodyOut() to: bodyOut.
-  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.WsClientes0141ResponseBodyOutDto #toBodyOutDto(operation.getBodyOut()).
-  Note: -- MapStruct: mapping property: operation.getError() to: error.
-  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.ErrorDto #toErrorDto(operation.getError()).
-  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.HeaderOutDto toHeaderOutDto(com.pichincha.sp.infrastructure.output.adapter.response.HeaderOut headerOut).
-  Note: -- MapStruct: mapping property: headerOut.getDispositivo() to: device.
-  Note: -- MapStruct: selecting property mapping: headerOut.getDispositivo().
-  Note: -- MapStruct: mapping property: headerOut.getEmpresa() to: company.
-  Note: -- MapStruct: selecting property mapping: headerOut.getEmpresa().
-  Note: -- MapStruct: mapping property: headerOut.getCanal() to: channel.
-  Note: -- MapStruct: selecting property mapping: headerOut.getCanal().
-  Note: -- MapStruct: mapping property: headerOut.getMedio() to: medium.
-  Note: -- MapStruct: selecting property mapping: headerOut.getMedio().
-  Note: -- MapStruct: mapping property: headerOut.getAplicacion() to: application.
-  Note: -- MapStruct: selecting property mapping: headerOut.getAplicacion().
-  Note: -- MapStruct: mapping property: headerOut.getAgencia() to: agency.
-  Note: -- MapStruct: selecting property mapping: headerOut.getAgencia().
-  Note: -- MapStruct: mapping property: headerOut.getTipoTransaccion() to: transactionType.
-  Note: -- MapStruct: selecting property mapping: headerOut.getTipoTransaccion().
-  Note: -- MapStruct: mapping property: headerOut.getGeolocalizacion() to: geolocation.
-  Note: -- MapStruct: selecting property mapping: headerOut.getGeolocalizacion().
-  Note: -- MapStruct: mapping property: headerOut.getUsuario() to: user.
-  Note: -- MapStruct: selecting property mapping: headerOut.getUsuario().
-  Note: -- MapStruct: mapping property: headerOut.getUnicidad() to: uniqueness.
-  Note: -- MapStruct: selecting property mapping: headerOut.getUnicidad().
-  Note: -- MapStruct: mapping property: headerOut.getFechaHora() to: dateTime.
-  Note: -- MapStruct: selecting property mapping: headerOut.getFechaHora().
-  Note: -- MapStruct: mapping property: headerOut.getIdioma() to: language.
-  Note: -- MapStruct: selecting property mapping: headerOut.getIdioma().
-  Note: -- MapStruct: mapping property: headerOut.getSesion() to: session.
-  Note: -- MapStruct: selecting property mapping: headerOut.getSesion().
-  Note: -- MapStruct: mapping property: headerOut.getIdCliente() to: customerId.
-  Note: -- MapStruct: selecting property mapping: headerOut.getIdCliente().
-  Note: -- MapStruct: mapping property: headerOut.getTipoIdCliente() to: customerIdType.
-  Note: -- MapStruct: selecting property mapping: headerOut.getTipoIdCliente().
-  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.DocumentDto toDocumentDto(com.pichincha.sp.infrastructure.output.adapter.response.DocumentoOut documentoOut).
-  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.WsClientes0141ResponseBodyOutDto toBodyOutDto(com.pichincha.sp.infrastructure.output.adapter.response.BodyOutWsClientes0141 bodyOut).
-  Note: -- MapStruct: mapping property: bodyOut.getTarjetas() to: tarjetas.
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141Tarjetas.getTarjeta() to: tarjeta.
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoTarjeta() to: codigoTarjeta.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoTarjeta().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoProducto() to: codigoProducto.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoProducto().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoEmpresa() to: codigoEmpresa.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoEmpresa().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getEstadoTransaccion() to: estadoTransaccion.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getEstadoTransaccion().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoPersona() to: codigoPersona.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoPersona().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoClienteAdicional() to: codigoClienteAdicional.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoClienteAdicional().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoSecuencia() to: codigoSecuencia.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoSecuencia().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoTarjetaCifrada() to: codigoTarjetaCifrada.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoTarjetaCifrada().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoOficinaSolicita() to: codigoOficinaSolicita.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoOficinaSolicita().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoOficinaEntrega() to: codigoOficinaEntrega.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoOficinaEntrega().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNombreImpreso() to: nombreImpreso.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNombreImpreso().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getTipoTarjeta() to: tipoTarjeta.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getTipoTarjeta().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getPrioridad() to: prioridad.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getPrioridad().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getFechaExpiracion() to: fechaExpiracion.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getFechaExpiracion().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getFechaEntrega() to: fechaEntrega.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getFechaEntrega().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getDestino() to: destino.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getDestino().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getDireccionEntrega() to: direccionEntrega.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getDireccionEntrega().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getTelefonoEntrega() to: telefonoEntrega.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getTelefonoEntrega().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getMotivoSolicitud() to: motivoSolicitud.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getMotivoSolicitud().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getObservacion() to: observacion.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getObservacion().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoEstadoTarjeta() to: codigoEstadoTarjeta.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoEstadoTarjeta().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getUsuarioCreacion() to: usuarioCreacion.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getUsuarioCreacion().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getFechaCreacion() to: fechaCreacion.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getFechaCreacion().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getUsuarioModificacion() to: usuarioModificacion.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getUsuarioModificacion().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getFechaModificacion() to: fechaModificacion.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getFechaModificacion().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getGestionCallCenter() to: gestionCallCenter.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getGestionCallCenter().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoPromocion() to: codigoPromocion.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoPromocion().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNombreProducto() to: nombreProducto.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNombreProducto().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNombreEstadoTarjeta() to: nombreEstadoTarjeta.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNombreEstadoTarjeta().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getEstadoTarjeta() to: estadoTarjeta.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getEstadoTarjeta().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getEstado() to: estado.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getEstado().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getPrioridadTarjeta() to: prioridadTarjeta.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getPrioridadTarjeta().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getVirtual() to: virtual.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getVirtual().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNumeroMaximoCuentasTrx() to: numeroMaximoCuentasTrx.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNumeroMaximoCuentasTrx().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNumeroMaximoCuentasCobro() to: numeroMaximoCuentasCobro.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNumeroMaximoCuentasCobro().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNumeroTarjetasPrincipal() to: numeroTarjetasPrincipal.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNumeroTarjetasPrincipal().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getNumeroTarjetasAdicional() to: numeroTarjetasAdicional.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getNumeroTarjetasAdicional().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCodigoServicio() to: codigoServicio.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCodigoServicio().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getOficinaEvento() to: oficinaEvento.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getOficinaEvento().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getUltimoEvento() to: ultimoEvento.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getUltimoEvento().
-  Note: -- MapStruct: mapping property: bodyOutWsClientes0141TarjetasTarjeta.getCanal() to: canal.
-  Note: -- MapStruct: selecting property mapping: bodyOutWsClientes0141TarjetasTarjeta.getCanal().
-  Note: -- MapStruct: creating element mapping: com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasTarjetaDto #bodyOutWsClientes0141TarjetasTarjetaToWsClientes0141OutTarjetasTarjetaDto(bodyOutWsClientes0141TarjetasTarjeta).
-  Note: -- MapStruct: selecting element mapping: com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasTarjetaDto #bodyOutWsClientes0141TarjetasTarjetaToWsClientes0141OutTarjetasTarjetaDto(bodyOutWsClientes0141TarjetasTarjeta).
-  Note: -- MapStruct: creating property mapping: java.util.List<com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasTarjetaDto> #bodyOutWsClientes0141TarjetasTarjetaListToWsClientes0141OutTarjetasTarjetaDtoList(bodyOutWsClientes0141Tarjetas.getTarjeta()).
-  Note: -- MapStruct: selecting property mapping: java.util.List<com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasTarjetaDto> #bodyOutWsClientes0141TarjetasTarjetaListToWsClientes0141OutTarjetasTarjetaDtoList(bodyOutWsClientes0141Tarjetas.getTarjeta()).
-  Note: -- MapStruct: creating element mapping: com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasDto #bodyOutWsClientes0141TarjetasToWsClientes0141OutTarjetasDto(bodyOutWsClientes0141Tarjetas).
-  Note: -- MapStruct: selecting element mapping: com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasDto #bodyOutWsClientes0141TarjetasToWsClientes0141OutTarjetasDto(bodyOutWsClientes0141Tarjetas).
-  Note: -- MapStruct: creating property mapping: java.util.List<com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasDto> #bodyOutWsClientes0141TarjetasListToWsClientes0141OutTarjetasDtoList(bodyOut.getTarjetas()).
-  Note: -- MapStruct: selecting property mapping: java.util.List<com.pichincha.sp.domain.dto.WsClientes0141OutTarjetasDto> #bodyOutWsClientes0141TarjetasListToWsClientes0141OutTarjetasDtoList(bodyOut.getTarjetas()).
-  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.ErrorDto toErrorDto(com.pichincha.sp.infrastructure.output.adapter.response.ErrorOut errorOut).
-  Note: -- MapStruct: mapping property: errorOut.getCode() to: code.
-  Note: -- MapStruct: selecting property mapping: errorOut.getCode().
-  Note: -- MapStruct: mapping property: errorOut.getMessage() to: message.
-  Note: -- MapStruct: selecting property mapping: errorOut.getMessage().
-  Note: -- MapStruct: mapping property: errorOut.getBusinessMessage() to: businessMessage.
-  Note: -- MapStruct: selecting property mapping: errorOut.getBusinessMessage().
-  Note: -- MapStruct: mapping property: errorOut.getType() to: type.
-  Note: -- MapStruct: selecting property mapping: errorOut.getType().
-  Note: -- MapStruct: mapping property: errorOut.getResource() to: resource.
-  Note: -- MapStruct: selecting property mapping: errorOut.getResource().
-  Note: -- MapStruct: mapping property: errorOut.getComponent() to: component.
-  Note: -- MapStruct: selecting property mapping: errorOut.getComponent().
-  Note: -- MapStruct: mapping property: errorOut.getBackend() to: backend.
-  Note: -- MapStruct: selecting property mapping: errorOut.getBackend().
-  1 error
-  2 warnings
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:18: error: illegal start of type
+      public 0OrquestacionStrategy(
+             ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:18: error: invalid method declaration; return type required
+      public 0OrquestacionStrategy(
+              ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\strategy\0OrquestacionStrategy.java:13: error: <identifier> expected
+  public class 0OrquestacionStrategy implements OrquestacionStrategy {
+              ^
+  3 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
@@ -539,5 +137,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 7s
+BUILD FAILED in 4s
 5 actionable tasks: 5 executed
