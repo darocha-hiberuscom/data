@@ -1,65 +1,368 @@
-package com.pichincha.sp.application.service;
 
-import com.pichincha.sp.application.service.context.OrchestrationContext;
-import com.pichincha.sp.application.builders.OrchestrationRequestBodyFactory;
-import com.pichincha.sp.application.builders.OrchestrationResponseAssembler;
-import com.pichincha.sp.domain.dto.OrchestratorRequestDto;
-import com.pichincha.sp.domain.dto.OrchestrationConfiguration;
-import com.pichincha.sp.domain.exception.OrquestacionBusinessException;
-import com.pichincha.sp.domain.util.EsqlExpressionSupport;
-import com.pichincha.sp.application.port.config.OrchestrationConfigurationPort;
+╔══════════════════════════════════════════╗
+║  Etapa 7: Infraestructura Input          ║
+╚══════════════════════════════════════════╝
 
+Paquete destino: com.pichincha.sp.infrastructure.input.adapter.rest.dto.request
+Fault: SoapFaultDto + SoapFaultBodyDto + SoapFaultEnvelopeDto
+Request: SoapBodyRequest + SoapEnvelopeRequest
+Response: SoapBodyResponse + SoapEnvelopeResponse
+Mappers: SoapToDomainMapper + DomainToSoapMapper
+Factory: {Service}OperationRouter + SoapHeaderFactory + SoapResponseFactory
+Validator: {Service}RequestValidator
+Controller: {Service}Controller (rest.impl)
+Constants: SoapControllerConstants
 
-import org.springframework.stereotype.Service;
-import java.util.List;
-import reactor.core.publisher.Mono;
-import reactor.core.publisher.Flux;
+── Gate prerrequisito JAXB Etapa 7 ──
+Servicio: ORQClientes0052
+Prefijo: ORQClientes0052 (esperado ORQClientes0052)
+JAXB: files=20 req=1 res=1 per-op
+  root: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\build\generated\sources\wsdl\com\pichincha\sp\generated
+Ready: sí
+Resumen: ok=2 warning=0 missing=0 skipped=0
+✓ Prerrequisito JAXB OK — se puede generar Etapa 7
 
-@Service
-public class OrchestrateTxService {
+⏳ Etapa 7 — infraestructura input SOAP...
+  SOAP request/response: wrappers infra que encapsulan clases JAXB en generated
+  Fault DTOs: SoapFaultDto, SoapFaultBodyDto, SoapFaultEnvelopeDto
+  Constants: SoapControllerConstants
+  Request envelope: SoapEnvelopeRequest (infra) → SoapBodyRequest → JAXB generated
+  Response envelope: SoapEnvelopeResponse (infra) → SoapBodyResponse → JAXB generated
+  Mappers: SoapToDomainMapper + DomainToSoapMapper
+  Factory: {Service}OperationRouter + SoapHeaderFactory + SoapResponseFactory
+  Validator: {Service}RequestValidator
+  Controller: {Service}Controller (infrastructure.input.adapter.rest.impl)
+  Mensajes runtime: application.yml (${ENV}) + applicationlocal.yml (claro) + helm/{dev,test,prod}.yml
+  Paquete fault: com.pichincha.sp.infrastructure.input.adapter.rest.dto
+  Paquete constants: com.pichincha.sp.infrastructure.constants
+  Paquete request: com.pichincha.sp.infrastructure.input.adapter.rest.dto.request
+  Paquete response: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response
+  Paquete JAXB: com.pichincha.sp.generated
 
+⏳ Persistiendo mensajes runtime (JSON + application.yml)...
+  ✓ application-messages.json: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\07-infraestructura-input\application-messages.json
+  ✓ application-messages.json: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\resources\application-messages.json
+  ✓ application YAML (env): c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\resources\application.yml
+  ✓ applicationlocal (claro): c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\resources\applicationlocal.yml
+  ✓ helm/dev.yml: solo sección variables.own.config actualizada
+  ✓ helm/test.yml: solo sección variables.own.config actualizada
+  ✓ helm/prod.yml: solo sección variables.own.config actualizada
+  ✓ Mensajes runtime: 33 clave(s) → JSON + application.yml (${ENV}) + applicationlocal.yml (claro) + helm
+  → Gradle: verificando Lombok + lombok-mapstruct-binding + MapStruct processor...
+  ✓ Gradle: dependencias Etapa 2 ya correctas en build.gradle
+    ○ traceLoggerVersion: traceLoggerVersion = '1.4.0'
+    ○ Lombok: compileOnly 'org.projectlombok:lombok:1.18.36'
+    ○ Lombok annotation processor: annotationProcessor 'org.projectlombok:lombok:1.18.36'
+    ○ MapStruct: implementation 'org.mapstruct:mapstruct:1.6.3'
+    ○ MapStruct processor: annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.3'
+    ○ Lombok MapStruct binding: annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
+  Orquestador: se reutiliza JAXB existente en generated (sin sobrescribir); mappers MapStruct → records domain.dto leyendo estructura WSDL/DTO.
+  ✓ Actualizado: SoapFaultDto
+  ✓ Actualizado: SoapFaultBodyDto
+  ✓ Actualizado: SoapFaultEnvelopeDto
+  ✓ Creado: SoapControllerConstants (@Value ${orqclientes0052.soap.*})
+  Raíz escaneada: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\build\generated\sources\wsdl\com\pichincha\sp\generated
+  Archivos .java: 20
+  Envelope request: por operación (1 binding(s) JAXB)
+  Envelope response: por operación (1 binding(s) JAXB)
+  Bindings request↔WSDL: ConsultarTarjetasDebitoClientes01→ConsultarTarjetasDebitoClientes01
+  Bindings response↔WSDL: ConsultarTarjetasDebitoClientes01Response→ConsultarTarjetasDebitoClientes01
+  ✓ Catálogo generated actualizado: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\generated-soap-class-catalog.json (19 clases, 1 ops con mapeos dominio)
 
-    private final ProductOrchestrationService productOrchestrationService;
-    private final OrchestrationRequestBodyFactory requestBodyFactory;
-    private final OrchestrationResponseAssembler responseAssembler;
-    private final OrchestrationConfigurationPort configurationPort;
+  Generando wrappers SOAP unificados (SoapBodyRequest/Response con todas las operaciones)...
+  ✓ Creado: SoapBodyRequest (1 operación(es))
+  ✓ Creado: SoapEnvelopeRequest → body SoapBodyRequest
+  ✓ Creado: SoapBodyResponse (1 operación(es))
+  ✓ Creado: SoapEnvelopeResponse → body SoapBodyResponse
+  → Mappings EN↔ES candidatos: 97 (DTO JAXB generados ↔ dominio EN; validación por campos reales)
 
-    public OrchestrateTxService(
-            ProductOrchestrationService productOrchestrationService,
-            OrchestrationRequestBodyFactory requestBodyFactory,
-            OrchestrationResponseAssembler responseAssembler,
-            OrchestrationConfigurationPort configurationPort) {
+  Tarea mappers: SoapToDomainMapper + DomainToSoapMapper
+  → OrchestratorRequestDto: 38 rutas bean en disco
+  → OrchestratorResponseDto: 46 rutas bean en disco
 
-        this.productOrchestrationService = productOrchestrationService;
-        this.requestBodyFactory = requestBodyFactory;
-        this.responseAssembler = responseAssembler;
-        this.configurationPort = configurationPort;
-    }
+⏳ Bedrock: analizando riesgos MapStruct Etapa 7 (SOAP↔dominio)...
+✓ Consejo MapStruct Bedrock: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\07-infraestructura-input\stage7-mapstruct-bedrock-advice.json
+  Bedrock riesgos=7 · bridges sugeridos=0 · learnedMappings=4
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Verificar si la lista de tarjetas debe ser mapeada a un wrapper JAXB.
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Verificar si existen campos en el dominio que no están presentes en el DTO raíz de entrada o salida.
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Verificar si los campos Domain→Soap carecen de los prefijos bodyOut o bodyIn.
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Verificar si existen campos que necesitan traducción EN↔ES.
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Verificar si el ResultDto carece de campos code/message pero el mapper mapea error.*.
+  ⚠ [high] ConsultarTarjetasDebitoClientes01: Verificar si existen tipos de elementos incompatibles en las colecciones anidadas.
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Verificar si existen colecciones anidadas en el request que necesitan ser mapeadas.
+  ✓ Creado: SoapToDomainMapper (4 mappings)
+  ✓ Creado: DomainToSoapMapper
 
-    public Mono<OrchestrationContext> execute(OrchestratorRequestDto request, String estado) {
-        OrchestrationContext context = new OrchestrationContext(request);
-        if (estado == null) {
-            return Mono.just(context);
-        }
-        return Mono.just(context)
-                .flatMap(current -> switch (estado.toLowerCase()) {
-                    case "iniciar" -> executeStart(request, current);
-                    default -> Mono.just(current);
-                })
-                .flatMap(productOrchestrationService::finalizar);
-    }
+  Tarea factory: ORQClientes0052OperationRouter (1 ruta(s) WSDL)
+  ✓ Creado: ORQClientes0052OperationRouter (1 ruta(s))
+  Tarea factory: ORQClientes0052SoapHeaderFactory
+  ✓ Creado: ORQClientes0052SoapHeaderFactory
+  Tarea factory: ORQClientes0052SoapResponseFactory
+  ✓ Creado: ORQClientes0052SoapResponseFactory
 
-    private List<?> flowItems(OrchestratorRequestDto request) {
-        if (request == null || request.bodyIn() == null || request.bodyIn().flow() == null) {
-            return List.of();
-        }
-        return request.bodyIn().flow().fields();
-    }
+  Tarea validator: QueryTarjetasDebitCustomersValidator
+  Operaciones: ConsultarTarjetasDebitoClientes01
+  Procedures Etapa 1: ValidarEntrada
+  ✓ Creado: QueryTarjetasDebitCustomersValidator
 
-    private Mono<OrchestrationContext> executeStart(
-            OrchestratorRequestDto request,
-            OrchestrationContext context) {
-        Mono<OrchestrationContext> chain = Mono.just(context);
-        return chain;
-    }
-}
+  Tarea controller: ORQClientes0052Controller
+  Resolviendo componentes de etapas previas (4/7)…
+  ── Checklist dependencias Controller ──
+  ✓ PortInput: QueryTarjetasDebitCustomersPortInput
+  ✓ SoapToDomainMapper: SoapToDomainMapper
+  ✓ OperationRouter: ORQClientes0052OperationRouter
+  ✓ SoapResponseFactory: ORQClientes0052SoapResponseFactory
+  ✓ RequestValidator: QueryTarjetasDebitCustomersValidator
+  ✓ SoapEnvelopeRequest: SoapEnvelopeRequest
+  ✓ SoapEnvelopeResponse: SoapEnvelopeResponse
+  ✓ SoapControllerConstants: SoapControllerConstants
+  ✓ BusinessException: BusinessException
+  ✓ JAXB operation: ConsultarTarjetasDebitoClientes01
+  Endpoint: consultarTarjetasDebitoClientes01 (ConsultarTarjetasDebitoClientes01)
+  ── Componentes cableados ──
+  · QueryTarjetasDebitCustomersPortInput + SoapToDomainMapper → route()
+  · ORQClientes0052OperationRouter
+  · ORQClientes0052SoapResponseFactory
+  · QueryTarjetasDebitCustomersValidator
+  · SoapEnvelopeRequest / SoapEnvelopeResponse
+  · SoapControllerConstants
+  ✓ Actualizado: ORQClientes0052Controller
+  Manifiesto: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\07-infraestructura-input\infra-input-generated-manifest.json
+  Unit-test candidates: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\09-tests\unit-test-candidates.json
+
+── Resumen ──
+Estado: completed
+Envelope JAXB: no detectado
+bodyIn: —
+Fuentes JAXB: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\build\generated\sources\wsdl\com\pichincha\sp\generated
+SoapFault DTOs: 3
+  - SoapFaultDto (overwritten)
+  - SoapFaultBodyDto (overwritten)
+  - SoapFaultEnvelopeDto (overwritten)
+SoapControllerConstants: created
+SoapBodyRequest: 1
+SoapEnvelopeRequest: 1
+SoapBodyResponse: 1
+SoapEnvelopeResponse: 1
+  - req SoapBodyRequest → ConsultarTarjetasDebitoClientes01 (@XmlElement ConsultarTarjetasDebitoClientes01)
+  - res SoapBodyResponse → ConsultarTarjetasDebitoClientes01Response (@XmlElement ConsultarTarjetasDebitoClientes01Response)
+  - req SoapEnvelopeRequest → body SoapBodyRequest
+  - res SoapEnvelopeResponse → body SoapBodyResponse
+Input REST mappers: 1
+  - SoapToDomainMapper / DomainToSoapMapper (4 mappings)
+OperationRouter: ORQClientes0052OperationRouter (1 ruta(s))
+SoapHeaderFactory: ORQClientes0052SoapHeaderFactory → DomainToSoapMapper
+SoapResponseFactory: ORQClientes0052SoapResponseFactory → OrchestratorResponseDto
+RequestValidator: QueryTarjetasDebitCustomersValidator (1 op · ConsultarTarjetasDebitoClientes01)
+  Procedures Etapa 1: ValidarEntrada
+Controller: ORQClientes0052Controller · consultarTarjetasDebitoClientes01 (1 ruta(s))
+  Cableados: QueryTarjetasDebitCustomersPortInput, SoapToDomainMapper, ORQClientes0052OperationRouter, ORQClientes0052SoapResponseFactory, QueryTarjetasDebitCustomersValidator, SoapEnvelopeRequest, SoapEnvelopeResponse, SoapControllerConstants, ConsultarTarjetasDebitoClientes01
+
+→ Reparando contrato Etapa 7 (mappers SOAP + factories overwrite)...
+  ✓ Manifiesto/prefijo SOAP normalizado
+
+⏳ Etapa 7 — infraestructura input SOAP...
+  SOAP request/response: wrappers infra que encapsulan clases JAXB en generated
+  Fault DTOs: SoapFaultDto, SoapFaultBodyDto, SoapFaultEnvelopeDto
+  Constants: SoapControllerConstants
+  Request envelope: SoapEnvelopeRequest (infra) → SoapBodyRequest → JAXB generated
+  Response envelope: SoapEnvelopeResponse (infra) → SoapBodyResponse → JAXB generated
+  Mappers: SoapToDomainMapper + DomainToSoapMapper
+  Factory: {Service}OperationRouter + SoapHeaderFactory + SoapResponseFactory
+  Validator: {Service}RequestValidator
+  Controller: {Service}Controller (infrastructure.input.adapter.rest.impl)
+  Mensajes runtime: application.yml (${ENV}) + applicationlocal.yml (claro) + helm/{dev,test,prod}.yml
+  Paquete fault: com.pichincha.sp.infrastructure.input.adapter.rest.dto
+  Paquete constants: com.pichincha.sp.infrastructure.constants
+  Paquete request: com.pichincha.sp.infrastructure.input.adapter.rest.dto.request
+  Paquete response: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response
+  Paquete JAXB: com.pichincha.sp.generated
+
+⏳ Persistiendo mensajes runtime (JSON + application.yml)...
+  ✓ application-messages.json: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\07-infraestructura-input\application-messages.json
+  ✓ application-messages.json: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\resources\application-messages.json
+  ✓ application YAML (env): c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\resources\application.yml
+  ✓ applicationlocal (claro): c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\resources\applicationlocal.yml
+  ○ helm/dev.yml: sin cambios
+  ○ helm/test.yml: sin cambios
+  ○ helm/prod.yml: sin cambios
+  ✓ Mensajes runtime: 33 clave(s) → JSON + application.yml (${ENV}) + applicationlocal.yml (claro) + helm
+  → Gradle: verificando Lombok + lombok-mapstruct-binding + MapStruct processor...
+  ✓ Gradle: dependencias Etapa 2 ya correctas en build.gradle
+    ○ traceLoggerVersion: traceLoggerVersion = '1.4.0'
+    ○ Lombok: compileOnly 'org.projectlombok:lombok:1.18.36'
+    ○ Lombok annotation processor: annotationProcessor 'org.projectlombok:lombok:1.18.36'
+    ○ MapStruct: implementation 'org.mapstruct:mapstruct:1.6.3'
+    ○ MapStruct processor: annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.3'
+    ○ Lombok MapStruct binding: annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
+  Orquestador: se reutiliza JAXB existente en generated (sin sobrescribir); mappers MapStruct → records domain.dto leyendo estructura WSDL/DTO.
+  ✓ Actualizado: SoapFaultDto
+  ✓ Actualizado: SoapFaultBodyDto
+  ✓ Actualizado: SoapFaultEnvelopeDto
+  ✓ Actualizado: SoapControllerConstants (@Value ${orqclientes0052.soap.*})
+  Raíz escaneada: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\build\generated\sources\wsdl\com\pichincha\sp\generated
+  Archivos .java: 20
+  Envelope request: por operación (1 binding(s) JAXB)
+  Envelope response: por operación (1 binding(s) JAXB)
+  Bindings request↔WSDL: ConsultarTarjetasDebitoClientes01→ConsultarTarjetasDebitoClientes01
+  Bindings response↔WSDL: ConsultarTarjetasDebitoClientes01Response→ConsultarTarjetasDebitoClientes01
+  ✓ Catálogo generated actualizado: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\generated-soap-class-catalog.json (19 clases, 1 ops con mapeos dominio)
+
+  Generando wrappers SOAP unificados (SoapBodyRequest/Response con todas las operaciones)...
+  ✓ Actualizado: SoapBodyRequest (1 operación(es))
+  ✓ Actualizado: SoapEnvelopeRequest → body SoapBodyRequest
+  ✓ Actualizado: SoapBodyResponse (1 operación(es))
+  ✓ Actualizado: SoapEnvelopeResponse → body SoapBodyResponse
+  → Mappings EN↔ES candidatos: 101 (DTO JAXB generados ↔ dominio EN; validación por campos reales); +4 learned
+
+  Tarea mappers: SoapToDomainMapper + DomainToSoapMapper
+  → OrchestratorRequestDto: 38 rutas bean en disco
+  → OrchestratorResponseDto: 46 rutas bean en disco
+
+⏳ Bedrock: analizando riesgos MapStruct Etapa 7 (SOAP↔dominio)...
+✓ Consejo MapStruct Bedrock: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\07-infraestructura-input\stage7-mapstruct-bedrock-advice.json
+  Bedrock riesgos=7 · bridges sugeridos=1 · learnedMappings=2
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Verificar el mapeo de listas a wrappers JAXB.
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Verificar que todos los campos del dominio estén presentes en el DTO de entrada/salida.
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Asegurarse de que los campos del dominio tengan los prefijos correctos para la transformación SOAP.
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Verificar la traducción correcta de campos EN↔ES.
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Verificar que el ResultDto contenga los campos code/message si se mapean errores.
+  ⚠ [high] ConsultarTarjetasDebitoClientes01: Verificar la compatibilidad de tipos de elementos en las colecciones anidadas.
+  ⚠ [medium] ConsultarTarjetasDebitoClientes01: Verificar el mapeo de colecciones anidadas correctamente.
+  → Bridges List↔wrapper ConsultarTarjetasDebitoClientes01: cards↔Tarjetas
+     · toTarjeta(CardResponseDto): 0 field mappings (filtrados por disco)
+  ✓ Actualizado: SoapToDomainMapper (4 mappings)
+  ✓ Actualizado: DomainToSoapMapper
+
+  Tarea factory: ORQClientes0052OperationRouter (1 ruta(s) WSDL)
+  ✓ Actualizado: ORQClientes0052OperationRouter (1 ruta(s))
+  Tarea factory: ORQClientes0052SoapHeaderFactory
+  ✓ Actualizado: ORQClientes0052SoapHeaderFactory
+  Tarea factory: ORQClientes0052SoapResponseFactory
+  ✓ Actualizado: ORQClientes0052SoapResponseFactory
+
+  Tarea validator: QueryTarjetasDebitCustomersValidator
+  Operaciones: ConsultarTarjetasDebitoClientes01
+  Procedures Etapa 1: ValidarEntrada
+  ✓ Actualizado: QueryTarjetasDebitCustomersValidator
+
+  Tarea controller: ORQClientes0052Controller
+  Resolviendo componentes de etapas previas (4/7)…
+  ── Checklist dependencias Controller ──
+  ✓ PortInput: QueryTarjetasDebitCustomersPortInput
+  ✓ SoapToDomainMapper: SoapToDomainMapper
+  ✓ OperationRouter: ORQClientes0052OperationRouter
+  ✓ SoapResponseFactory: ORQClientes0052SoapResponseFactory
+  ✓ RequestValidator: QueryTarjetasDebitCustomersValidator
+  ✓ SoapEnvelopeRequest: SoapEnvelopeRequest
+  ✓ SoapEnvelopeResponse: SoapEnvelopeResponse
+  ✓ SoapControllerConstants: SoapControllerConstants
+  ✓ BusinessException: BusinessException
+  ✓ JAXB operation: ConsultarTarjetasDebitoClientes01
+  Endpoint: consultarTarjetasDebitoClientes01 (ConsultarTarjetasDebitoClientes01)
+  ── Componentes cableados ──
+  · QueryTarjetasDebitCustomersPortInput + SoapToDomainMapper → route()
+  · ORQClientes0052OperationRouter
+  · ORQClientes0052SoapResponseFactory
+  · QueryTarjetasDebitCustomersValidator
+  · SoapEnvelopeRequest / SoapEnvelopeResponse
+  · SoapControllerConstants
+  ✓ Actualizado: ORQClientes0052Controller
+  Manifiesto: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\07-infraestructura-input\infra-input-generated-manifest.json
+  Unit-test candidates: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\09-tests\unit-test-candidates.json
+  ✓ Regenerado: 1 mapper(s) SOAP
+
+── Gate contrato infra input Etapa 7 ──
+Servicio: ORQClientes0052
+Prefijo: ORQClientes0052 (esperado ORQClientes0052)
+JAXB: files=20 req=1 res=1 per-op
+  root: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\build\generated\sources\wsdl\com\pichincha\sp\generated
+Mappers: toDomain=1/1 toSoap=1/1 · Router=sí · Header=sí · Response=sí · bareRefs=3
+Ready: no (regenerado overwrite)
+Resumen: ok=9 warning=0 missing=2 skipped=0
+  · ConsultarTarjetasDebitoClientes01: SoapToDomain+DomainToSoap → SoapToDomainMapper
+  ✗ [soap-mappers] ConsultarTarjetasDebitoClientes01 DomainToSoapMapper no cubre todos los campos de error · Targets faltantes: code, message, businessMessage, type, resource, component; sources record faltantes: (ninguno)
+  ✗ [factories] Falta ORQClientes0052RequestValidator · c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052/src/main/java/com/pichincha/sp/infrastructure/input/adapter/rest/validator/ORQClientes0052RequestValidator.java
+⚠ Contrato Etapa 7 incompleto — revisa findings antes de Etapa 8
+✓ Contrato Etapa 7: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\07-infraestructura-input\stage7-infra-input-contract-validation.json
+
+══ Reconciliación post-etapa (Etapa 1 derivados) ══
+→ Regenerando Etapa 1 derivados desde source-code-tree.json...
+✓ WSDL cargado: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\wsdl-analysis.json
+✓ Tipo servicio reutilizado desde registro de Etapa 1: orquestador
+✓ Perfil derivados: orquestador (c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\tipo-servicio.json)
+✓ Source-code tree cargado: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\source-code-tree.json
+  Operaciones: 1
+✓ Manifiesto operaciones: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\migration-operation-manifest.json
+  Operaciones: 1
+✓ Catálogo clases generated: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\generated-soap-class-catalog.json
+  Clases JAXB: 19 · Operaciones: 1 · Con mapeos dominio: 0
+
+── Generando Etapa 1 derivados ──
+✓ Validación mapeo campos (MS Subflow): c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\field-mapping-validation.json
+✓ Catálogo MS Subflow: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\ms-invocation-catalog.json
+  1/1 MS con artefactos · 0 pendientes · 0 omitidos
+✓ Specs TX de compatibilidad (vacías): c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\tx-domain-mapper-specs.json
+  Transacciones: 0
+
+── Gate contrato Etapa 1 ──
+Servicio: ORQClientes0052
+Prefijo SOAP: ORQClientes0052 (esperado ORQClientes0052)
+TX origen: 0 · specs: 0
+Nombres divergentes: 0
+Ready: sí
+Resumen: ok=3 warning=0 missing=0 skipped=0
+✓ Contrato Etapa 1 OK (MS Subflow + nombres + prefijo SOAP)
+✓ Contrato Etapa 1: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\stage1-contract-validation.json
+✓ Plan campos DTO y mapeos TX: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\migration-dto-field-plan.json
+  Operaciones: 1 · Detalle: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\migration-dto-field-plan.md
+  ⏳ Bedrock: plan de orquestación para 1 operación(es)...
+  ⚠ Plan Bedrock inválido: ConsultarTarjetasDebitoClientes01: mapper no permitido QueryTarjetasDebitCustomersResponseDtoBuilder
+    Usando plan programático como respaldo.
+✓ Plan de orquestación: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\orchestration-plan.json
+  Operaciones: 1 · fuente: programmatic-fallback
+✓ Contrato ESQL estructurado ORQUESTADOR: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\orquestador-esql-invocation-plan.json
+  Operaciones: 1 · ready=true
+
+── Resumen Etapa 1 ──
+✓ migration-operation-manifest.json
+✓ migration-blueprint.json
+✓ migration-component-tree.json
+✓ stage1-contract-validation.json
+✓ field-mapping-validation.json
+✓ tx-domain-mapper-specs.json
+✓ migration-dto-field-plan.json
+✓ orchestration-plan.json
+✓ orquestador-esql-invocation-plan.json
+✓ generated-soap-class-catalog.json
+⊘ No se recargó ESQL, UMP ni CURL (solo derivados JSON)
+✓ Blueprint migración: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\migration-blueprint.json
+  Operaciones planificadas: 1
+  Cadena full: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9
+✓ Árbol componentes (controller/adapters/service): c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\migration-component-tree.json
+  Operaciones: 1 · Nodos compartidos infra-input: 6 · Detalle: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\01-analisis\migration-component-tree.md
+
+── Etapa 1 derivados (desde código origen) ──
+  ✓ field-mapping-validation.json
+  ✓ tx-domain-mapper-specs.json
+  ✓ ms-invocation-catalog.json
+  ✓ orquestador-esql-invocation-plan.json
+  ✓ migration-dto-field-plan.json
+  ✓ orchestration-plan.json
+  ✓ migration-component-tree.json
+  ✓ generated-soap-class-catalog.json
+  ✓ stage1-contract-validation.json
+  ✓ migration-blueprint.json
+
+── Etapa 1 derivados (desde código origen) ──
+  ✓ field-mapping-validation.json
+  ✓ tx-domain-mapper-specs.json
+  ✓ ms-invocation-catalog.json
+  ✓ orquestador-esql-invocation-plan.json
+  ✓ migration-dto-field-plan.json
+  ✓ orchestration-plan.json
+  ✓ migration-component-tree.json
+  ✓ generated-soap-class-catalog.json
+  ✓ stage1-contract-validation.json
+  ✓ migration-blueprint.json
+✓ Etapa 7: sin huecos respecto al plan (0 TX en origen)
