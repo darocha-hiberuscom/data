@@ -13,8 +13,8 @@ C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
 ---------------------------------------------------------------
 ≡ƒÅù∩╕Å  ARQUITECTURA:
    Estilo detectado: HEXAGONAL
-   Archivos analizados: 92
-   Paquetes encontrados: 25
+   Archivos analizados: 105
+   Paquetes encontrados: 33
    Java 21: Γ£à
 
    ≡ƒôè Desglose de puntos:
@@ -28,18 +28,23 @@ C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
 
    Γ£à Todos los archivos requeridos est├ín presentes
 
-   ≡ƒôï Observaciones generales (26):
+   ≡ƒôï Observaciones generales (31):
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.builders': 'OrchestrationRequestBodyFactory' | Archivo: OrchestrationRequestBodyFactory.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.builders': 'OrchestrationResponseAssembler' | Archivo: OrchestrationResponseAssembler.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.port.config': 'OrchestrationConfigurationPort' | Archivo: OrchestrationConfigurationPort.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.port.config': 'OrquestadorSoapErrorPort' | Archivo: OrquestadorSoapErrorPort.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.service.ports': 'OrchestrationPortsPrimary' | Archivo: OrchestrationPortsPrimary.java
       ΓÇó [Naming] Interface debe terminar en sufijo apropiado (Service, ServicePort, Repository, RepositoryPort, Mapper, Handler, Provider, Factory, Port, PortInput, PortOutput): 'OrchestrationStrategy' | Archivo: OrchestrationStrategy.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.service.strategy': 'OrchestrationStrategyResolver' | Archivo: OrchestrationStrategyResolver.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.constants': 'QueryTarjetasDebitCustomersMsFlowConstants' | Archivo: QueryTarjetasDebitCustomersMsFlowConstants.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.dto': 'OrchestrationConfiguration' | Archivo: OrchestrationConfiguration.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.util': 'EsbGenericoUtils' | Archivo: EsbGenericoUtils.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.util': 'EsqlExpressionSupport' | Archivo: EsqlExpressionSupport.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.config': 'OrquestadorSoapProperties' | Archivo: OrquestadorSoapProperties.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.constants': 'SoapControllerConstants' | Archivo: SoapControllerConstants.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.exception': 'ErrorCatalogConstants' | Archivo: ErrorCatalogConstants.java
+      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.input.adapter.rest.factory': 'ORQClientes0052OperationRouter' | Archivo: ORQClientes0052OperationRouter.java
+      ΓÇó [Declarations] Variable local sin inicializar | Archivo: ORQClientes0052SoapResponseFactory.java | L├¡nea: 33 | C├│digo: ErrorDto error;
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.config': 'OrquestadorErrorFactory' | Archivo: OrquestadorErrorFactory.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.properties.webclient': 'WebClientProperties' | Archivo: WebClientProperties.java
       ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'BodyInWsClientes0141' | Archivo: BodyInWsClientes0141.java
@@ -97,14 +102,48 @@ wsdl2java - Apache CXF 4.1.1
 Γ£à Post-procesamiento unificado completado
 
 > Task :compileJava
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\OrchestrationConfigurationService.java:33: error: cannot find symbol
-                + safe(bodyIn == null ? null : bodyIn.productType());
-                                                     ^
-  symbol:   method productType()
-  location: variable bodyIn of type OrchestratorBodyInDto
-Note: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-1 error
+Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
+Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
+Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.SoapToDomainMapper.
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.OrchestratorRequestDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
+Note: -- MapStruct: mapping property: requestBodyConsultarTarjetasDebitoClientes01BodyIn( request ) to: bodyIn.
+Note: -- MapStruct: mapping property: bodyInConsultarTarjetasDebitoClientes01.getOrdenante() to: ordenante.
+Note: -- MapStruct: mapping property: ordenante.getCif() to: cif.
+Note: -- MapStruct: selecting property mapping: ordenante.getCif().
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
+Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
+Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
+Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
+Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
+Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:3: error: cannot find symbol
+import com.pichincha.sp.domain.dto.CardResponseDto;
+                                  ^
+  symbol:   class CardResponseDto
+  location: package com.pichincha.sp.domain.dto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:35: error: cannot find symbol
+    Tarjeta toTarjeta(CardResponseDto source);
+                      ^
+  symbol:   class CardResponseDto
+  location: interface DomainToSoapMapper
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:37: error: cannot find symbol
+    default Tarjetas toTarjetas(List<CardResponseDto> value) {
+                                     ^
+  symbol:   class CardResponseDto
+  location: interface DomainToSoapMapper
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:17: error: No implementation was created for DomainToSoapMapper due to having a problem in the erroneous element CardResponseDto. Hint: this often means that some other annotation processor was supposed to process the erroneous element. You can also enable MapStruct verbose mode by setting -Amapstruct.verbose=true as a compilation argument.
+public interface DomainToSoapMapper {
+       ^
+4 errors
 
 > Task :compileJava FAILED
 
@@ -115,14 +154,40 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compileJava'.
 > Compilation failed; see the compiler output below.
-  Note: Recompile with -Xlint:unchecked for details.
-  Note: Some input files use unchecked or unsafe operations.
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\application\service\OrchestrationConfigurationService.java:33: error: cannot find symbol
-                  + safe(bodyIn == null ? null : bodyIn.productType());
-                                                       ^
-    symbol:   method productType()
-    location: variable bodyIn of type OrchestratorBodyInDto
-  1 error
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:17: error: No implementation was created for DomainToSoapMapper due to having a problem in the erroneous element CardResponseDto. Hint: this often means that some other annotation processor was supposed to process the erroneous element. You can also enable MapStruct verbose mode by setting -Amapstruct.verbose=true as a compilation argument.
+  public interface DomainToSoapMapper {
+         ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:3: error: cannot find symbol
+  import com.pichincha.sp.domain.dto.CardResponseDto;
+                                    ^
+    symbol:   class CardResponseDto
+    location: package com.pichincha.sp.domain.dto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:35: error: cannot find symbol
+      Tarjeta toTarjeta(CardResponseDto source);
+                        ^
+    symbol:   class CardResponseDto
+    location: interface DomainToSoapMapper
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:37: error: cannot find symbol
+      default Tarjetas toTarjetas(List<CardResponseDto> value) {
+                                       ^
+    symbol:   class CardResponseDto
+    location: interface DomainToSoapMapper
+  Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
+  Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
+  Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
+  Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.SoapToDomainMapper.
+  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.OrchestratorRequestDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
+  Note: -- MapStruct: mapping property: requestBodyConsultarTarjetasDebitoClientes01BodyIn( request ) to: bodyIn.
+  Note: -- MapStruct: mapping property: bodyInConsultarTarjetasDebitoClientes01.getOrdenante() to: ordenante.
+  Note: -- MapStruct: mapping property: ordenante.getCif() to: cif.
+  Note: -- MapStruct: selecting property mapping: ordenante.getCif().
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
+  Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
+  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
+  Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
+  Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
+  4 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
@@ -134,5 +199,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 7s
+BUILD FAILED in 8s
 5 actionable tasks: 5 executed
