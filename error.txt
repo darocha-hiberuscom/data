@@ -1,193 +1,804 @@
-
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
-
-> Task :architectureReview
-
-===============================================================
-================ PEER REVIEW AUTOMATIZADO ====================
-===============================================================
-
-≡ƒôü Proyecto: tnd-msa-sp-orqclientes0052
-≡ƒôè Threshold Configurado: 7 / 10
-
----------------------------------------------------------------
-≡ƒÅù∩╕Å  ARQUITECTURA:
-   Estilo detectado: HEXAGONAL
-   Archivos analizados: 105
-   Paquetes encontrados: 33
-   Java 21: Γ£à
-
-   ≡ƒôè Desglose de puntos:
-      ΓÇó Arquitectura: 5 / 5
-      ΓÇó Paquetes: 3 / 4
-      ΓÇó Nomenclatura: 4 / 7
-      ΓÇó Archivos requeridos: 2 / 2
-
-   Puntaje final: 8.2 / 10
-   BLOQUEAR PR: NO Γ£à
-
-   Γ£à Todos los archivos requeridos est├ín presentes
-
-   ≡ƒôï Observaciones generales (31):
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.builders': 'OrchestrationRequestBodyFactory' | Archivo: OrchestrationRequestBodyFactory.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.builders': 'OrchestrationResponseAssembler' | Archivo: OrchestrationResponseAssembler.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.port.config': 'OrchestrationConfigurationPort' | Archivo: OrchestrationConfigurationPort.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.port.config': 'OrquestadorSoapErrorPort' | Archivo: OrquestadorSoapErrorPort.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.service.ports': 'OrchestrationPortsPrimary' | Archivo: OrchestrationPortsPrimary.java
-      ΓÇó [Naming] Interface debe terminar en sufijo apropiado (Service, ServicePort, Repository, RepositoryPort, Mapper, Handler, Provider, Factory, Port, PortInput, PortOutput): 'OrchestrationStrategy' | Archivo: OrchestrationStrategy.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.application.service.strategy': 'OrchestrationStrategyResolver' | Archivo: OrchestrationStrategyResolver.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.constants': 'QueryTarjetasDebitCustomersMsFlowConstants' | Archivo: QueryTarjetasDebitCustomersMsFlowConstants.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.dto': 'OrchestrationConfiguration' | Archivo: OrchestrationConfiguration.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.util': 'EsbGenericoUtils' | Archivo: EsbGenericoUtils.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.domain.util': 'EsqlExpressionSupport' | Archivo: EsqlExpressionSupport.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.config': 'OrquestadorSoapProperties' | Archivo: OrquestadorSoapProperties.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.constants': 'SoapControllerConstants' | Archivo: SoapControllerConstants.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.exception': 'ErrorCatalogConstants' | Archivo: ErrorCatalogConstants.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.input.adapter.rest.factory': 'ORQClientes0052OperationRouter' | Archivo: ORQClientes0052OperationRouter.java
-      ΓÇó [Declarations] Variable local sin inicializar | Archivo: ORQClientes0052SoapResponseFactory.java | L├¡nea: 33 | C├│digo: ErrorDto error;
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.config': 'OrquestadorErrorFactory' | Archivo: OrquestadorErrorFactory.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.properties.webclient': 'WebClientProperties' | Archivo: WebClientProperties.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'BodyInWsClientes0141' | Archivo: BodyInWsClientes0141.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'BodyInWsClientes0141CriteriosBusqueda' | Archivo: BodyInWsClientes0141CriteriosBusqueda.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'BodyInWsClientes0141Ordenante' | Archivo: BodyInWsClientes0141Ordenante.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'ConsultarTarjetasDebitoCliente01' | Archivo: ConsultarTarjetasDebitoCliente01.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'HeaderIn' | Archivo: HeaderIn.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.request': 'SoapHeader' | Archivo: SoapHeader.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'BodyOutWsClientes0141' | Archivo: BodyOutWsClientes0141.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'BodyOutWsClientes0141Tarjetas' | Archivo: BodyOutWsClientes0141Tarjetas.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'BodyOutWsClientes0141TarjetasTarjeta' | Archivo: BodyOutWsClientes0141TarjetasTarjeta.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'DocumentoOut' | Archivo: DocumentoOut.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'ErrorOut' | Archivo: ErrorOut.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'HeaderOut' | Archivo: HeaderOut.java
-      ΓÇó [Naming] Sufijo no corresponde al rol por paquete 'com.pichincha.sp.infrastructure.output.adapter.response': 'SoapHeader' | Archivo: SoapHeader.java
-
-   Γ£à Arquitectura aprobada
-
----------------------------------------------------------------
-≡ƒº¬ PRUEBAS UNITARIAS:
-   Archivos de test analizados: 0
-
-   Γ¥î ERROR: No se encontraron archivos de pruebas unitarias
-   El proyecto DEBE tener pruebas unitarias en src/test/java
-
-   Puntaje final: 0 / 10
-   BLOQUEAR PR: SI Γ¥î
-
-   ΓÜá∩╕Å  El proyecto NO tiene pruebas unitarias - Esto es OBLIGATORIO
-
-===============================================================
-
-ΓÜá∩╕Å        PEER REVIEW - ADVERTENCIAS DETECTADAS         ΓÜá∩╕Å
-
-   ΓÜá∩╕Å  Pruebas Unitarias: NO EXISTEN - El proyecto DEBE tener pruebas unitarias
-
-Por favor, revisa y corrige los problemas antes de continuar.
-
-ΓÜá∩╕Å    PEER REVIEW COMPLETADO CON ADVERTENCIAS     ΓÜá∩╕Å
-
-
-> Task :generateJavaFromWsdl
-Generando clases desde: ORQClientes0052.wsdl
-   Γ£ô Usando binding global: jaxb-bindings.xml
-SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Loading FrontEnd jaxws ...
-Loading DataBinding jaxb ...
-wsdl2java -d C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\build\generated\sources\wsdl -p com.pichincha.sp.generated -verbose -autoNameResolution -xjc-enableIntrospection -xjc-XautoNameResolution -exsh true -mark-generated -b C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\gradle\wrapper\jaxb-bindings.xml C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\resources\legacy\ORQClientes0052.wsdl
-wsdl2java - Apache CXF 4.1.1
-
-
-> Task :postProcessGeneratedWsdl
-Γ£à Post-procesamiento unificado completado
-
-> Task :compileJava
-Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
-Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
-Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.SoapToDomainMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.OrchestratorRequestDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
-Note: -- MapStruct: mapping property: requestBodyConsultarTarjetasDebitoClientes01BodyIn( request ) to: bodyIn.
-Note: -- MapStruct: mapping property: bodyInConsultarTarjetasDebitoClientes01.getOrdenante() to: ordenante.
-Note: -- MapStruct: mapping property: ordenante.getCif() to: cif.
-Note: -- MapStruct: selecting property mapping: ordenante.getCif().
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
-Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
-Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
-Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
-Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
-Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:3: error: cannot find symbol
-import com.pichincha.sp.domain.dto.CardResponseDto;
-                                  ^
-  symbol:   class CardResponseDto
-  location: package com.pichincha.sp.domain.dto
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:35: error: cannot find symbol
-    Tarjeta toTarjeta(CardResponseDto source);
+        when(headerOutMock.getGeolocation()).thenReturn("geolocation");
+                          ^
+  symbol:   method getGeolocation()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:46: error: cannot find symbol
+        when(headerOutMock.getUniqueness()).thenReturn("uniqueness");
+                          ^
+  symbol:   method getUniqueness()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:47: error: cannot find symbol
+        when(headerOutMock.getFiller()).thenReturn("filler");
+                          ^
+  symbol:   method getFiller()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:48: error: cannot find symbol
+        when(headerOutMock.getLanguage()).thenReturn("language");
+                          ^
+  symbol:   method getLanguage()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:49: error: cannot find symbol
+        when(headerOutMock.getIp()).thenReturn("ip");
+                          ^
+  symbol:   method getIp()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:50: error: cannot find symbol
+        when(headerOutMock.getCustomerId()).thenReturn("customerId");
+                          ^
+  symbol:   method getCustomerId()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:51: error: cannot find symbol
+        when(headerOutMock.getCustomerIdType()).thenReturn("customerIdType");
+                          ^
+  symbol:   method getCustomerIdType()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:52: error: constructor BancsHeaderOutDto in record BancsHeaderOutDto cannot be applied to given types;
+        when(headerOutMock.getBancs()).thenReturn(new BancsHeaderOutDto());
+                                                  ^
+  required: String,String,String,String,String,String,String
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:52: error: cannot find symbol
+        when(headerOutMock.getBancs()).thenReturn(new BancsHeaderOutDto());
+                          ^
+  symbol:   method getBancs()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:54: error: constructor CardsQueryCardsDebitCustomersResponseDto in record CardsQueryCardsDebitCustomersResponseDto cannot be applied to given types;
+        when(bodyOutMock.getCards()).thenReturn(new CardsQueryCardsDebitCustomersResponseDto());
+                                                ^
+  required: List<CardQueryCardsDebitCustomersResponseDto>
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:54: error: cannot find symbol
+        when(bodyOutMock.getCards()).thenReturn(new CardsQueryCardsDebitCustomersResponseDto());
+                        ^
+  symbol:   method getCards()
+  location: variable bodyOutMock of type OrchestratorBodyOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:55: error: constructor FlowDto in record FlowDto cannot be applied to given types;
+        when(bodyOutMock.getFlow()).thenReturn(new FlowDto());
+                                               ^
+  required: String,List<OrchestratorFieldDto>
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:55: error: cannot find symbol
+        when(bodyOutMock.getFlow()).thenReturn(new FlowDto());
+                        ^
+  symbol:   method getFlow()
+  location: variable bodyOutMock of type OrchestratorBodyOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:57: error: cannot find symbol
+        when(errorMock.getCode()).thenReturn("code");
                       ^
-  symbol:   class CardResponseDto
-  location: interface DomainToSoapMapper
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:37: error: cannot find symbol
-    default Tarjetas toTarjetas(List<CardResponseDto> value) {
-                                     ^
-  symbol:   class CardResponseDto
-  location: interface DomainToSoapMapper
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:17: error: No implementation was created for DomainToSoapMapper due to having a problem in the erroneous element CardResponseDto. Hint: this often means that some other annotation processor was supposed to process the erroneous element. You can also enable MapStruct verbose mode by setting -Amapstruct.verbose=true as a compilation argument.
-public interface DomainToSoapMapper {
-       ^
-4 errors
-
-> Task :compileJava FAILED
+  symbol:   method getCode()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:58: error: cannot find symbol
+        when(errorMock.getMessage()).thenReturn("message");
+                      ^
+  symbol:   method getMessage()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:59: error: cannot find symbol
+        when(errorMock.getBusinessMessage()).thenReturn("businessMessage");
+                      ^
+  symbol:   method getBusinessMessage()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:60: error: cannot find symbol
+        when(errorMock.getType()).thenReturn("type");
+                      ^
+  symbol:   method getType()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:61: error: cannot find symbol
+        when(errorMock.getResource()).thenReturn("resource");
+                      ^
+  symbol:   method getResource()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:62: error: cannot find symbol
+        when(errorMock.getComponent()).thenReturn("component");
+                      ^
+  symbol:   method getComponent()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:63: error: cannot find symbol
+        when(errorMock.getBackend()).thenReturn("backend");
+                      ^
+  symbol:   method getBackend()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:78: error: cannot find symbol
+        when(headerOutMock.getDevice()).thenReturn(null);
+                          ^
+  symbol:   method getDevice()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:79: error: cannot find symbol
+        when(headerOutMock.getCompany()).thenReturn(null);
+                          ^
+  symbol:   method getCompany()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:80: error: cannot find symbol
+        when(headerOutMock.getChannel()).thenReturn(null);
+                          ^
+  symbol:   method getChannel()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:81: error: cannot find symbol
+        when(headerOutMock.getMedium()).thenReturn(null);
+                          ^
+  symbol:   method getMedium()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:82: error: cannot find symbol
+        when(headerOutMock.getApplication()).thenReturn(null);
+                          ^
+  symbol:   method getApplication()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:83: error: cannot find symbol
+        when(headerOutMock.getAgency()).thenReturn(null);
+                          ^
+  symbol:   method getAgency()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:84: error: cannot find symbol
+        when(headerOutMock.getTransactionType()).thenReturn(null);
+                          ^
+  symbol:   method getTransactionType()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:85: error: cannot find symbol
+        when(headerOutMock.getUser()).thenReturn(null);
+                          ^
+  symbol:   method getUser()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:86: error: cannot find symbol
+        when(headerOutMock.getGuid()).thenReturn(null);
+                          ^
+  symbol:   method getGuid()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:87: error: cannot find symbol
+        when(headerOutMock.getDateTime()).thenReturn(null);
+                          ^
+  symbol:   method getDateTime()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:88: error: cannot find symbol
+        when(headerOutMock.getSession()).thenReturn(null);
+                          ^
+  symbol:   method getSession()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:89: error: cannot find symbol
+        when(headerOutMock.getDocument()).thenReturn(null);
+                          ^
+  symbol:   method getDocument()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:90: error: cannot find symbol
+        when(headerOutMock.getGeolocation()).thenReturn(null);
+                          ^
+  symbol:   method getGeolocation()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:91: error: cannot find symbol
+        when(headerOutMock.getUniqueness()).thenReturn(null);
+                          ^
+  symbol:   method getUniqueness()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:92: error: cannot find symbol
+        when(headerOutMock.getFiller()).thenReturn(null);
+                          ^
+  symbol:   method getFiller()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:93: error: cannot find symbol
+        when(headerOutMock.getLanguage()).thenReturn(null);
+                          ^
+  symbol:   method getLanguage()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:94: error: cannot find symbol
+        when(headerOutMock.getIp()).thenReturn(null);
+                          ^
+  symbol:   method getIp()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:95: error: cannot find symbol
+        when(headerOutMock.getCustomerId()).thenReturn(null);
+                          ^
+  symbol:   method getCustomerId()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:96: error: cannot find symbol
+        when(headerOutMock.getCustomerIdType()).thenReturn(null);
+                          ^
+  symbol:   method getCustomerIdType()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:97: error: cannot find symbol
+        when(headerOutMock.getBancs()).thenReturn(null);
+                          ^
+  symbol:   method getBancs()
+  location: variable headerOutMock of type HeaderOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:99: error: cannot find symbol
+        when(bodyOutMock.getCards()).thenReturn(null);
+                        ^
+  symbol:   method getCards()
+  location: variable bodyOutMock of type OrchestratorBodyOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:100: error: cannot find symbol
+        when(bodyOutMock.getFlow()).thenReturn(null);
+                        ^
+  symbol:   method getFlow()
+  location: variable bodyOutMock of type OrchestratorBodyOutDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:102: error: cannot find symbol
+        when(errorMock.getCode()).thenReturn(null);
+                      ^
+  symbol:   method getCode()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:103: error: cannot find symbol
+        when(errorMock.getMessage()).thenReturn(null);
+                      ^
+  symbol:   method getMessage()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:104: error: cannot find symbol
+        when(errorMock.getBusinessMessage()).thenReturn(null);
+                      ^
+  symbol:   method getBusinessMessage()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:105: error: cannot find symbol
+        when(errorMock.getType()).thenReturn(null);
+                      ^
+  symbol:   method getType()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:106: error: cannot find symbol
+        when(errorMock.getResource()).thenReturn(null);
+                      ^
+  symbol:   method getResource()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:107: error: cannot find symbol
+        when(errorMock.getComponent()).thenReturn(null);
+                      ^
+  symbol:   method getComponent()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:108: error: cannot find symbol
+        when(errorMock.getBackend()).thenReturn(null);
+                      ^
+  symbol:   method getBackend()
+  location: variable errorMock of type ErrorDto
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\ORQClientes0052ControllerTest.java:65: error: incompatible types: ConsultarTarjetasDebitoClientes01 cannot be converted to SoapBodyRequest
+        request.setBody(operation);
+                        ^
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\ORQClientes0052ControllerTest.java:69: error: incompatible types: inference variable T has incompatible bounds
+        when(operationRouter.route(any(ConsultarTarjetasDebitoClientes01.class), any(SoapEnvelopeRequest.class), any(QueryTarjetasDebitCustomersPortInput.class), any(SoapToDomainMapper.class), any(ORQClientes0052SoapResponseFactory.class)))
+                            ^
+    equality constraints: ConsultarTarjetasDebitoClientes01
+    upper bounds: SoapBodyRequest,Object
+  where T is a type-variable:
+    T extends Object declared in method <T>any(Class<T>)
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\ORQClientes0052ControllerTest.java:83: error: incompatible types: ConsultarTarjetasDebitoClientes01 cannot be converted to SoapBodyRequest
+        request.setBody(operation);
+                        ^
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:42: error: cannot find symbol
+        headerIn = new HeaderInDto("device", "company", "channel", "medium", "application", "agency", "transactionType", "geolocation", "user", "uniqueness", "guid", "dateTime", "filler", "language", "session", "ip", "customerId", "customerIdType", new BancsHeaderInDto());
+                                                                                                                                                                                                                                                             ^
+  symbol:   class BancsHeaderInDto
+  location: class WsClientes0141OutputAdapterTest
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:43: error: cannot find symbol
+        bodyIn = new WsClientes0141RequestBodyInDto(new WsClientes0141OrdenanteDto(), new WsClientes0141CriteriosBusquedaDto());
+                                                        ^
+  symbol:   class WsClientes0141OrdenanteDto
+  location: class WsClientes0141OutputAdapterTest
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:43: error: cannot find symbol
+        bodyIn = new WsClientes0141RequestBodyInDto(new WsClientes0141OrdenanteDto(), new WsClientes0141CriteriosBusquedaDto());
+                                                                                          ^
+  symbol:   class WsClientes0141CriteriosBusquedaDto
+  location: class WsClientes0141OutputAdapterTest
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:45: error: cannot find symbol
+        responseBodyOutDto = new WsClientes0141ResponseBodyOutDto(List.of());
+                                                                  ^
+  symbol:   variable List
+  location: class WsClientes0141OutputAdapterTest
+Note: C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\OrquestadorSoapErrorFactoryTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
 
 [Incubating] Problems report is available at: file:///C:/Users/darochar/Documents/pruebas/tnd-msa-sp-orqclientes0052/build/reports/problems/problems-report.html
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':compileJava'.
+Execution failed for task ':compileTestJava'.
 > Compilation failed; see the compiler output below.
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:17: error: No implementation was created for DomainToSoapMapper due to having a problem in the erroneous element CardResponseDto. Hint: this often means that some other annotation processor was supposed to process the erroneous element. You can also enable MapStruct verbose mode by setting -Amapstruct.verbose=true as a compilation argument.
-  public interface DomainToSoapMapper {
-         ^
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:3: error: cannot find symbol
-  import com.pichincha.sp.domain.dto.CardResponseDto;
-                                    ^
-    symbol:   class CardResponseDto
-    location: package com.pichincha.sp.domain.dto
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:35: error: cannot find symbol
-      Tarjeta toTarjeta(CardResponseDto source);
+  Note: C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\OrquestadorSoapErrorFactoryTest.java uses or overrides a deprecated API.
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:48: error: constructor FlowDto in record FlowDto cannot be applied to given types;
+          when(bodyInMock.getFlow()).thenReturn(new FlowDto());
+                                                ^
+    required: String,List<OrchestratorFieldDto>
+    found:    no arguments
+    reason: actual and formal argument lists differ in length
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:49: error: constructor OrdenanteQueryCardsDebitCustomersRequestDto in record OrdenanteQueryCardsDebitCustomersRequestDto cannot be applied to given types;
+          when(bodyInMock.getOrdenante()).thenReturn(new OrdenanteQueryCardsDebitCustomersRequestDto());
+                                                     ^
+    required: String,String,String
+    found:    no arguments
+    reason: actual and formal argument lists differ in length
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:50: error: constructor CardQueryCardsDebitCustomersRequestDto in record CardQueryCardsDebitCustomersRequestDto cannot be applied to given types;
+          when(bodyInMock.getCard()).thenReturn(new CardQueryCardsDebitCustomersRequestDto());
+                                                ^
+    required: String,String
+    found:    no arguments
+    reason: actual and formal argument lists differ in length
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:44: error: constructor DocumentDto in record DocumentDto cannot be applied to given types;
+          when(headerOutMock.getDocument()).thenReturn(new DocumentDto());
+                                                       ^
+    required: String,String,JournalsHeaderOutDto
+    found:    no arguments
+    reason: actual and formal argument lists differ in length
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:52: error: constructor BancsHeaderOutDto in record BancsHeaderOutDto cannot be applied to given types;
+          when(headerOutMock.getBancs()).thenReturn(new BancsHeaderOutDto());
+                                                    ^
+    required: String,String,String,String,String,String,String
+    found:    no arguments
+    reason: actual and formal argument lists differ in length
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:54: error: constructor CardsQueryCardsDebitCustomersResponseDto in record CardsQueryCardsDebitCustomersResponseDto cannot be applied to given types;
+          when(bodyOutMock.getCards()).thenReturn(new CardsQueryCardsDebitCustomersResponseDto());
+                                                  ^
+    required: List<CardQueryCardsDebitCustomersResponseDto>
+    found:    no arguments
+    reason: actual and formal argument lists differ in length
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:55: error: constructor FlowDto in record FlowDto cannot be applied to given types;
+          when(bodyOutMock.getFlow()).thenReturn(new FlowDto());
+                                                 ^
+    required: String,List<OrchestratorFieldDto>
+    found:    no arguments
+    reason: actual and formal argument lists differ in length
+  Note: Recompile with -Xlint:deprecation for details.
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\ORQClientes0052ControllerTest.java:65: error: incompatible types: ConsultarTarjetasDebitoClientes01 cannot be converted to SoapBodyRequest
+          request.setBody(operation);
+                          ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\ORQClientes0052ControllerTest.java:69: error: incompatible types: inference variable T has incompatible bounds
+          when(operationRouter.route(any(ConsultarTarjetasDebitoClientes01.class), any(SoapEnvelopeRequest.class), any(QueryTarjetasDebitCustomersPortInput.class), any(SoapToDomainMapper.class), any(ORQClientes0052SoapResponseFactory.class)))
+                              ^
+      equality constraints: ConsultarTarjetasDebitoClientes01
+      upper bounds: SoapBodyRequest,Object
+    where T is a type-variable:
+      T extends Object declared in method <T>any(Class<T>)
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\ORQClientes0052ControllerTest.java:83: error: incompatible types: ConsultarTarjetasDebitoClientes01 cannot be converted to SoapBodyRequest
+          request.setBody(operation);
+                          ^
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:13: error: cannot find symbol
+  import com.pichincha.sp.generated.HeaderInDto;
+                                   ^
+    symbol:   class HeaderInDto
+    location: package com.pichincha.sp.generated
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:14: error: cannot find symbol
+  import com.pichincha.sp.generated.OrchestratorBodyInDto;
+                                   ^
+    symbol:   class OrchestratorBodyInDto
+    location: package com.pichincha.sp.generated
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:15: error: cannot find symbol
+  import com.pichincha.sp.generated.OrchestratorRequestDto;
+                                   ^
+    symbol:   class OrchestratorRequestDto
+    location: package com.pichincha.sp.generated
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\soap\WsClientes0141SoapFactoryTest.java:3: error: cannot find symbol
+  import com.pichincha.sp.infrastructure.output.adapter.soap.WsClientes0141SoapFactory;
+                                                            ^
+    symbol:   class WsClientes0141SoapFactory
+    location: package com.pichincha.sp.infrastructure.output.adapter.soap
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\soap\WsClientes0141SoapFactoryTest.java:30: error: cannot find symbol
+      private WsClientes0141SoapFactory factory;
+              ^
+    symbol:   class WsClientes0141SoapFactory
+    location: class WsClientes0141SoapFactoryTest
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:42: error: cannot find symbol
+          headerIn = new HeaderInDto("device", "company", "channel", "medium", "application", "agency", "transactionType", "geolocation", "user", "uniqueness", "guid", "dateTime", "filler", "language", "session", "ip", "customerId", "customerIdType", new BancsHeaderInDto());
+                                                                                                                                                                                                                                                               ^
+    symbol:   class BancsHeaderInDto
+    location: class WsClientes0141OutputAdapterTest
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:43: error: cannot find symbol
+          bodyIn = new WsClientes0141RequestBodyInDto(new WsClientes0141OrdenanteDto(), new WsClientes0141CriteriosBusquedaDto());
+                                                          ^
+    symbol:   class WsClientes0141OrdenanteDto
+    location: class WsClientes0141OutputAdapterTest
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:43: error: cannot find symbol
+          bodyIn = new WsClientes0141RequestBodyInDto(new WsClientes0141OrdenanteDto(), new WsClientes0141CriteriosBusquedaDto());
+                                                                                            ^
+    symbol:   class WsClientes0141CriteriosBusquedaDto
+    location: class WsClientes0141OutputAdapterTest
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\WsClientes0141OutputAdapterTest.java:45: error: cannot find symbol
+          responseBodyOutDto = new WsClientes0141ResponseBodyOutDto(List.of());
+                                                                    ^
+    symbol:   variable List
+    location: class WsClientes0141OutputAdapterTest
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:35: error: cannot find symbol
+          OrchestratorRequestDto request = OrchestratorRequestDto.builder().build();
+                                                                 ^
+    symbol:   method builder()
+    location: class OrchestratorRequestDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:47: error: cannot find symbol
+          OrchestratorRequestDto request = OrchestratorRequestDto.builder().build();
+                                                                 ^
+    symbol:   method builder()
+    location: class OrchestratorRequestDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\application\service\QueryTarjetasDebitCustomersServiceTest.java:59: error: cannot find symbol
+          OrchestratorRequestDto request = OrchestratorRequestDto.builder().build();
+                                                                 ^
+    symbol:   method builder()
+    location: class OrchestratorRequestDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:31: error: cannot find symbol
+          when(headerInMock.getDevice()).thenReturn("device");
+                           ^
+    symbol:   method getDevice()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:32: error: cannot find symbol
+          when(headerInMock.getCompany()).thenReturn("company");
+                           ^
+    symbol:   method getCompany()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:33: error: cannot find symbol
+          when(headerInMock.getChannel()).thenReturn("channel");
+                           ^
+    symbol:   method getChannel()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:34: error: cannot find symbol
+          when(headerInMock.getApplication()).thenReturn("application");
+                           ^
+    symbol:   method getApplication()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:35: error: cannot find symbol
+          when(headerInMock.getAgency()).thenReturn("agency");
+                           ^
+    symbol:   method getAgency()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:36: error: cannot find symbol
+          when(headerInMock.getTransactionType()).thenReturn("transactionType");
+                           ^
+    symbol:   method getTransactionType()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:37: error: cannot find symbol
+          when(headerInMock.getGeolocation()).thenReturn("geolocation");
+                           ^
+    symbol:   method getGeolocation()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:38: error: cannot find symbol
+          when(headerInMock.getUser()).thenReturn("user");
+                           ^
+    symbol:   method getUser()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:39: error: cannot find symbol
+          when(headerInMock.getUniqueness()).thenReturn("uniqueness");
+                           ^
+    symbol:   method getUniqueness()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:40: error: cannot find symbol
+          when(headerInMock.getGuid()).thenReturn("guid");
+                           ^
+    symbol:   method getGuid()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:41: error: cannot find symbol
+          when(headerInMock.getDateTime()).thenReturn("dateTime");
+                           ^
+    symbol:   method getDateTime()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:42: error: cannot find symbol
+          when(headerInMock.getFiller()).thenReturn("filler");
+                           ^
+    symbol:   method getFiller()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:43: error: cannot find symbol
+          when(headerInMock.getLanguage()).thenReturn("language");
+                           ^
+    symbol:   method getLanguage()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:44: error: cannot find symbol
+          when(headerInMock.getSession()).thenReturn("session");
+                           ^
+    symbol:   method getSession()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:45: error: cannot find symbol
+          when(headerInMock.getIp()).thenReturn("ip");
+                           ^
+    symbol:   method getIp()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:46: error: cannot find symbol
+          when(headerInMock.getCustomerId()).thenReturn("customerId");
+                           ^
+    symbol:   method getCustomerId()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:47: error: cannot find symbol
+          when(headerInMock.getCustomerIdType()).thenReturn("customerIdType");
+                           ^
+    symbol:   method getCustomerIdType()
+    location: variable headerInMock of type HeaderInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:48: error: cannot find symbol
+          when(bodyInMock.getFlow()).thenReturn(new FlowDto());
+                         ^
+    symbol:   method getFlow()
+    location: variable bodyInMock of type OrchestratorBodyInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:49: error: cannot find symbol
+          when(bodyInMock.getOrdenante()).thenReturn(new OrdenanteQueryCardsDebitCustomersRequestDto());
+                         ^
+    symbol:   method getOrdenante()
+    location: variable bodyInMock of type OrchestratorBodyInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorRequestDtoTest.java:50: error: cannot find symbol
+          when(bodyInMock.getCard()).thenReturn(new CardQueryCardsDebitCustomersRequestDto());
+                         ^
+    symbol:   method getCard()
+    location: variable bodyInMock of type OrchestratorBodyInDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:33: error: cannot find symbol
+          when(headerOutMock.getDevice()).thenReturn("device");
+                            ^
+    symbol:   method getDevice()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:34: error: cannot find symbol
+          when(headerOutMock.getCompany()).thenReturn("company");
+                            ^
+    symbol:   method getCompany()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:35: error: cannot find symbol
+          when(headerOutMock.getChannel()).thenReturn("channel");
+                            ^
+    symbol:   method getChannel()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:36: error: cannot find symbol
+          when(headerOutMock.getMedium()).thenReturn("medium");
+                            ^
+    symbol:   method getMedium()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:37: error: cannot find symbol
+          when(headerOutMock.getApplication()).thenReturn("application");
+                            ^
+    symbol:   method getApplication()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:38: error: cannot find symbol
+          when(headerOutMock.getAgency()).thenReturn("agency");
+                            ^
+    symbol:   method getAgency()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:39: error: cannot find symbol
+          when(headerOutMock.getTransactionType()).thenReturn("transactionType");
+                            ^
+    symbol:   method getTransactionType()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:40: error: cannot find symbol
+          when(headerOutMock.getUser()).thenReturn("user");
+                            ^
+    symbol:   method getUser()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:41: error: cannot find symbol
+          when(headerOutMock.getGuid()).thenReturn("guid");
+                            ^
+    symbol:   method getGuid()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:42: error: cannot find symbol
+          when(headerOutMock.getDateTime()).thenReturn("dateTime");
+                            ^
+    symbol:   method getDateTime()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:43: error: cannot find symbol
+          when(headerOutMock.getSession()).thenReturn("session");
+                            ^
+    symbol:   method getSession()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:44: error: cannot find symbol
+          when(headerOutMock.getDocument()).thenReturn(new DocumentDto());
+                            ^
+    symbol:   method getDocument()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:45: error: cannot find symbol
+          when(headerOutMock.getGeolocation()).thenReturn("geolocation");
+                            ^
+    symbol:   method getGeolocation()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:46: error: cannot find symbol
+          when(headerOutMock.getUniqueness()).thenReturn("uniqueness");
+                            ^
+    symbol:   method getUniqueness()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:47: error: cannot find symbol
+          when(headerOutMock.getFiller()).thenReturn("filler");
+                            ^
+    symbol:   method getFiller()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:48: error: cannot find symbol
+          when(headerOutMock.getLanguage()).thenReturn("language");
+                            ^
+    symbol:   method getLanguage()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:49: error: cannot find symbol
+          when(headerOutMock.getIp()).thenReturn("ip");
+                            ^
+    symbol:   method getIp()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:50: error: cannot find symbol
+          when(headerOutMock.getCustomerId()).thenReturn("customerId");
+                            ^
+    symbol:   method getCustomerId()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:51: error: cannot find symbol
+          when(headerOutMock.getCustomerIdType()).thenReturn("customerIdType");
+                            ^
+    symbol:   method getCustomerIdType()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:52: error: cannot find symbol
+          when(headerOutMock.getBancs()).thenReturn(new BancsHeaderOutDto());
+                            ^
+    symbol:   method getBancs()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:54: error: cannot find symbol
+          when(bodyOutMock.getCards()).thenReturn(new CardsQueryCardsDebitCustomersResponseDto());
+                          ^
+    symbol:   method getCards()
+    location: variable bodyOutMock of type OrchestratorBodyOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:55: error: cannot find symbol
+          when(bodyOutMock.getFlow()).thenReturn(new FlowDto());
+                          ^
+    symbol:   method getFlow()
+    location: variable bodyOutMock of type OrchestratorBodyOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:57: error: cannot find symbol
+          when(errorMock.getCode()).thenReturn("code");
                         ^
-    symbol:   class CardResponseDto
-    location: interface DomainToSoapMapper
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\main\java\com\pichincha\sp\infrastructure\input\adapter\rest\mapper\DomainToSoapMapper.java:37: error: cannot find symbol
-      default Tarjetas toTarjetas(List<CardResponseDto> value) {
-                                       ^
-    symbol:   class CardResponseDto
-    location: interface DomainToSoapMapper
-  Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
-  Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
-  Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
-  Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.SoapToDomainMapper.
-  Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.OrchestratorRequestDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
-  Note: -- MapStruct: mapping property: requestBodyConsultarTarjetasDebitoClientes01BodyIn( request ) to: bodyIn.
-  Note: -- MapStruct: mapping property: bodyInConsultarTarjetasDebitoClientes01.getOrdenante() to: ordenante.
-  Note: -- MapStruct: mapping property: ordenante.getCif() to: cif.
-  Note: -- MapStruct: selecting property mapping: ordenante.getCif().
-  Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
-  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
-  Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
-  Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
-  Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
-  Note: MapStruct: referred types not available (yet), deferring mapper: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper
-  4 errors
+    symbol:   method getCode()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:58: error: cannot find symbol
+          when(errorMock.getMessage()).thenReturn("message");
+                        ^
+    symbol:   method getMessage()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:59: error: cannot find symbol
+          when(errorMock.getBusinessMessage()).thenReturn("businessMessage");
+                        ^
+    symbol:   method getBusinessMessage()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:60: error: cannot find symbol
+          when(errorMock.getType()).thenReturn("type");
+                        ^
+    symbol:   method getType()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:61: error: cannot find symbol
+          when(errorMock.getResource()).thenReturn("resource");
+                        ^
+    symbol:   method getResource()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:62: error: cannot find symbol
+          when(errorMock.getComponent()).thenReturn("component");
+                        ^
+    symbol:   method getComponent()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:63: error: cannot find symbol
+          when(errorMock.getBackend()).thenReturn("backend");
+                        ^
+    symbol:   method getBackend()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:78: error: cannot find symbol
+          when(headerOutMock.getDevice()).thenReturn(null);
+                            ^
+    symbol:   method getDevice()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:79: error: cannot find symbol
+          when(headerOutMock.getCompany()).thenReturn(null);
+                            ^
+    symbol:   method getCompany()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:80: error: cannot find symbol
+          when(headerOutMock.getChannel()).thenReturn(null);
+                            ^
+    symbol:   method getChannel()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:81: error: cannot find symbol
+          when(headerOutMock.getMedium()).thenReturn(null);
+                            ^
+    symbol:   method getMedium()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:82: error: cannot find symbol
+          when(headerOutMock.getApplication()).thenReturn(null);
+                            ^
+    symbol:   method getApplication()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:83: error: cannot find symbol
+          when(headerOutMock.getAgency()).thenReturn(null);
+                            ^
+    symbol:   method getAgency()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:84: error: cannot find symbol
+          when(headerOutMock.getTransactionType()).thenReturn(null);
+                            ^
+    symbol:   method getTransactionType()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:85: error: cannot find symbol
+          when(headerOutMock.getUser()).thenReturn(null);
+                            ^
+    symbol:   method getUser()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:86: error: cannot find symbol
+          when(headerOutMock.getGuid()).thenReturn(null);
+                            ^
+    symbol:   method getGuid()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:87: error: cannot find symbol
+          when(headerOutMock.getDateTime()).thenReturn(null);
+                            ^
+    symbol:   method getDateTime()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:88: error: cannot find symbol
+          when(headerOutMock.getSession()).thenReturn(null);
+                            ^
+    symbol:   method getSession()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:89: error: cannot find symbol
+          when(headerOutMock.getDocument()).thenReturn(null);
+                            ^
+    symbol:   method getDocument()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:90: error: cannot find symbol
+          when(headerOutMock.getGeolocation()).thenReturn(null);
+                            ^
+    symbol:   method getGeolocation()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:91: error: cannot find symbol
+          when(headerOutMock.getUniqueness()).thenReturn(null);
+                            ^
+    symbol:   method getUniqueness()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:92: error: cannot find symbol
+          when(headerOutMock.getFiller()).thenReturn(null);
+                            ^
+    symbol:   method getFiller()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:93: error: cannot find symbol
+          when(headerOutMock.getLanguage()).thenReturn(null);
+                            ^
+    symbol:   method getLanguage()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:94: error: cannot find symbol
+          when(headerOutMock.getIp()).thenReturn(null);
+                            ^
+    symbol:   method getIp()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:95: error: cannot find symbol
+          when(headerOutMock.getCustomerId()).thenReturn(null);
+                            ^
+    symbol:   method getCustomerId()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:96: error: cannot find symbol
+          when(headerOutMock.getCustomerIdType()).thenReturn(null);
+                            ^
+    symbol:   method getCustomerIdType()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:97: error: cannot find symbol
+          when(headerOutMock.getBancs()).thenReturn(null);
+                            ^
+    symbol:   method getBancs()
+    location: variable headerOutMock of type HeaderOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:99: error: cannot find symbol
+          when(bodyOutMock.getCards()).thenReturn(null);
+                          ^
+    symbol:   method getCards()
+    location: variable bodyOutMock of type OrchestratorBodyOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:100: error: cannot find symbol
+          when(bodyOutMock.getFlow()).thenReturn(null);
+                          ^
+    symbol:   method getFlow()
+    location: variable bodyOutMock of type OrchestratorBodyOutDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:102: error: cannot find symbol
+          when(errorMock.getCode()).thenReturn(null);
+                        ^
+    symbol:   method getCode()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:103: error: cannot find symbol
+          when(errorMock.getMessage()).thenReturn(null);
+                        ^
+    symbol:   method getMessage()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:104: error: cannot find symbol
+          when(errorMock.getBusinessMessage()).thenReturn(null);
+                        ^
+    symbol:   method getBusinessMessage()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:105: error: cannot find symbol
+          when(errorMock.getType()).thenReturn(null);
+                        ^
+    symbol:   method getType()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:106: error: cannot find symbol
+          when(errorMock.getResource()).thenReturn(null);
+                        ^
+    symbol:   method getResource()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:107: error: cannot find symbol
+          when(errorMock.getComponent()).thenReturn(null);
+                        ^
+    symbol:   method getComponent()
+    location: variable errorMock of type ErrorDto
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\domain\dto\OrchestratorResponseDtoTest.java:108: error: cannot find symbol
+          when(errorMock.getBackend()).thenReturn(null);
+                        ^
+    symbol:   method getBackend()
+    location: variable errorMock of type ErrorDto
+  100 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
@@ -199,5 +810,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 8s
-5 actionable tasks: 5 executed
+BUILD FAILED in 12s
+10 actionable tasks: 9 executed, 1 up-to-date
