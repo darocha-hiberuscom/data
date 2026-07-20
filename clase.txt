@@ -13,50 +13,25 @@ Paquete: com.pichincha.sp
 ── Resumen por etapa ──
 ✓ Etapa 1 · Análisis: ok=13 missing=0
 ✓ Etapa 2 · Dominio DTO: ok=5 missing=0
-⚠ Etapa 3 · TX DTOs + mappers: ok=1 missing=3
-⚠ Etapa 4 · Puertos: ok=4 missing=1
-⚠ Etapa 5 · Adaptadores output: ok=1 missing=1
-⚠ Etapa 6 · Services + builders + MapStruct: ok=4 missing=3 · mappers 0/1 · builders 0/1
-⚠ Etapa 7 · Infra input SOAP: ok=10 missing=1 · mappers 2/2
-⚠ Etapa 8 · Validación: ok=0 missing=2
+✓ Etapa 3 · TX DTOs + mappers: ok=2 missing=0
+✓ Etapa 4 · Puertos: ok=4 missing=0
+✓ Etapa 5 · Adaptadores output: ok=2 missing=0
+✓ Etapa 6 · Services + builders + MapStruct: ok=4 missing=0
+✓ Etapa 7 · Infra input SOAP: ok=11 missing=0 · mappers 2/2
+✓ Etapa 8 · Validación: ok=2 missing=0
 ✓ Etapa 9 · Tests: ok=1 missing=0
 
 ── Mappers ──
-  ✗ [E6] QueryTarjetasDebitCustomersRequestBancsMapper (Clase Java ausente en disco)
   ✓ [E7] DomainToSoapMapper
   ✓ [E7] SoapToDomainMapper
 
 ── Builders ──
-  ✗ [E6] QueryTarjetasDebitCustomersRequestBuilder (Clase Java ausente en disco)
+  (ninguno planificado en el árbol)
 
-── Faltantes (11) ──
-  · [E3][artifact] stage3-tx-contract-validation.json
-      c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\03-infraestructura\stage3-tx-contract-validation.json
-  · [E3][artifact] tx-dto-candidates.json
-      c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\03-infraestructura\tx-dto-candidates.json
-  · [E3][artifact] tx-mapper-manifest.json
-      c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\03-infraestructura\tx-mapper-manifest.json
-  · [E4][port] QueryTarjetasDebitCustomersPortOutput
-      c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052/src/main/java/com/pichincha/sp/application/port/output/QueryTarjetasDebitCustomersPortOutput.java
-  · [E5][artifact] stage5-adapters-contract-validation.json
-      c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\05-infraestructura-adaptadores\stage5-adapters-contract-validation.json
-  · [E6][artifact] stage6-application-contract-validation.json
-      c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\06-aplicacion-service\stage6-application-contract-validation.json
-  · [E6][builder] QueryTarjetasDebitCustomersRequestBuilder
-      c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052/src/main/java/com/pichincha/sp/application/builders/QueryTarjetasDebitCustomersRequestBuilder.java
-  · [E6][mapper] QueryTarjetasDebitCustomersRequestBancsMapper
-      c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052/src/main/java/com/pichincha/sp/application/mappers/QueryTarjetasDebitCustomersRequestBancsMapper.java
-  · [E7][validator] ORQClientes0052RequestValidator
-      c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052/src/main/java/com/pichincha/sp/infrastructure/input/adapter/rest/validator/ORQClientes0052RequestValidator.java
-  · [E8][artifact] migration-full-checklist.json
-      c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\08-validacion\migration-full-checklist.json
-  · [E8][artifact] stage8-validation-contract.json
-      c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\08-validacion\stage8-validation-contract.json
-
-⚠ Checklist incompleto: 11 hueco(s)
+✓ Checklist completo: sin huecos críticos
 
 ── Checklist componentes (árbol Etapa 1) ──
-Mappers: 2 ok / 1 missing · Builders: 0 ok / 1 missing
+Mappers: 2 ok / 0 missing · Builders: 0 ok / 0 missing
 Informe: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\08-validacion\migration-full-checklist.md
 
 ⏳ Validando referencias de clases del proyecto (no inventadas)...
@@ -69,14 +44,13 @@ Ready: no · ok=18 missing=1 warning=0
 
 ── Gate Etapa 8 (contrato final) ──
 Servicio: orqclientes0052
-Checklist: ready=no  mappers missing=1  builders missing=1
+Checklist: ready=sí  mappers missing=0  builders missing=0
 Artifacts/classes: missing=1
 Compile: ok
 Class refs: issues=0
 ORQUESTADOR 2–7: ready=no missing=1
 Ready: no
-Resumen: ok=2 warning=0 missing=3 skipped=0
-  ✗ [checklist] Checklist incompleto (mappers missing=1, builders missing=1) · c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\08-validacion\migration-full-checklist.md
+Resumen: ok=3 warning=0 missing=2 skipped=0
   ✗ [artifacts] Validación pipeline: 1 elemento(s) faltante(s)
   ✗ [orquestador] Contratos ORQUESTADOR incompletos (1 finding(s)) · c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\08-validacion\orquestador-stage8-contract.json
 Checklist MD: c:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\hiberus-analysis\orqclientes0052\08-validacion\migration-full-checklist.md
