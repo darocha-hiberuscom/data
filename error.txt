@@ -1,85 +1,14 @@
-Note: -- MapStruct: selecting property mapping: errorDto.businessMessage().
-Note: -- MapStruct: mapping property: errorDto.type() to: setTipo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: errorDto.type().
-Note: -- MapStruct: mapping property: errorDto.resource() to: setRecurso(java.lang.String).
-Note: -- MapStruct: selecting property mapping: errorDto.resource().
-Note: -- MapStruct: mapping property: errorDto.component() to: setComponente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: errorDto.component().
-Note: -- MapStruct: mapping property: errorDto.backend() to: setBackend(java.lang.String).
-Note: -- MapStruct: selecting property mapping: errorDto.backend().
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.GenericError #errorDtoToGenericError(result.error()).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.GenericError #errorDtoToGenericError(result.error()).
-Note: -- MapStruct: mapping property: result.bodyOut() to: setBodyOut(com.pichincha.sp.generated.BodyOutConsultarTarjetasDebitoClientes01).
-Note: -- MapStruct: mapping property: orchestratorBodyOutDto.flow() to: setFlujo(com.pichincha.sp.generated.GenericFlow).
-Note: -- MapStruct: mapping property: flowDto.status() to: setEstado(java.lang.String).
-Note: -- MapStruct: selecting property mapping: flowDto.status().
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.GenericFlow #flowDtoToGenericFlow(orchestratorBodyOutDto.flow()).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.GenericFlow #flowDtoToGenericFlow(orchestratorBodyOutDto.flow()).
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.generated.BodyOutConsultarTarjetasDebitoClientes01 #orchestratorBodyOutDtoToBodyOutConsultarTarjetasDebitoClientes01(result.bodyOut()).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.generated.BodyOutConsultarTarjetasDebitoClientes01 #orchestratorBodyOutDtoToBodyOutConsultarTarjetasDebitoClientes01(result.bodyOut()).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapEnvelopeResponse toEnvelope(com.pichincha.sp.generated.ConsultarTarjetasDebitoClientes01Response operationResponse).
-Note: -- MapStruct: mapping property: operationResponse to: body(com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse).
-Note: -- MapStruct: mapping property: consultarTarjetasDebitoClientes01Response to: consultarTarjetasDebitoClientes01Response(com.pichincha.sp.generated.ConsultarTarjetasDebitoClientes01Response).
-Note: -- MapStruct: selecting property mapping: consultarTarjetasDebitoClientes01Response.
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarTarjetasDebitoClientes01ResponseToSoapBodyResponse(operationResponse).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.infrastructure.input.adapter.rest.dto.response.SoapBodyResponse #consultarTarjetasDebitoClientes01ResponseToSoapBodyResponse(operationResponse).
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.GenericHeaderOut toHeaderOut(com.pichincha.sp.generated.GenericHeaderIn headerIn).
-Note: -- MapStruct: mapping property: headerIn.getDispositivo() to: setDispositivo(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getDispositivo().
-Note: -- MapStruct: mapping property: headerIn.getEmpresa() to: setEmpresa(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getEmpresa().
-Note: -- MapStruct: mapping property: headerIn.getCanal() to: setCanal(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getCanal().
-Note: -- MapStruct: mapping property: headerIn.getMedio() to: setMedio(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getMedio().
-Note: -- MapStruct: mapping property: headerIn.getAplicacion() to: setAplicacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getAplicacion().
-Note: -- MapStruct: mapping property: headerIn.getAgencia() to: setAgencia(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getAgencia().
-Note: -- MapStruct: mapping property: headerIn.getTipoTransaccion() to: setTipoTransaccion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getTipoTransaccion().
-Note: -- MapStruct: mapping property: headerIn.getGeolocalizacion() to: setGeolocalizacion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getGeolocalizacion().
-Note: -- MapStruct: mapping property: headerIn.getUsuario() to: setUsuario(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getUsuario().
-Note: -- MapStruct: mapping property: headerIn.getUnicidad() to: setUnicidad(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getUnicidad().
-Note: -- MapStruct: mapping property: headerIn.getGuid() to: setGuid(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getGuid().
-Note: -- MapStruct: mapping property: headerIn.getFechaHora() to: setFechaHora(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getFechaHora().
-Note: -- MapStruct: mapping property: headerIn.getFiller() to: setFiller(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getFiller().
-Note: -- MapStruct: mapping property: headerIn.getIdioma() to: setIdioma(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIdioma().
-Note: -- MapStruct: mapping property: headerIn.getSesion() to: setSesion(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getSesion().
-Note: -- MapStruct: mapping property: headerIn.getIp() to: setIp(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIp().
-Note: -- MapStruct: mapping property: headerIn.getIdCliente() to: setIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getIdCliente().
-Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdCliente(java.lang.String).
-Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
-Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
-Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
+Microsoft Windows [Version 10.0.26100.8655]
+(c) Microsoft Corporation. All rights reserved.
 
-[Incubating] Problems report is available at: file:///C:/Users/darochar/Documents/pruebas/tnd-msa-sp-orqclientes0052/build/reports/problems/problems-report.html
-
-Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
-
-You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
-
-For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
-
-BUILD SUCCESSFUL in 13s
-10 actionable tasks: 9 executed, 1 up-to-date
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-or
  *  History restored 
 
 Microsoft Windows [Version 10.0.26100.8655]
 (c) Microsoft Corporation. All rights reserved.
 
 C:\Users\darochar\Documents\pruebas\tnd-msa-sp-or              gradlew build
+Starting a Gradle Daemon, 2 incompatible and 1 stopped Daemons could not be reused, use --status for details
 
 > Task :architectureReview
 
@@ -145,39 +74,27 @@ C:\Users\darochar\Documents\pruebas\tnd-msa-sp-or              gradlew build
 
 ---------------------------------------------------------------
 ≡ƒº¬ PRUEBAS UNITARIAS:
-   Archivos de test analizados: 20
+   Archivos de test analizados: 22
 
    ≡ƒôè Desglose de puntos:
-      ΓÇó Estructura: 1 / 3
+      ΓÇó Estructura: 2 / 3
       ΓÇó Nomenclatura: 1 / 1
-      ΓÇó Anotaciones: 0 / 1
+      ΓÇó Anotaciones: 1 / 1
       ΓÇó Mocks/Stubbing: 0 / 1
-      ΓÇó Assertions: 0 / 2
-      ΓÇó Integraci├│n: 0 / 2
+      ΓÇó Assertions: 1 / 2
+      ΓÇó Integraci├│n: 2 / 2
 
-   Puntaje final: 2.2 / 10
-   BLOQUEAR PR: SI Γ¥î
+   Puntaje final: 7.8 / 10
+   BLOQUEAR PR: NO Γ£à
 
-   ≡ƒôï Observaciones de tests (7):
-      ΓÇó [Configuraci├│n] Falta application-test.yml/.properties
-      ΓÇó [Configuraci├│n] No se detecta uso de H2 en las pruebas
-      ΓÇó [Anotaciones] Faltan anotaciones requeridas: @SpringBootTest
+   ≡ƒôï Observaciones de tests (1):
       ΓÇó [Mocking] Hay pruebas sin mocks/stubbing o imports est├íticos para m├⌐todos stub
-      ΓÇó [Asserts] Debe haber al menos una aserci├│n JUnit b├ísica en los tests
-      ΓÇó [Integraci├│n] Falta validaci├│n de HTTP status en tests de integraci├│n
-      ΓÇó [Integraci├│n] Falta validaci├│n de error HTTP 404/500
 
-   ΓÜá∩╕Å  Pruebas Unitarias NO cumplen con el threshold m├¡nimo de 7
+   Γ£à Pruebas Unitarias aprobadas
 
 ===============================================================
 
-ΓÜá∩╕Å        PEER REVIEW - ADVERTENCIAS DETECTADAS         ΓÜá∩╕Å
-
-   ΓÜá∩╕Å  Pruebas Unitarias: 2.2 / 10 (m├¡nimo: 7)
-
-Por favor, revisa y corrige los problemas antes de continuar.
-
-ΓÜá∩╕Å    PEER REVIEW COMPLETADO CON ADVERTENCIAS     ΓÜá∩╕Å
+Γ£à    PEER REVIEW AUTOMATIZADO: APROBADO     Γ£à
 
 
 > Task :generateJavaFromWsdl
@@ -199,16 +116,6 @@ wsdl2java - Apache CXF 4.1.1
 Note: MapStruct: Using accessor naming strategy: org.mapstruct.ap.spi.DefaultAccessorNamingStrategy
 Note: MapStruct: Using builder provider: org.mapstruct.ap.spi.DefaultBuilderProvider
 Note: MapStruct: Using enum naming strategy: org.mapstruct.ap.spi.DefaultEnumMappingStrategy
-Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.SoapToDomainMapper.
-Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.OrchestratorRequestDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
-Note: -- MapStruct: mapping property: requestBodyConsultarTarjetasDebitoClientes01BodyIn( request ) to: bodyIn.
-Note: -- MapStruct: mapping property: bodyInConsultarTarjetasDebitoClientes01.getOrdenante() to: ordenante.
-Note: -- MapStruct: mapping property: ordenante.getCif() to: cif.
-Note: -- MapStruct: selecting property mapping: ordenante.getCif().
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
-Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
-Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
 Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.DomainToSoapMapper.
 Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.generated.ConsultarTarjetasDebitoClientes01Response toOperationResponse(com.pichincha.sp.domain.dto.OrchestratorResponseDto result).
 Note: -- MapStruct: mapping property: result.error() to: setError(com.pichincha.sp.generated.GenericError).
@@ -281,8 +188,18 @@ Note: -- MapStruct: mapping property: headerIn.getTipoIdCliente() to: setTipoIdC
 Note: -- MapStruct: selecting property mapping: headerIn.getTipoIdCliente().
 Note: -- MapStruct: mapping property: headerIn.getBancs() to: setBancs(com.pichincha.sp.generated.BancsTeller).
 Note: -- MapStruct: selecting property mapping: headerIn.getBancs().
+Note:  MapStruct: processing: com.pichincha.sp.infrastructure.input.adapter.rest.mapper.SoapToDomainMapper.
+Note: - MapStruct: creating bean mapping method implementation for com.pichincha.sp.domain.dto.OrchestratorRequestDto toDomain(com.pichincha.sp.infrastructure.input.adapter.rest.dto.request.SoapEnvelopeRequest request).
+Note: -- MapStruct: mapping property: requestBodyConsultarTarjetasDebitoClientes01BodyIn( request ) to: bodyIn.
+Note: -- MapStruct: mapping property: bodyInConsultarTarjetasDebitoClientes01.getOrdenante() to: ordenante.
+Note: -- MapStruct: mapping property: ordenante.getCif() to: cif.
+Note: -- MapStruct: selecting property mapping: ordenante.getCif().
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrdenanteQueryCardsDebitCustomersRequestDto #ordenanteToOrdenanteQueryCardsDebitCustomersRequestDto(bodyInConsultarTarjetasDebitoClientes01.getOrdenante()).
+Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
+Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
 
-> Task :compileTestJava FAILED
+> Task :compileTestJava
 C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\soap\WsClientes0141SoapFactoryTest.java:3: error: cannot find symbol
 import com.pichincha.sp.infrastructure.output.adapter.soap.WsClientes0141SoapFactory;
                                                           ^
@@ -293,9 +210,39 @@ C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com
             ^
   symbol:   class WsClientes0141SoapFactory
   location: class WsClientes0141SoapFactoryTest
-Note: C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\OrquestadorSoapErrorFactoryTest.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-2 errors
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:48: error: cannot find symbol
+                    assertThat(status.value()).isIn(HttpStatus.OK.value(), HttpStatus.NOT_FOUND.value());
+                                     ^
+  symbol:   method value()
+  location: variable status of type Integer
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:60: error: cannot find symbol
+                    assertEquals(HttpStatus.NOT_FOUND.value(), status.value());
+                                                                     ^
+  symbol:   method value()
+  location: variable status of type Integer
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:61: error: cannot find symbol
+                    assertThat(status.value()).isEqualTo(404);
+                                     ^
+  symbol:   method value()
+  location: variable status of type Integer
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:77: error: cannot find symbol
+                    assertThat(status.value()).isIn(
+                                     ^
+  symbol:   method value()
+  location: variable status of type Integer
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:82: error: cannot find symbol
+                    if (status.value() == HttpStatus.INTERNAL_SERVER_ERROR.value()) {
+                              ^
+  symbol:   method value()
+  location: variable status of type Integer
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:83: error: cannot find symbol
+                        assertEquals(500, status.value());
+                                                ^
+  symbol:   method value()
+  location: variable status of type Integer
+8 errors
+
+> Task :compileTestJava FAILED
 
 [Incubating] Problems report is available at: file:///C:/Users/darochar/Documents/pruebas/tnd-msa-sp-orqclientes0052/build/reports/problems/problems-report.html
 
@@ -304,8 +251,6 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':compileTestJava'.
 > Compilation failed; see the compiler output below.
-  Note: C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\OrquestadorSoapErrorFactoryTest.java uses or overrides a deprecated API.
-  Note: Recompile with -Xlint:deprecation for details.
   C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\soap\WsClientes0141SoapFactoryTest.java:3: error: cannot find symbol
   import com.pichincha.sp.infrastructure.output.adapter.soap.WsClientes0141SoapFactory;
                                                             ^
@@ -316,7 +261,37 @@ Execution failed for task ':compileTestJava'.
               ^
     symbol:   class WsClientes0141SoapFactory
     location: class WsClientes0141SoapFactoryTest
-  2 errors
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:48: error: cannot find symbol
+                      assertThat(status.value()).isIn(HttpStatus.OK.value(), HttpStatus.NOT_FOUND.value());
+                                       ^
+    symbol:   method value()
+    location: variable status of type Integer
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:60: error: cannot find symbol
+                      assertEquals(HttpStatus.NOT_FOUND.value(), status.value());
+                                                                       ^
+    symbol:   method value()
+    location: variable status of type Integer
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:61: error: cannot find symbol
+                      assertThat(status.value()).isEqualTo(404);
+                                       ^
+    symbol:   method value()
+    location: variable status of type Integer
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:77: error: cannot find symbol
+                      assertThat(status.value()).isIn(
+                                       ^
+    symbol:   method value()
+    location: variable status of type Integer
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:82: error: cannot find symbol
+                      if (status.value() == HttpStatus.INTERNAL_SERVER_ERROR.value()) {
+                                ^
+    symbol:   method value()
+    location: variable status of type Integer
+  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:83: error: cannot find symbol
+                          assertEquals(500, status.value());
+                                                  ^
+    symbol:   method value()
+    location: variable status of type Integer
+  8 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
@@ -328,7 +303,7 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 16s
+BUILD FAILED in 34s
 10 actionable tasks: 9 executed, 1 up-to-date
 
 C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>
