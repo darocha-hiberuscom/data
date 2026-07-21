@@ -1,14 +1,5 @@
-Microsoft Windows [Version 10.0.26100.8655]
-(c) Microsoft Corporation. All rights reserved.
 
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-or
- *  History restored 
-
-Microsoft Windows [Version 10.0.26100.8655]
-(c) Microsoft Corporation. All rights reserved.
-
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-or              gradlew build
-Starting a Gradle Daemon, 2 incompatible and 1 stopped Daemons could not be reused, use --status for details
+C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>gradlew build
 
 > Task :architectureReview
 
@@ -74,27 +65,36 @@ Starting a Gradle Daemon, 2 incompatible and 1 stopped Daemons could not be reus
 
 ---------------------------------------------------------------
 ≡ƒº¬ PRUEBAS UNITARIAS:
-   Archivos de test analizados: 22
+   Archivos de test analizados: 21
 
    ≡ƒôè Desglose de puntos:
       ΓÇó Estructura: 2 / 3
       ΓÇó Nomenclatura: 1 / 1
-      ΓÇó Anotaciones: 1 / 1
+      ΓÇó Anotaciones: 0 / 1
       ΓÇó Mocks/Stubbing: 0 / 1
       ΓÇó Assertions: 1 / 2
-      ΓÇó Integraci├│n: 2 / 2
+      ΓÇó Integraci├│n: 0 / 2
 
-   Puntaje final: 7.8 / 10
-   BLOQUEAR PR: NO Γ£à
+   Puntaje final: 4.4 / 10
+   BLOQUEAR PR: SI Γ¥î
 
-   ≡ƒôï Observaciones de tests (1):
+   ≡ƒôï Observaciones de tests (4):
+      ΓÇó [Anotaciones] Faltan anotaciones requeridas: @SpringBootTest
       ΓÇó [Mocking] Hay pruebas sin mocks/stubbing o imports est├íticos para m├⌐todos stub
+      ΓÇó [Integraci├│n] Falta validaci├│n de HTTP status en tests de integraci├│n
+      ΓÇó [Integraci├│n] Falta validaci├│n de error HTTP 404/500
 
-   Γ£à Pruebas Unitarias aprobadas
+   ΓÜá∩╕Å  Pruebas Unitarias NO cumplen con el threshold m├¡nimo de 7
 
 ===============================================================
 
-Γ£à    PEER REVIEW AUTOMATIZADO: APROBADO     Γ£à
+ΓÜá∩╕Å        PEER REVIEW - ADVERTENCIAS DETECTADAS         ΓÜá∩╕Å
+
+   ΓÜá∩╕Å  Pruebas Unitarias: 4.4 / 10 (m├¡nimo: 7)
+
+Por favor, revisa y corrige los problemas antes de continuar.
+
+ΓÜá∩╕Å    PEER REVIEW COMPLETADO CON ADVERTENCIAS     ΓÜá∩╕Å
 
 
 > Task :generateJavaFromWsdl
@@ -200,101 +200,20 @@ Note: -- MapStruct: creating property mapping: com.pichincha.sp.domain.dto.Orche
 Note: -- MapStruct: selecting property mapping: com.pichincha.sp.domain.dto.OrchestratorBodyInDto #bodyInConsultarTarjetasDebitoClientes01ToOrchestratorBodyInDto(requestBodyConsultarTarjetasDebitoClientes01BodyIn( request )).
 
 > Task :compileTestJava
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\soap\WsClientes0141SoapFactoryTest.java:3: error: cannot find symbol
-import com.pichincha.sp.infrastructure.output.adapter.soap.WsClientes0141SoapFactory;
-                                                          ^
-  symbol:   class WsClientes0141SoapFactory
-  location: package com.pichincha.sp.infrastructure.output.adapter.soap
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\soap\WsClientes0141SoapFactoryTest.java:30: error: cannot find symbol
-    private WsClientes0141SoapFactory factory;
-            ^
-  symbol:   class WsClientes0141SoapFactory
-  location: class WsClientes0141SoapFactoryTest
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:48: error: cannot find symbol
-                    assertThat(status.value()).isIn(HttpStatus.OK.value(), HttpStatus.NOT_FOUND.value());
-                                     ^
-  symbol:   method value()
-  location: variable status of type Integer
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:60: error: cannot find symbol
-                    assertEquals(HttpStatus.NOT_FOUND.value(), status.value());
-                                                                     ^
-  symbol:   method value()
-  location: variable status of type Integer
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:61: error: cannot find symbol
-                    assertThat(status.value()).isEqualTo(404);
-                                     ^
-  symbol:   method value()
-  location: variable status of type Integer
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:77: error: cannot find symbol
-                    assertThat(status.value()).isIn(
-                                     ^
-  symbol:   method value()
-  location: variable status of type Integer
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:82: error: cannot find symbol
-                    if (status.value() == HttpStatus.INTERNAL_SERVER_ERROR.value()) {
-                              ^
-  symbol:   method value()
-  location: variable status of type Integer
-C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:83: error: cannot find symbol
-                        assertEquals(500, status.value());
-                                                ^
-  symbol:   method value()
-  location: variable status of type Integer
-8 errors
+Note: C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\factory\OrquestadorSoapErrorFactoryTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
 
-> Task :compileTestJava FAILED
+> Task :test FAILED
 
 [Incubating] Problems report is available at: file:///C:/Users/darochar/Documents/pruebas/tnd-msa-sp-orqclientes0052/build/reports/problems/problems-report.html
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':compileTestJava'.
-> Compilation failed; see the compiler output below.
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\soap\WsClientes0141SoapFactoryTest.java:3: error: cannot find symbol
-  import com.pichincha.sp.infrastructure.output.adapter.soap.WsClientes0141SoapFactory;
-                                                            ^
-    symbol:   class WsClientes0141SoapFactory
-    location: package com.pichincha.sp.infrastructure.output.adapter.soap
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\output\adapter\soap\WsClientes0141SoapFactoryTest.java:30: error: cannot find symbol
-      private WsClientes0141SoapFactory factory;
-              ^
-    symbol:   class WsClientes0141SoapFactory
-    location: class WsClientes0141SoapFactoryTest
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:48: error: cannot find symbol
-                      assertThat(status.value()).isIn(HttpStatus.OK.value(), HttpStatus.NOT_FOUND.value());
-                                       ^
-    symbol:   method value()
-    location: variable status of type Integer
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:60: error: cannot find symbol
-                      assertEquals(HttpStatus.NOT_FOUND.value(), status.value());
-                                                                       ^
-    symbol:   method value()
-    location: variable status of type Integer
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:61: error: cannot find symbol
-                      assertThat(status.value()).isEqualTo(404);
-                                       ^
-    symbol:   method value()
-    location: variable status of type Integer
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:77: error: cannot find symbol
-                      assertThat(status.value()).isIn(
-                                       ^
-    symbol:   method value()
-    location: variable status of type Integer
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:82: error: cannot find symbol
-                      if (status.value() == HttpStatus.INTERNAL_SERVER_ERROR.value()) {
-                                ^
-    symbol:   method value()
-    location: variable status of type Integer
-  C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052\src\test\java\com\pichincha\sp\infrastructure\input\adapter\rest\impl\SoapSpringBootIntegrationTest.java:83: error: cannot find symbol
-                          assertEquals(500, status.value());
-                                                  ^
-    symbol:   method value()
-    location: variable status of type Integer
-  8 errors
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///C:/Users/darochar/Documents/pruebas/tnd-msa-sp-orqclientes0052/build/reports/tests/test/index.html
 
 * Try:
-> Check your code and dependencies to fix the compilation error(s)
 > Run with --scan to get full insights.
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
@@ -303,7 +222,7 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 34s
-10 actionable tasks: 9 executed, 1 up-to-date
+BUILD FAILED in 14s
+12 actionable tasks: 11 executed, 1 up-to-date
 
 C:\Users\darochar\Documents\pruebas\tnd-msa-sp-orqclientes0052>
