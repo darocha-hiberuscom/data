@@ -1,0 +1,488 @@
+<!--Nombre archivo:     000000001 - (GENERICO)
+  Autor:          Christian Herrera N
+  Descripcion archivo:   Configuracion de canales para transacciones que requieran 
+                identificar si cuenta esta activa para transferencias
+  Historial de cambios
+  03/04/2019        Archivo inicial.
+-->
+<parametros>
+  <C01 descripcion="">
+    <M010002 descripcion="">
+      <A00335 descripcion="">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00335>
+      <A00751 descripcion="BP ONE">
+        <BT id="i" descripcion="BP ONE" />
+        <AC id="05,99" descripcion="CANAL REFERIDO" />
+        <ACactivacion id="05" descripcion="CANAL PARA ACTIVACION" />
+        <filtroT alias="true" configuracion="true" principal="true" />
+        <filtroCAT alias="false" configuracion="true" principal="true" />
+        <filtroCAC alias="false" configuracion="false" principal="true" />
+        <filtroCAV alias="false" configuracion="false" principal="false" />
+        <filtroCC alias="false" configuracion="false" principal="true" />
+        <filtroAH alias="false" configuracion="true" principal="true" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+        <filtroTJA alias="false" configuracion="false" />
+      </A00751>
+    </M010002>
+    <M010003 descripcion="">
+      <A00335 descripcion="">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00335>
+       <A00344 descripcion="Zendesk">
+        <AB id="CRM" descripcion="APLICACION" />
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00344>
+      <A00657 descripcion="aplicacion = PRY_LEAN BRANCH">
+        <BT id="l" descripcion = "BIZAGI" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCAV alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+        <filtroTJA alias="false" configuracion="false" />
+     </A00657>
+    </M010003>
+    <M010001 descripcion="">
+      <A00541 descripcion="">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00541>
+    </M010001>
+  </C01>
+  <C02 descripcion="BANCA ELECTRONICA">
+    <M020001 descripcion="BANCA ELECTRONICA EMPRESAS">
+       <A00716 descripcion="BUSINESS BANKING">
+          <AB id="BEP" descripcion="APLICACION" />
+          <BT id="i" descripcion="CANAL" />
+          <AC id="05,99" descripcion="CANAL REFERIDO" />
+          <ACactivacion id="05" descripcion="CANAL PARA ACTIVACION" />
+          <filtroT alias="true" configuracion="true" principal="true" />
+          <filtroCAT alias="false" configuracion="true" principal="true" />
+          <filtroCAC alias="false" configuracion="false" principal="true" />
+          <filtroCAV alias="false" configuracion="false" principal="false" />
+          <filtroCC alias="false" configuracion="false" principal="true" />
+          <filtroAH alias="false" configuracion="true" principal="true" />
+          <filtroIV alias="false" configuracion="false" />
+          <filtroCR alias="false" configuracion="false" />
+          <filtroTJ alias="false" configuracion="false" />
+          <filtroTJA alias="false" configuracion="false" />
+       </A00716>
+     <A00731 descripcion=" Jaguar (Liquidez Plus) ">
+        <BT id="i" descripcion="CANAL" />
+        <AC id="05,99" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" principal="true" />
+        <filtroCAT alias="false" configuracion="true" principal="true" />
+        <filtroCAC alias="false" configuracion="false" principal="true" />
+        <filtroCAV alias="false" configuracion="false" principal="false" />
+        <filtroCC alias="false" configuracion="false" principal="true" />
+        <filtroAH alias="false" configuracion="true" principal="true" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+        <filtroTJA alias="false" configuracion="false" />
+      </A00731>
+    </M020001>
+    <M020002 descripcion="BANCA ELECTRONICA PERSONAS">
+      <A00647 descripcion="CXP">
+        <AB id="BEP" descripcion="APLICACION" />
+        <BT id="i" descripcion="CANAL" />
+        <AC id="05,99" descripcion="CANAL REFERIDO" />
+        <ACactivacion id="05" descripcion="CANAL PARA ACTIVACION" />
+        <filtroT alias="true" configuracion="true" principal="true" />
+        <filtroCAT alias="false" configuracion="true" principal="true" />
+        <filtroCAC alias="false" configuracion="false" principal="true" />
+        <filtroCAV alias="false" configuracion="false" principal="false" />
+        <filtroCC alias="false" configuracion="false" principal="true" />
+        <filtroAH alias="false" configuracion="true" principal="true" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+        <filtroTJA alias="false" configuracion="false" />
+      </A00647>
+      <A00335 descripcion="">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00335>
+    </M020002>
+   <M020001 descripcion="Cash New release">
+      <A00117 descripcion="">
+        <AB id="BEP" descripcion="APLICACION" />
+        <BT id="i" descripcion="CANAL" />
+        <AC id="05,99" descripcion="CANAL REFERIDO" />
+        <ACactivacion id="05" descripcion="CANAL PARA ACTIVACION" />
+        <filtroT alias="true" configuracion="true" principal="true" />
+        <filtroCAT alias="false" configuracion="true" principal="true" />
+        <filtroCAC alias="false" configuracion="false" principal="true" />
+        <filtroCAV alias="false" configuracion="false" principal="false" />
+        <filtroCC alias="false" configuracion="false" principal="true" />
+        <filtroAH alias="false" configuracion="true" principal="true" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+        <filtroTJA alias="false" configuracion="false" />
+      </A00117>
+    </M020001>
+    <M020007 descripcion="Autogestion Web">
+      <A00655 descripcion="">
+        <AB id="BEP" descripcion="APLICACION" />
+        <BT id="i" descripcion="CANAL" />
+        <AC id="05,99" descripcion="CANAL REFERIDO" />
+        <ACactivacion id="05" descripcion="CANAL PARA ACTIVACION" />
+        <filtroT alias="true" configuracion="true" principal="true" />
+        <filtroCAT alias="false" configuracion="true" principal="true" />
+        <filtroCAC alias="false" configuracion="false" principal="true" />
+        <filtroCAV alias="false" configuracion="false" principal="false" />
+        <filtroCC alias="false" configuracion="false" principal="true" />
+        <filtroAH alias="false" configuracion="true" principal="true" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+        <filtroTJA alias="false" configuracion="false" />
+      </A00655>
+<A00712 descripcion="">
+        <AB id="BEP" descripcion="APLICACION" />
+        <BT id="i" descripcion="CANAL" />
+        <AC id="05,99" descripcion="CANAL REFERIDO" />
+        <ACactivacion id="05" descripcion="CANAL PARA ACTIVACION" />
+        <filtroT alias="true" configuracion="true" principal="true" />
+        <filtroCAT alias="false" configuracion="true" principal="true" />
+        <filtroCAC alias="false" configuracion="false" principal="true" />
+        <filtroCAV alias="false" configuracion="false" principal="false" />
+        <filtroCC alias="false" configuracion="false" principal="true" />
+        <filtroAH alias="false" configuracion="true" principal="true" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+        <filtroTJA alias="false" configuracion="false" />
+      </A00712>
+    </M020007>
+  </C02>
+  <C03 descripcion="BANCA MOVIL">
+    <M030006 descripcion="APLICATIVO MOVIL CENTRO DIGITAL">
+      <A00663 descripcion="NUEVA BANCA MOVIL">
+<AB id="BEP" descripcion="APLICACION" />
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <ACactivacion id="06" descripcion="CANAL PARA ACTIVACION" />
+        <filtroT alias="true" configuracion="true" principal="true" />
+        <filtroCAT alias="true" configuracion="true" principal="true" />
+        <filtroCAC alias="true" configuracion="false" principal="true" />
+        <filtroCC alias="true" configuracion="false" principal="true" />
+        <filtroAH alias="true" configuracion="true" principal="true" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+        <filtroTJA alias="false" configuracion="false" />
+      </A00663>
+    </M030006>
+    <M030001 descripcion="APLICATIVO MOVIL">
+      <A00335 descripcion="PICHINCHA CELULAR">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <ACactivacion id="06" descripcion="CANAL PARA ACTIVACION" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00335>
+      <A00663 descripcion="NUEVA BANCA MOVIL">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="true|" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00663>
+    </M030001>
+    <M030002 descripcion="SMS">
+      <A00335 descripcion="Pichincha Celular">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00335>
+    </M030002>
+    <M030003 descripcion="USSD">
+      <A00335 descripcion="Pichincha Celular">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00335>
+      <A00724 descripcion="Business WhatsApp">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+    <AB id="BEP" descripcion="APLICACION"/>
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00724>
+    </M030003>
+    <M030004 descripcion="MEDIOS DE PAGO">
+      <A00335 descripcion="Pichincha Celular">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00335>
+      <A00670 descripcion="BILLETERA PICHINCHAG">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <ACactivacion id="06" descripcion="CANAL PARA ACTIVACION" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="true" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00670>
+    </M030004>
+  </C03>
+  <C04 descripcion="">
+    <M040002 descripcion="">
+      <A00335 descripcion="">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00335>
+    </M040002>
+  <M040001 descripcion="">
+      <A00654 descripcion="">
+           <AB id="BEP" descripcion="APLICACION"/>
+   <BT id="l" descripcion="CANAL"/>
+   <AC id="06" descripcion="CANAL REFERIDO"/>
+   <ACactivacion id="06" descripcion="CANAL PARA ACTIVACION"/>
+   <filtroT alias="true" configuracion="true" principal="true"/>
+   <filtroCAT alias="true" configuracion="true" principal="true"/>
+   <filtroCAC alias="true" configuracion="false" principal="true"/>
+   <filtroCAV alias="false" configuracion="false" principal="false"/>
+   <filtroCC alias="true" configuracion="false" principal="true"/>
+   <filtroAH alias="true" configuracion="true" principal="true"/>
+   <filtroIV alias="false" configuracion="false"/>
+   <filtroCR alias="false" configuracion="false"/>
+   <filtroTJ alias="false" configuracion="false"/>
+   <filtroTJA alias="false" configuracion="false"/>
+</A00654>
+</M040001>
+  </C04>
+  <C05 descripcion="">
+    <M050001 descripcion="">
+      <A00335 descripcion="">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00335>
+      <A00473 descripcion="">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00473>
+    </M050001>
+    <M050003 descripcion="">
+      <A00656 descripcion="">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00656>
+    </M050003>
+  </C05>
+  <C06 descripcion="">
+    <M060003 descripcion="">
+      <A00335 descripcion="">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <filtroT alias="true" configuracion="true" />
+        <filtroCAT alias="false" configuracion="true" />
+        <filtroCAC alias="false" configuracion="false" />
+        <filtroCC alias="false" configuracion="false" />
+        <filtroAH alias="false" configuracion="false" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+      </A00335>
+    </M060003>
+  </C06>
+  <C08 descripcion="Banca Abierta">
+    <M080001 descripcion="API">
+   <A00732 descripcion="RPA">
+  <AB id="BEP" descripcion="APLICACION" />
+  <BT id="i" descripcion="CANAL" />
+  <AC id="05,99" descripcion="CANAL REFERIDO" />
+  <ACactivacion id="05" descripcion="CANAL PARA ACTIVACION" />
+  <filtroT alias="true" configuracion="true" principal="true" />
+  <filtroCAT alias="false" configuracion="true" principal="true" />
+  <filtroCAC alias="false" configuracion="false" principal="true" />
+  <filtroCAV alias="false" configuracion="false" principal="false" />
+  <filtroCC alias="false" configuracion="false" principal="true" />
+  <filtroAH alias="false" configuracion="true" principal="true" />
+  <filtroIV alias="false" configuracion="false" />
+  <filtroCR alias="false" configuracion="false" />
+  <filtroTJ alias="false" configuracion="false" />
+  <filtroTJA alias="false" configuracion="false" />
+  </A00732>
+      <A00730 descripcion="Seguros API Cuentas">
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <ACactivacion id="06" descripcion="CANAL PARA ACTIVACION" />
+        <filtroT alias="true" configuracion="true" principal="true" />
+        <filtroCAT alias="false" configuracion="true" principal="true" />
+        <filtroCAC alias="false" configuracion="false" principal="true" />
+        <filtroCC alias="false" configuracion="false" principal="true" />
+        <filtroAH alias="false" configuracion="true" principal="true" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+        <filtroTJA alias="false" configuracion="false" />
+      </A00730>
+    </M080001>
+    <M080002 descripcion="Remesas">
+    <A00729 descripcion="Remesas">
+        <AB id="BEP" descripcion="APLICACION" />
+        <BT id="l" descripcion="CANAL" />
+        <AC id="06" descripcion="CANAL REFERIDO" />
+        <ACactivacion id="06" descripcion="CANAL PARA ACTIVACION" />
+        <filtroT alias="true" configuracion="true" principal="true" />
+        <filtroCAT alias="true" configuracion="true" principal="true" />
+        <filtroCAC alias="true" configuracion="false" principal="true" />
+        <filtroCC alias="true" configuracion="false" principal="true" />
+        <filtroAH alias="true" configuracion="true" principal="true" />
+        <filtroIV alias="false" configuracion="false" />
+        <filtroCR alias="false" configuracion="false" />
+        <filtroTJ alias="false" configuracion="false" />
+        <filtroTJA alias="false" configuracion="false" />
+    </A00729>
+    </M080002>
+</C08>
+<C10 descripcion="BANCA EMPRESAS">
+<M100001 descripcion="BANCA WEB EMPRESAS">
+<A00738 descripcion="BUSINESS BANKING">
+<AB id="BEE" descripcion="APLICACION" />
+<BT id="Y" descripcion="CANAL" />
+<AC id="24" descripcion="CANAL REFERIDO" />
+<ACactivacion id="24" descripcion="CANAL PARA ACTIVACION" />
+<filtroT alias="true" configuracion="true" principal="true" />
+<filtroCAT alias="false" configuracion="true" principal="true" />
+<filtroCAC alias="false" configuracion="false" principal="true" />
+<filtroCAV alias="false" configuracion="false" principal="false" />
+<filtroCC alias="false" configuracion="false" principal="true" />
+<filtroAH alias="false" configuracion="true" principal="true" />
+<filtroIV alias="false" configuracion="false" />
+<filtroCR alias="false" configuracion="false" />
+<filtroTJ alias="false" configuracion="false" />
+<filtroTJA alias="false" configuracion="false" />
+</A00738>
+</M100001>
+</C10>
+</parametros>
