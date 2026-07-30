@@ -1,0 +1,7 @@
+
+<Procesamiento>
+  <parametros filtroMoneda="true" monedaLocal="USD" archivoCuentas="000000006" timeOutTJ="10000" timeOutWSClientes0220="4000" filtroInicial="CUENTA " llaveXYBW="0202000200647" transaccionCanales="000000001" filtroCuentasCAT="22153039-22153038-22014023" avnceEfctvo="001" efctvExpress="002" BP="BPI" Diners="DIN" valoresNoCredito="VISA-MASTER-TARJET-DISCOVER" filtroCuentasCCNoMostrar="22014023" filtroCuentasAHNoMostrar="22014023" filtroCuentasIVNoMostrar="22014023"/>
+  <proceso canalMedioAplicacion="*">
+    <invocacion tipo="ESQL" />
+  </proceso>
+</Procesamiento>

@@ -1,0 +1,99 @@
+<!--Nombre archivo:   000000006 - (GENERICO)
+ Autor:     Christian Herrera N
+ Descripcion archivo:  Configuracion parametrizacion de cuentas activas para avance
+ Historial de cambios
+ 03/04/2019    Archivo inicial.
+-->
+<productos>
+  <avance descripcion="productos no permitidos para avance">
+    <producto tipo="2102" subtipo="2003" descripcion="CTA.CTE ENTIDADES FINANCIERAS" />
+    <producto tipo="2112" subtipo="3012" descripcion="CTA CTE SWEEP ACCOUNT- REPOS" />
+    <producto tipo="2101" subtipo="0002" descripcion="CTA.CTE EMPRESARIAL" />
+    <producto tipo="2102" subtipo="2005" descripcion="CTA.CTE INSTI.FINANC ENCAJE" />
+    <producto tipo="2102" subtipo="2004" descripcion="CTA.CTE INSTI.FINANCIERAS DINE" />
+    <producto tipo="2103" subtipo="0006" descripcion="CTA.CTE CREDITO DISTRIBUIDOR" />
+    <producto tipo="2101" subtipo="0024" descripcion="CTA.CTE COOPERATIVAS" />
+    <producto tipo="2112" subtipo="3011" descripcion="CTA CTE SWEEP ACCOUNT-EMPRESA" />
+    <producto tipo="2101" subtipo="0023" descripcion="CUENTA CORRIENTE CONFIANZA" />
+    <producto tipo="2112" subtipo="3010" descripcion="CTA.CTE OVERNIGHT" />
+    <producto tipo="2101" subtipo="2139" descripcion="CTA.CNB" />
+    <producto tipo="2215" subtipo="3019" descripcion="PLAN AHORRO FUTURO RESERVA" />
+    <producto tipo="2211" subtipo="1008" descripcion="AHORRO GANADOLAR PERSONAS" />
+    <producto tipo="2211" subtipo="1011" descripcion="GANADOLAR EMPRESAS" />
+    <producto tipo="2212" subtipo="1009" descripcion="GANADIARIO EMPRESAS PROD INTER" />
+    <producto tipo="2233" subtipo="0004" descripcion="AHORRO FACIL" />
+    <producto tipo="2236" subtipo="0007" descripcion="AHORRO MICROCREDITO" />
+    <producto tipo="2215" subtipo="3025" descripcion="PLAN AHORRO FUTURO JOVEN" />
+    <producto tipo="2232" subtipo="0030" descripcion="CUENTA ELECTRONICA CONFIANZA" />
+    <producto tipo="2212" subtipo="1010" descripcion="INT GANADIARIO MIGRACION" />
+    <producto tipo="2218" subtipo="2021" descripcion="INT CASAHORRO MIGRACION" />
+    <producto tipo="2218" subtipo="2022" descripcion="INT CASAHORRO BONO MIGRACION" />
+    <producto tipo="2231" subtipo="0033" descripcion="AHORRO MIDUVI" />
+    <producto tipo="2232" subtipo="0032" descripcion="CUENTA ELECTRONICA E-TEENS" />
+    <producto tipo="2215" subtipo="3027" descripcion="PLAN AHORRO BIENES PRODUCTIVOS" />
+    <producto tipo="2231" subtipo="0034" descripcion="CORRESPONSAL NO BANCARIO" />
+    <producto tipo="2231" subtipo="0035" descripcion="CUENTA XPERTA" />
+    <producto tipo="2215" subtipo="3028" descripcion="PLAN AHORRO FUTURO CRECER" />
+    <producto tipo="2215" subtipo="3029" descripcion="PLAN AHORRO PLAZO" />
+    <producto tipo="2234" subtipo="0005" descripcion="AHORRO JOVEN" />
+    <producto tipo="2215" subtipo="3017" descripcion="PLAN AHORRO FUTURO AUTO" />
+    <producto tipo="2235" subtipo="0006" descripcion="AHORRO COMPATRIOTA" />
+    <producto tipo="2215" subtipo="3036" descripcion="AH FUTURO RESERVA MIGRA FONDO" />
+    <producto tipo="2232" subtipo="0036" descripcion="CTA AHO CADENA COMERCIAL CNB P" />
+    <producto tipo="2236" subtipo="0008" descripcion="AHORRO MICROCREDITO BCA COMUNAL" />
+    <producto tipo="2215" subtipo="3038" descripcion="MI DECIMO CUENTA" />
+    <producto tipo="2215" subtipo="3039" descripcion="PLAN AHORRO FUTURO DECIMOS" />
+    <producto tipo="2215" subtipo="3037" descripcion="PLAN AHORRO JUBILACION" />
+    <producto tipo="2215" subtipo="3041" descripcion="PLAN AHORRO FUTURO EMPRESAS" />
+    <producto tipo="0727" subtipo="9000" descripcion="PLAN AHORRO FUTURO EMPRESAS" />
+    <producto tipo="2215" subtipo="3045" descripcion="PLAN AHORRO FUTURO EMPRESAS" />
+    <producto tipo="2201" subtipo="4025" descripcion="CUENTA INVERSION IFIS" />
+    <producto tipo="2211" subtipo="1012" descripcion="GANADOLAR IFIS" />
+    <producto tipo="2212" subtipo="1011" descripcion="GANADIARIO EMP PROD INTER IFIS" />
+    <producto tipo="2215" subtipo="3040" descripcion="PLAN AHORRO BIENES PRODUC IFIS" />
+    <producto tipo="2231" subtipo="0004" descripcion="AHORRO TRADICIONAL EMPRES IFIS" />
+    <producto tipo="2231" subtipo="0005" descripcion="AHORRO TRADICIONAL IFIS" />
+    <producto tipo="2215" subtipo="3018" descripcion="PLAN AHORRO FUTURO CASA" />
+    <producto tipo="2201" subtipo="4023" descripcion="CUENTA INVERSION" />
+    <producto tipo="2215" subtipo="3013" descripcion="PLAN AHORRO FUTURO" />
+    <producto tipo="2215" subtipo="3016" descripcion="PLAN AHORRO FUTURO VIAJE" />
+    <producto tipo="2215" subtipo="3015" descripcion="PLAN AHORRO FUTURO E-TEENS" />
+    <producto tipo="2215" subtipo="3014" descripcion="PLAN AHORRO FUTURO ESTUDIO" />
+    <producto tipo="2236" subtipo="0020" descripcion="AHORRO CREDIFE" />
+    <producto tipo="2201" subtipo="4024" descripcion="CUENTA INVERSION EUROS" />
+    <producto tipo="2232" subtipo="0004" descripcion="AHORRO ELECTRONICO IFIS" />
+    <producto tipo="2231" subtipo="0002" descripcion="AHORRO TRADICIONAL EMPRESAS" />
+    <producto tipo="2232" subtipo="0001" descripcion="AHORROS EURO" />
+    <producto tipo="2211" subtipo="1008" descripcion="AHORRO GANADOLAR PERSONAS" />
+    <producto tipo="2211" subtipo="1011" descripcion="GANADOLAR EMPRESAS" />
+    <producto tipo="2211" subtipo="1012" descripcion="GANADOLAR IFIS" />
+    <producto tipo="2212" subtipo="1009" descripcion="GANADIARIO EMPRESAS PROD INTER" />
+    <producto tipo="2212" subtipo="1010" descripcion="INT GANADIARIO MIGRACION" />
+    <producto tipo="2212" subtipo="1011" descripcion="GANADIARIO EMP PROD INTER IFIS" />
+    <producto tipo="2215" subtipo="3018" descripcion="PLAN AHORRO FUTURO CASA" />
+    <producto tipo="2218" subtipo="2021" descripcion="INT CASAHORRO MIGRACION" />
+    <producto tipo="2218" subtipo="2022" descripcion="INT CASAHORRO BONO MIGRACION" />
+    <producto tipo="2233" subtipo="0004" descripcion="AHORRO FACIL" />
+    <producto tipo="2237" subtipo="0012" descripcion="AHORROEUROS" />
+    <producto tipo="2201" subtipo="4024" descripcion="CUENTA INVERSION EUROS" />
+    <producto tipo="2236" subtipo="0007" descripcion="AHORRO MICROCREDITO" />
+    <producto tipo="2236" subtipo="0008" descripcion="AHORRO MICROCREDITO BCA COMUNA" />
+    <producto tipo="2215" subtipo="3014" descripcion="PLAN AHORRO FUTURO ESTUDIO" />
+    <producto tipo="2215" subtipo="3016" descripcion="PLAN AHORRO FUTURO VIAJE" />
+    <producto tipo="2215" subtipo="3017" descripcion="PLAN AHORRO FUTURO AUTO" />
+    <producto tipo="2215" subtipo="3018" descripcion="PLAN AHORRO FUTURO CASA" />
+    <producto tipo="2215" subtipo="3013" descripcion="PLAN AHORRO FUTURO" />
+    <producto tipo="2215" subtipo="3019" descripcion="PLAN AHORRO FUTURO RESERVA" />
+    <producto tipo="2215" subtipo="3015" descripcion="PLAN AHORRO FUTURO E-TEENS" />
+    <producto tipo="2215" subtipo="3028" descripcion="PLAN AHORRO FUTURO CRECER" />
+    <producto tipo="2215" subtipo="3027" descripcion="PLAN AHORRO BIENES PRODUCTIVOS" />
+    <producto tipo="2215" subtipo="3040" descripcion="PLAN AHORRO BIENES PRODUC IFIS" />
+    <producto tipo="2215" subtipo="3029" descripcion="PLAN AHORRO PLAZO" />
+    <producto tipo="2231" subtipo="0035" descripcion="CUENTA XPERTA" />
+    <producto tipo="2215" subtipo="3037" descripcion="PLAN AHORRO JUBILACION" />
+    <producto tipo="2215" subtipo="3038" descripcion="MI DECIMO CUENTA" />
+    <producto tipo="2215" subtipo="3039" descripcion="PLAN AHORRO FUTURO DECIMOS" />
+    <producto tipo="2231" subtipo="0034" descripcion="CORRESPONSAL NO BANCARIO" />
+    <producto tipo="2215" subtipo="3029" descripcion="PLAN AHORRO PLAZO" />
+  </avance>
+</productos>
